@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="20ad8530-0994-414f-a681-8ba82ed47fc9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Codename_One_Libraries.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Connector_J_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CodeNameOneBuildClient.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaSE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mobile_App.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Versions.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codenameone_kotlin.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codenameone_settings.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/CLDC11.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/CodenameOne.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/CodenameOne_SRC.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/impl/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifest.mf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nbproject/build-impl.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nbproject/genfiles.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nbproject/nativej2me.res" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nbproject/private/config.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nbproject/private/private.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nbproject/private/private.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nbproject/project.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nbproject/project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Entities/Category.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Entities/Demande_Recrutement.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Entities/Offre_Emploi.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Mobile_App/theme.res" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Mobile_App/Entities/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Mobile_App/Entities/Demande_Recrutement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Mobile_App/Entities/Offre_Emploi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/AddOffer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/HomeForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/ListOfferForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Mobile_App/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Mobile_App/Service/Offer_Service.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Mobile_App/Utils/Statics.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/theme.res" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1rt02CtLh40j1NvIGvhwn0tZkdI" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../JobHub-Desktop-Application" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Mobile_App.Gui" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Run in Device Simulator" type="#com.codename1.plugin.intellij.run.CodenameOneConfigurationType" factoryName="Codename One">
+      <setting name="mainClass" value="Mobile_App.Main" />
+      <setting name="vmparams" value="" />
+      <setting name="workDir" value="" />
+      <setting name="debug" value="false" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="20ad8530-0994-414f-a681-8ba82ed47fc9" name="Default Changelist" comment="" />
+      <created>1619779868610</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1619779868610</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>
