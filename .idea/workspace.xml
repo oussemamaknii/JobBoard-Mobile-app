@@ -54,6 +54,7 @@
       <change beforePath="$PROJECT_DIR$/src/Mobile_App/Entities/Offre_Emploi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Entities/Offre_Emploi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Mobile_App/Gui/AddOffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/AddOffer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Mobile_App/Service/Offer_Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Service/Offer_Service.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Utils/Statics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Utils/Statics.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
