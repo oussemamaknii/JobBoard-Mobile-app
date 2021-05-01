@@ -69,7 +69,32 @@
             <compilerarg value="-no-stdlib"/>
             <compilerarg value="-no-reflect"/>
             <compilerarg value="-no-jdk"/>
-        </withKotlin></javac>        
+        </withKotlin></javac><get src="https://bintray.com/guardsquare/proguard/download_file?file_path=com%2Fguardsquare%2Fproguard-ant%2F7.0.0%2Fproguard-ant-7.0.0.jar" dest="lib/proguard-ant-7.0.0.jar" skipexisting="true"/>
+        <get src="https://bintray.com/guardsquare/proguard/download_file?file_path=com%2Fguardsquare%2Fproguard-base%2F7.0.0%2Fproguard-base-7.0.0.jar" dest="lib/proguard-base-7.0.0.jar" skipexisting="true"/>
+        <get src="https://bintray.com/guardsquare/proguard/download_file?file_path=com%2Fguardsquare%2Fproguard-core%2F7.0.0%2Fproguard-core-7.0.0.jar" dest="lib/proguard-core-7.0.0.jar" skipexisting="true"/>
+        <taskdef resource="proguard/ant/task.properties"
+                 classpath="lib/proguard-ant-7.0.0.jar:lib/proguard-base-7.0.0.jar:lib/proguard-core-7.0.0.jar" />
+        <proguard>
+            -verbose
+            -dontobfuscate
+            -libraryjars lib/CLDC11.jar:lib/CodenameOne.jar
+            -injars build/tmp:lib/impl/cls
+            -outjars build/tmp.jar
+            -keep class ${codename1.packageName}.${codename1.mainName} {
+            *;
+            }
+            -dontwarn **
+
+        </proguard>
+        <proguard>
+            -verbose
+            -dontobfuscate
+            -libraryjars lib/CLDC11.jar:lib/CodenameOne.jar
+            -injars build/tmp.jar
+            -keep class ${codename1.packageName}.${codename1.mainName} {
+            *;
+            }
+        </proguard>        
     </target>
 
     <target name="-post-compile">
