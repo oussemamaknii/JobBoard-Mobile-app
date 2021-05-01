@@ -3,6 +3,8 @@ package Mobile_App;
 
 import static com.codename1.ui.CN.*;
 
+import Mobile_App.Gui.BaseForm;
+import Mobile_App.Gui.GestionProduit_Commande.ShopForm;
 import Mobile_App.Gui.HomeForm;
 import com.codename1.ui.Display;
 import com.codename1.ui.Form;
@@ -51,7 +53,8 @@ public class Main {
     }
 
     public void start() {
-        new HomeForm().show();
+      //  new HomeForm().show();
+        new ShopForm().show();
     }
 
     public void stop() {
