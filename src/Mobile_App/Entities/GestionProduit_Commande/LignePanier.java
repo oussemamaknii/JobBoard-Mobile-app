@@ -5,80 +5,89 @@
  */
 package Mobile_App.Entities.GestionProduit_Commande;
 
+import com.codename1.ui.Image;
+
 /**
  *
  * @author toshiba
- */
-public class LignePanier {
-    private int id;
-    private int $quantite;
-    private int $idCommande;// clé étrangère de la table commande
-    private int $idProduit;// clé étrangère de la table produit 
+ */public class LignePanier {
 
-    public LignePanier(int $quantite, int $idCommande, int $idProduit) {
-        this.$quantite = $quantite;
-        this.$idCommande = $idCommande;
-        this.$idProduit = $idProduit;
+    private int id;
+    private int idProduit;// clé étrangère de la table produit
+    private String nomProduit;
+    private int idCommande;
+    private double prix;
+    private int quantite;
+    private String image;
+
+    @Override
+    public String toString() {
+        return "LignePanier{" + "id=" + id + ", idProduit=" + idProduit + ", nomProduit=" + nomProduit + ", idCommande=" + idCommande + ", prix=" + prix + ", quantite=" + quantite + ", image=" + image + '}';
+    }
+
+    public LignePanier() {
+    }
+
+    public LignePanier(int idProduit, String nomProduit, double prix, int quantite, String image, int idCommande) {
+        this.image=image;
+        this.quantite = quantite;
+        this.idProduit = idProduit;
+        this.nomProduit = nomProduit;
+        this.prix = prix;
+        this.idCommande=idCommande;
+    }
+
+    public void setIdProduit(int idProduit) {
+        this.idProduit = idProduit;
+    }
+
+    public void setNomProduit(String nomProduit) {
+        this.nomProduit = nomProduit;
+    }
+
+    public void setIdCommande(int idCommande) {
+        this.idCommande = idCommande;
+    }
+
+    public void setPrix(double prix) {
+        this.prix = prix;
+    }
+
+    public void setQuantite(int quantite) {
+        this.quantite = quantite;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
     }
 
     public int getId() {
         return id;
     }
 
-    public int get$quantite() {
-        return $quantite;
+    public int getIdProduit() {
+        return idProduit;
     }
 
-    public int get$idCommande() {
-        return $idCommande;
+    public String getNomProduit() {
+        return nomProduit;
     }
 
-    public int get$idProduit() {
-        return $idProduit;
+    public int getIdCommande() {
+        return idCommande;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public double getPrix() {
+        return prix;
     }
 
-    public void set$quantite(int $quantite) {
-        this.$quantite = $quantite;
+    public int getQuantite() {
+        return quantite;
     }
 
-    public void set$idProduit(int $idProduit) {
-        this.$idProduit = $idProduit;
-    }
-public void setIdCommande(int idCommande) {
-        this.$idCommande = idCommande;
-    }
-    @Override
-    public int hashCode() {
-        int hash = 3;
-        return hash;
+    public String getImage() {
+        return image;
     }
 
-    @Override
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if (obj == null) {
-            return false;
-        }
-        if (getClass() != obj.getClass()) {
-            return false;
-        }
-        final LignePanier other = (LignePanier) obj;
-        if (this.id != other.id) {
-            return false;
-        }
-        return true;
-    }
 
-    @Override
-    public String toString() {
-        return "LignePanier{ $quantite=" + $quantite + ", $idCommande=" + $idCommande + ", $idProduit=" + $idProduit + '}';
-    }
-    
-    
 }
