@@ -22,29 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="20ad8530-0994-414f-a681-8ba82ed47fc9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/res/theme/Icon material-delete.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/GestionProduit_Commande/ProductSingleForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Mobile_App/Images/Icon material-delete.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Mobile_App/Service/ServiceGPC/PanierService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Entities/GestionProduit_Commande/LignePanier.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Entities/GestionProduit_Commande/LignePanier.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/GestionProduit_Commande/PanierForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/GestionProduit_Commande/PanierForm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/GestionProduit_Commande/ShopForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/GestionProduit_Commande/ShopForm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/ServiceGPC/CommandeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/ServiceGPC/CommandeService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/ServiceGPC/ShopService$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/ServiceGPC/ShopService$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/ServiceGPC/ShopService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/ServiceGPC/ShopService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/theme.res" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/theme.res" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/theme.xml" beforeDir="false" afterPath="$PROJECT_DIR$/res/theme.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Entities/GestionProduit_Commande/LignePanier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Entities/GestionProduit_Commande/LignePanier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Gui/GestionProduit_Commande/PanierForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/GestionProduit_Commande/PanierForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Gui/GestionProduit_Commande/ShopForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/GestionProduit_Commande/ShopForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Service/ServiceGPC/CommandeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Service/ServiceGPC/CommandeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Service/ServiceGPC/ShopService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Service/ServiceGPC/ShopService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme.res" beforeDir="false" afterPath="$PROJECT_DIR$/src/theme.res" afterDir="false" />
-    </list>
+    <list default="true" id="20ad8530-0994-414f-a681-8ba82ed47fc9" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
