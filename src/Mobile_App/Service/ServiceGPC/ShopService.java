@@ -58,7 +58,7 @@ public class ShopService {
     }
 
     public ArrayList<Produit> getAllProducts(){
-        String url = Statics.BASE_URL_MINTOUA + "/searchProduct";
+        String url = Statics.BASE_URL_MINTOUA + "/list_products";
 
         request.setUrl(url);
         request.setPost(false);
@@ -66,7 +66,7 @@ public class ShopService {
             @Override
             public void actionPerformed(NetworkEvent evt) {
                 products = parseProduits(new String(request.getResponseData()));
-                System.out.println("Books: "+products);
+               // System.out.println("Books: "+products);
                 request.removeResponseListener(this);
             }
         });
