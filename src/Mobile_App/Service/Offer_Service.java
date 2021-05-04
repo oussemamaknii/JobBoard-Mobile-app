@@ -34,7 +34,7 @@ public class Offer_Service {
         String url = Statics.BASE_URL + "/offre_emploi/" + t.getTitre() + "/" + t.getPoste() + "/" + t.getDescription() + "/" + t.getLocation()
                 + "/" + t.getFile() + "/" + t.getEmail() + "/" + t.getDate_debut() + "/" + t.getDate_expiration()
                 + "/" + t.getMax_salary() + "/" + t.getMin_salary() + "/" + t.getCategory_id(); //création de l'URL
-        req.setUrl(url);// Insertion de l'URL de notre demande de connexion
+        req.setUrl(url);
         req.addResponseListener(new ActionListener<NetworkEvent>() {
             @Override
             public void actionPerformed(NetworkEvent evt) {
