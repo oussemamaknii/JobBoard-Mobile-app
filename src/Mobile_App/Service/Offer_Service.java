@@ -51,22 +51,24 @@ public class Offer_Service {
             Offers = new ArrayList<>();
             JSONParser j = new JSONParser();
             Map<String, Object> tasksListJson = j.parseJSON(new CharArrayReader(jsonText.toCharArray()));
-            System.out.println(jsonText);
             List<Map<String, Object>> list = (List<Map<String, Object>>) tasksListJson.get("root");
             for (Map<String, Object> obj : list) {
                 Offre_Emploi t = new Offre_Emploi();
                 float id = Float.parseFloat(obj.get("id").toString());
+                float min_salary = Float.parseFloat(obj.get("minSalary").toString());
+                float max_salary = Float.parseFloat(obj.get("maxSalary").toString());
                 t.setId((int) id);
                 t.setTitre(obj.get("titre").toString());
                 t.setPoste(obj.get("poste").toString());
                 t.setDescription(obj.get("description").toString());
                 t.setDate_debut((LocalDate) obj.get("date_debut"));
-                t.setTitre(obj.get("date_expiration").toString());
+                t.setDate_expiration((LocalDate) obj.get("date_expiration"));
                 t.setFile(obj.get("file").toString());
                 t.setLocation(obj.get("location").toString());
-                t.setMin_salary(Integer.parseInt(obj.get("min_salary").toString()));
-                t.setMax_salary(Integer.parseInt(obj.get("email").toString()));
-                t.setCategory_id(Integer.parseInt(obj.get("categorie_id").toString()));
+                t.setMin_salary((int) min_salary);
+                t.setMax_salary((int) max_salary);
+                t.setEmail(obj.get("email").toString());
+                //t.setCategory_id((int)Integer.parseInt(obj.get("categorie").toString()));
                 Offers.add(t);
             }
         } catch (IOException ex) {
@@ -75,7 +77,7 @@ public class Offer_Service {
     }
 
     public ArrayList<Offre_Emploi> getAllOffers() {
-        String url = Statics.BASE_URL + "/offre_emploi/";
+        String url = Statics.BASE_URL + "/listofferjson";
         req.setUrl(url);
         req.setPost(false);
         req.addResponseListener(new ActionListener<NetworkEvent>() {
