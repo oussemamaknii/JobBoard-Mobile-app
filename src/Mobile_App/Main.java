@@ -53,8 +53,8 @@ public class Main {
     }
 
     public void start() {
-      //  new HomeForm().show();
-        new ShopForm().show();
+        new HomeForm().show();
+        // new ShopForm().show();
     }
 
     public void stop() {
