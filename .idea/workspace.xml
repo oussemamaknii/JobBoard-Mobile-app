@@ -23,16 +23,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="20ad8530-0994-414f-a681-8ba82ed47fc9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/json_simple_1_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deps/json-simple-1.1.1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Connector_J_8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/ant.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/built-jar.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/CN1FileChooser.cn1lib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/impl/cls/com/codename1/ext/filechooser/FileChooser.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/impl/cls/com/codename1/ext/filechooser/FileChooserNative.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/impl/native/android/com/codename1/ext/filechooser/FileChooserNativeImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/impl/native/ios/com_codename1_ext_filechooser_FileChooserNativeImpl.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/impl/native/ios/com_codename1_ext_filechooser_FileChooserNativeImpl.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/impl/native/j2me/com/codename1/ext/filechooser/FileChooserNativeImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/impl/native/javascript/com_codename1_ext_filechooser_FileChooserNative.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/impl/native/javase/com/codename1/ext/filechooser/FileChooserNativeImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/impl/native/rim/com/codename1/ext/filechooser/FileChooserNativeImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/impl/native/win/com/codename1/ext/filechooser/FileChooserNativeImpl.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/impl/stubs/com/codename1/ext/filechooser/FileChooser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/impl/stubs/com/codename1/ext/filechooser/FileChooserNative.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeNameOneBuildClient.jar" beforeDir="false" afterPath="$PROJECT_DIR$/CodeNameOneBuildClient.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Versions.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Versions.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codenameone_settings.properties" beforeDir="false" afterPath="$PROJECT_DIR$/codenameone_settings.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/impl/readme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Entities/Category.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Entities/Category.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Entities/Offre_Emploi.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Entities/Offre_Emploi.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/AddOffer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/AddOffer$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/AddOffer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/AddOffer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/Offer_Service$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/Offer_Service$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/Offer_Service$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/Offer_Service$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/Offer_Service.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/Offer_Service.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Utils/Statics.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Utils/Statics.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Entities/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Entities/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Entities/Offre_Emploi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Entities/Offre_Emploi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Gui/AddOffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/AddOffer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Mobile_App/Service/Offer_Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Service/Offer_Service.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Utils/Statics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Utils/Statics.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +70,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="ProjectId" id="1rt02CtLh40j1NvIGvhwn0tZkdI" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -59,6 +88,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -67,17 +100,20 @@
     <property name="project.structure.proportion" value="0.13927579" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Etudes\ESPRIT\Esprit_3A28\Semestre 2\PiDev\Mobile\Mobile-app\src\Mobile_App\Service\ServiceGPC" />
+      <recent name="E:\Etudes\ESPRIT\Esprit_3A28\Semestre 2\PiDev\Mobile\Mobile-app\src\Mobile_App\Images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\souso\Desktop\Mobile App\lib" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="Mobile_App.Entities.GestionProduit_Commande" />
       <recent name="Mobile_App.Utils" />
       <recent name="Mobile_App.Gui" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Etudes\ESPRIT\Esprit_3A28\Semestre 2\PiDev\Mobile\Mobile-app\src\Mobile_App\Service\ServiceGPC" />
-      <recent name="E:\Etudes\ESPRIT\Esprit_3A28\Semestre 2\PiDev\Mobile\Mobile-app\src\Mobile_App\Images" />
     </key>
   </component>
   <component name="RunManager">

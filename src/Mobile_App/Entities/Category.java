@@ -76,13 +76,7 @@ public class Category {
 
     @Override
     public String toString() {
-        return ("Category [couleur="
-                + couleur
-                + ", descriptionc="
-                + descriptionc
-                + ", titre="
-                + titre
-                + "]");
+        return titre;
     }
 
     public Category( String titre, String descriptionc, String couleur) {
