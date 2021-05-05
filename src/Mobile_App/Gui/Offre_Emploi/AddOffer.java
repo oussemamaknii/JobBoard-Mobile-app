@@ -99,7 +99,12 @@ public class AddOffer extends Form {
             ComboBox<Category> categ = new ComboBox<>();
             ArrayList<Category> list = Offer_Service.getInstance().getcategnames();
             for (Category l : list) {
+                if (l.getId() == o.getCategory_id())
                 categ.addItem(l);
+            }
+            for (Category l : list) {
+                if (l.getId() != o.getCategory_id())
+                    categ.addItem(l);
             }
             Picker dateTimePicker = new Picker();
             dateTimePicker.setType(Display.PICKER_TYPE_DATE_AND_TIME);

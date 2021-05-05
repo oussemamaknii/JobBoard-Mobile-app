@@ -89,7 +89,9 @@ public class Offer_Service {
                 t.setMin_salary((int) min_salary);
                 t.setMax_salary((int) max_salary);
                 t.setEmail(obj.get("email").toString());
-                //t.setCategory_id((int)Integer.parseInt(obj.get("categorie").toString()));
+                Map<String, Object> categ = (Map<String, Object>) obj.get("categorie");
+                t.setCategory_id((int) Float.parseFloat(categ.get("id").toString()));
+                t.setCatname(categ.get("titre").toString());
                 Offers.add(t);
             }
         } catch (IOException ex) {
@@ -130,8 +132,8 @@ public class Offer_Service {
         return Offers;
     }
 
-    public void deleteoffer(Offre_Emploi o) {
-        String url = Statics.BASE_URL + "/deleteofferjson?id="+o.getId();
+    public void deleteoffer(int o) {
+        String url = Statics.BASE_URL + "/deleteofferjson?id="+o;
         req.setUrl(url);
         req.setPost(false);
         NetworkManager.getInstance().addToQueueAndWait(req);
