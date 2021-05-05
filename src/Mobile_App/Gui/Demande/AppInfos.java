@@ -1,7 +1,10 @@
-package Mobile_App.Gui.Offre_Emploi;
+package Mobile_App.Gui.Demande;
 
+import Mobile_App.Entities.Demande_Recrutement;
 import Mobile_App.Entities.Offre_Emploi;
 import Mobile_App.Gui.HomeForm;
+import Mobile_App.Gui.Offre_Emploi.AddOffer;
+import Mobile_App.Gui.Offre_Emploi.ListViewOffer;
 import Mobile_App.Main;
 import Mobile_App.Service.DemandeService;
 import Mobile_App.Service.Offer_Service;
@@ -10,15 +13,10 @@ import com.codename1.ui.*;
 import com.codename1.ui.layouts.BoxLayout;
 import com.codename1.ui.layouts.FlowLayout;
 
-import java.io.IOException;
-import java.util.Date;
+public class AppInfos extends Form {
 
-import static com.codename1.ui.layouts.GroupLayout.CENTER;
-
-public class OfferInfos extends Form {
-
-    public OfferInfos(Offre_Emploi s, Form previous) {
-        this.setTitle("Offer Infos");
+    public AppInfos(Demande_Recrutement s, Form previous) {
+        this.setTitle("Apps Infos");
         this.setLayout(new FlowLayout(CENTER, CENTER));
         this.getToolbar().addMaterialCommandToLeftBar("", FontImage.MATERIAL_ARROW_BACK
                 , e -> previous.showBack());
@@ -28,14 +26,17 @@ public class OfferInfos extends Form {
 
             ImageViewer image = new ImageViewer(Main.theme.getImage("job.png").scaled(250, 350));
 
-            Label lbTitle = new Label(s.getTitre());
-            Label lDescription = new Label(s.getDescription());
-            Label lDuree = new Label(String.valueOf(s.getEmail()));
+            Label lbTitle = new Label(s.getOfftit());
+            Label lDescription = new Label(s.getOfftit());
+            Label lDuree;
+            if (s.getStatus())
+                lDuree = new Label("Treated !");
+            else
+                lDuree = new Label("Loadinf ..");
 
             Container buttons = new Container(BoxLayout.x());
             Button delete = new Button("Delete");
-            Button Update = new Button("Update");
-            Button Apply = new Button("Apply");
+            Button Update = new Button("Treat");
             delete.addActionListener(e -> {
                 Offer_Service.getInstance().deleteoffer(s.getId());
                 Dialog.show("Success", "Deleted Successfully !", new Command("OK"));
@@ -43,18 +44,12 @@ public class OfferInfos extends Form {
                 f2.show();
             });
             Update.addActionListener(e -> {
-                Form f = new AddOffer(this, s);
+                //Offer_Service.getInstance().treat();
+                Form f = new ListApps(this);
                 f.show();
             });
-            Apply.addActionListener(e -> {
-                int iduser = 5;
-                DemandeService.getInstance().applytojob(s.getId(),iduser);
-                Dialog.show("Success", "Applied Successfully !", new Command("OK"));
-                Form f2 = new ListViewOffer(new HomeForm());
-                f2.show();
-            });
 
-            buttons.addAll(delete, Update,Apply);
+            buttons.addAll(delete, Update);
 
             titleDuree.addAll(lbTitle, lDuree);
             details.addAll(titleDuree, lDescription);

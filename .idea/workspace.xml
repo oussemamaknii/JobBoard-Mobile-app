@@ -23,88 +23,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="20ad8530-0994-414f-a681-8ba82ed47fc9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/res/offerInfos/active.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/offerInfos/categpng.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/offerInfos/crossIcon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/offerInfos/email.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/offerInfos/enddat.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/offerInfos/event.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/offerInfos/event1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/offerInfos/event2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/offerInfos/event3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/offerInfos/event4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/offerInfos/form.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/offerInfos/icons8_Box_32px.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/offerInfos/icons8_GPS_Antenna_64px_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/offerInfos/icons8_Home_32px.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/offerInfos/icons8_Meanpath_64px_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/offerInfos/icons8_Open_Envelope_32px.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/offerInfos/icons8_Person_32px.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/offerInfos/icons8_Search_52px.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/offerInfos/icons8_Sign_Out_32px.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/offerInfos/icons8_Slider__32px.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/offerInfos/icons8_Xbox_Menu_32px.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/offerInfos/jimmy-fallon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/offerInfos/job.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/offerInfos/jobapp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/offerInfos/loc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/offerInfos/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/offerInfos/post.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/offerInfos/strtdat.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/offerInfos/title.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/offerInfos/unactive.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/offerInfos/user.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/theme/active.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/theme/categpng.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/theme/crossIcon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/theme/email.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/theme/enddat.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/theme/event.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/theme/event1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/theme/event2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/theme/event3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/theme/event4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/theme/form.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/theme/icons8_Box_32px.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/theme/icons8_GPS_Antenna_64px_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/theme/icons8_Home_32px.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/theme/icons8_Meanpath_64px_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/theme/icons8_Open_Envelope_32px.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/theme/icons8_Person_32px.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/theme/icons8_Search_52px.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/theme/icons8_Sign_Out_32px.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/theme/icons8_Slider__32px.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/theme/icons8_Xbox_Menu_32px.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/theme/jimmy-fallon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/theme/job.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/theme/jobapp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/theme/loc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/theme/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/theme/post.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/theme/strtdat.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/theme/title.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/theme/unactive.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/theme/user.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/Offre_Emploi/ListViewOffer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/Offre_Emploi/OfferInfos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/Demande/AppInfos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/Demande/ListApps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Mobile_App/Service/DemandeService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Entities/Offre_Emploi.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Entities/Offre_Emploi.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/AddOffer$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/AddOffer.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/HomeForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/HomeForm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/ListOfferForm.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/Offer_Service$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/Offer_Service$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/AddOffer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/AddOffer$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/AddOffer$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/AddOffer$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/AddOffer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/AddOffer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/OfferInfos.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/OfferInfos.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/Offer_Service$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/Offer_Service$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/Offer_Service$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/Offer_Service$4.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/Offer_Service.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/Offer_Service.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/theme.res" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/theme.res" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/theme.xml" beforeDir="false" afterPath="$PROJECT_DIR$/res/theme.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Entities/Offre_Emploi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Entities/Offre_Emploi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Gui/AddOffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/Offre_Emploi/AddOffer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Mobile_App/Gui/HomeForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/HomeForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Gui/ListOfferForm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Gui/Offre_Emploi/AddOffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/Offre_Emploi/AddOffer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Gui/Offre_Emploi/OfferInfos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/Offre_Emploi/OfferInfos.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Mobile_App/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Mobile_App/Service/Offer_Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Service/Offer_Service.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme.res" beforeDir="false" afterPath="$PROJECT_DIR$/src/theme.res" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,6 +99,7 @@
       <recent name="C:\Users\souso\Desktop\Mobile App\lib" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Mobile_App.Gui.Demande" />
       <recent name="Mobile_App.Entities.GestionProduit_Commande" />
       <recent name="Mobile_App.Utils" />
       <recent name="Mobile_App.Gui" />
