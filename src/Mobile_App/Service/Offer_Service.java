@@ -14,7 +14,7 @@ import java.util.Map;
 
 public class Offer_Service {
     public ArrayList<Offre_Emploi> Offers;
-    public ArrayList<Category> categ ;
+    public ArrayList<Category> categ;
 
     public static Offer_Service instance = null;
     public boolean resultOK;
@@ -33,6 +33,24 @@ public class Offer_Service {
 
     public boolean addOffer(Offre_Emploi t) {
         String url = Statics.BASE_URL + "/addofferjson?titre=" + t.getTitre() + "&poste=" + t.getPoste() +
+                "&description=" + t.getDescription() + "&location=" + t.getLocation()
+                + "&file=" + t.getFile() + "&email=" + t.getEmail() + "&maxSalary=" + t.getMax_salary() +
+                "&minSalary=" + t.getMin_salary() + "&categ=" + t.getCategory_id();
+        System.out.println(url);
+        req.setUrl(url);
+        req.addResponseListener(new ActionListener<NetworkEvent>() {
+            @Override
+            public void actionPerformed(NetworkEvent evt) {
+                resultOK = req.getResponseCode() == 200;
+                req.removeResponseListener(this);
+            }
+        });
+        NetworkManager.getInstance().addToQueueAndWait(req);
+        return resultOK;
+    }
+
+    public boolean modOffer(Offre_Emploi t) {
+        String url = Statics.BASE_URL + "/updateofferjson?id=" + t.getId() + "&titre=" + t.getTitre() + "&poste=" + t.getPoste() +
                 "&description=" + t.getDescription() + "&location=" + t.getLocation()
                 + "&file=" + t.getFile() + "&email=" + t.getEmail() + "&maxSalary=" + t.getMax_salary() +
                 "&minSalary=" + t.getMin_salary() + "&categ=" + t.getCategory_id();
@@ -110,6 +128,13 @@ public class Offer_Service {
         });
         NetworkManager.getInstance().addToQueueAndWait(req);
         return Offers;
+    }
+
+    public void deleteoffer(Offre_Emploi o) {
+        String url = Statics.BASE_URL + "/deleteofferjson?id="+o.getId();
+        req.setUrl(url);
+        req.setPost(false);
+        NetworkManager.getInstance().addToQueueAndWait(req);
     }
 
     public ArrayList<Category> getcategnames() {

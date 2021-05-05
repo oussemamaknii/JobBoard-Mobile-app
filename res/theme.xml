@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <resource majorVersion="1" minorVersion="11" useXmlUI="false">
+    <image name="active.png"  />
     <image name="alchimiste.PNG"  />
     <image name="back-command.png" type="multi"  />
     <image name="border.png"  />
@@ -15,6 +16,7 @@
     <image name="Button.dis#borderTopR_1.png" type="multi"  />
     <image name="cal_left_arrow.png" type="multi"  />
     <image name="cal_right_arrow.png" type="multi"  />
+    <image name="categpng.png"  />
     <image name="chbox1.png" type="multi"  />
     <image name="chboxv1.png" type="multi"  />
     <image name="ComboBox.borderBottom_1.png" type="multi"  />
@@ -35,6 +37,7 @@
     <image name="ComboBox.sel#borderTop_1.png" type="multi"  />
     <image name="ComboBox.sel#borderTopL_1.png" type="multi"  />
     <image name="ComboBox.sel#borderTopR_1.png" type="multi"  />
+    <image name="crossIcon.png"  />
     <image name="Dialog.borderBottom_1.png" type="multi"  />
     <image name="Dialog.borderBottomL_1.png" type="multi"  />
     <image name="Dialog.borderBottomR_1.png" type="multi"  />
@@ -44,9 +47,32 @@
     <image name="Dialog.borderTop_1.png" type="multi"  />
     <image name="Dialog.borderTopL_1.png" type="multi"  />
     <image name="Dialog.borderTopR_1.png" type="multi"  />
+    <image name="email.png"  />
+    <image name="enddat.png"  />
+    <image name="event.png"  />
+    <image name="event1.jpg"  />
+    <image name="event2.jpg"  />
+    <image name="event3.jpg"  />
+    <image name="event4.jpg"  />
+    <image name="form.png"  />
     <image name="Icon material-delete.png"  />
+    <image name="icons8_Box_32px.png"  />
+    <image name="icons8_GPS_Antenna_64px_1.png"  />
+    <image name="icons8_Home_32px.png"  />
+    <image name="icons8_Meanpath_64px_2.png"  />
+    <image name="icons8_Open_Envelope_32px.png"  />
+    <image name="icons8_Person_32px.png"  />
+    <image name="icons8_Search_52px.png"  />
+    <image name="icons8_Sign_Out_32px.png"  />
+    <image name="icons8_Slider__32px.png"  />
+    <image name="icons8_Xbox_Menu_32px.png"  />
+    <image name="jimmy-fallon.png"  />
+    <image name="job.png"  />
+    <image name="jobapp.png"  />
     <image name="liberez_votre_cerveau.PNG"  />
     <image name="livre_vente.PNG"  />
+    <image name="loc.png"  />
+    <image name="logo.png"  />
     <image name="Mask2.png"  />
     <image name="Menu.borderBottom_2.png" type="multi"  />
     <image name="Menu.borderBottomL_2.png" type="multi"  />
@@ -67,6 +93,7 @@
     <image name="OKGR.borderTopL_1.png" type="multi"  />
     <image name="OKGR.borderTopR_1.png" type="multi"  />
     <image name="Pere_riche.PNG"  />
+    <image name="post.png"  />
     <image name="round.png" type="multi"  />
     <image name="selection_in_sidemenu.png"  />
     <image name="sliderBlueCenter.png" type="multi"  />
@@ -75,6 +102,7 @@
     <image name="sliderEmpty.png" type="multi"  />
     <image name="sliderEmptyLeft.png" type="multi"  />
     <image name="sliderEmptyRight.png" type="multi"  />
+    <image name="strtdat.png"  />
     <image name="switch_mask.png" type="multi"  />
     <image name="switch_off.png" type="multi"  />
     <image name="switch_on.png" type="multi"  />
@@ -812,6 +840,7 @@
         <border key="sel#border" type="empty" />
         <val key="transparency" value="0" />
     </theme>
+    <image name="title.png"  />
     <image name="TitleArea.borderBottom_2.png" type="multi"  />
     <image name="TitleArea.borderBottomL_2.png" type="multi"  />
     <image name="TitleArea.borderBottomR_2.png" type="multi"  />
@@ -821,4 +850,6 @@
     <image name="TitleArea.borderTop_2.png" type="multi"  />
     <image name="TitleArea.borderTopL_2.png" type="multi"  />
     <image name="TitleArea.borderTopR_2.png" type="multi"  />
+    <image name="unactive.png"  />
+    <image name="user.png"  />
 </resource>

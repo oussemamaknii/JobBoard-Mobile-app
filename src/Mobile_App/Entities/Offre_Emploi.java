@@ -28,7 +28,7 @@ public class Offre_Emploi {
     public Offre_Emploi() {
     }
 
-    public Offre_Emploi(int category_id, String titre, String poste, String description, String location, String file, String email, Date date_debut, Date date_expiration, int max_salary, int min_salary) {
+    public Offre_Emploi(int id,int category_id, String titre, String poste, String description, String location, String file, String email, Date date_debut, Date date_expiration, int max_salary, int min_salary) {
         this.category_id = category_id;
         this.titre = titre;
         this.poste = poste;
@@ -40,6 +40,7 @@ public class Offre_Emploi {
         this.date_expiration = date_expiration;
         this.max_salary = max_salary;
         this.min_salary = min_salary;
+        this.id = id;
     }
 
     public int getId() {
