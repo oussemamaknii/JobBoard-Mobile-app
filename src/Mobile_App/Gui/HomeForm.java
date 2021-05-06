@@ -11,17 +11,21 @@ import Mobile_App.Gui.Offre_Emploi.ListViewOffer;
 import com.codename1.ui.Button;
 import com.codename1.ui.Form;
 import com.codename1.ui.Label;
+import com.codename1.ui.Toolbar;
 import com.codename1.ui.layouts.BoxLayout;
+import com.codename1.ui.util.Resources;
 
 /**
  *
  * @author bhk
  */
-public class HomeForm extends Form {
+public class HomeForm extends SideMenu {
 
     Form current;
-    
-    public HomeForm() {
+    public HomeForm(Resources res) {
+        Toolbar tb = getToolbar();
+        tb.setTitleCentered(false);
+        setupSideMenu(res);
         current = this;
         setTitle("Home");
         setLayout(BoxLayout.y());
@@ -31,9 +35,9 @@ public class HomeForm extends Form {
         Button btnListTasks = new Button("List Offers");
         Button btnListapps = new Button("List Applications");
 
-        btnAddTask.addActionListener(e -> new AddOffer(current,null).show());
-        btnListTasks.addActionListener(e -> new ListViewOffer(current).show());
-        btnListapps.addActionListener(e -> new ListApps(current).show());
+        btnAddTask.addActionListener(e -> new AddOffer(current,null, res).show());
+        btnListTasks.addActionListener(e -> new ListViewOffer(current, res).show());
+        btnListapps.addActionListener(e -> new ListApps(current, res).show());
         addAll(btnAddTask, btnListTasks,btnListapps);
 
     }

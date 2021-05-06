@@ -2,6 +2,7 @@ package Mobile_App.Gui.Offre_Emploi;
 
 import Mobile_App.Entities.Category;
 import Mobile_App.Entities.Offre_Emploi;
+import Mobile_App.Gui.SideMenu;
 import Mobile_App.Service.Offer_Service;
 import com.codename1.components.SpanLabel;
 import com.codename1.io.FileSystemStorage;
@@ -13,12 +14,17 @@ import com.codename1.ui.events.ActionListener;
 import com.codename1.ui.layouts.BoxLayout;
 import com.codename1.ui.spinner.Picker;
 import com.codename1.ext.filechooser.FileChooser;
+import com.codename1.ui.util.Resources;
 
 import java.util.ArrayList;
 import java.util.Date;
 
-public class AddOffer extends Form {
-    public AddOffer(Form previous, Offre_Emploi o) {
+public class AddOffer extends SideMenu {
+
+    public AddOffer(Form previous, Offre_Emploi o, Resources res) {
+        Toolbar tb = getToolbar();
+        tb.setTitleCentered(false);
+        setupSideMenu(res);
         setTitle("Add a new Offer");
         setLayout(BoxLayout.y());
         if (o == null) {
@@ -70,7 +76,7 @@ public class AddOffer extends Form {
                                 Integer.parseInt(tfmin.getText()));
                         if (Offer_Service.getInstance().addOffer(offer)) {
                             Dialog.show("Success", "Added Successfully !", new Command("OK"));
-                            Form f1 = new ListViewOffer(null);
+                            Form f1 = new ListViewOffer(null,res);
                             f1.show();
                         } else
                             Dialog.show("ERROR", "Server error", new Command("OK"));
@@ -138,7 +144,7 @@ public class AddOffer extends Form {
                                 Integer.parseInt(tfmin.getText()));
                         if (Offer_Service.getInstance().modOffer(offer)) {
                             Dialog.show("Success", "Updated Successfully !", new Command("OK"));
-                            Form f2 = new ListViewOffer(null);
+                            Form f2 = new ListViewOffer(null,res);
                             f2.show();
                         } else
                             Dialog.show("ERROR", "Server error", new Command("OK"));
@@ -152,5 +158,6 @@ public class AddOffer extends Form {
             getToolbar().addMaterialCommandToLeftBar("", FontImage.MATERIAL_ARROW_BACK
                     , e -> previous.showBack());
         }
+
     }
 }

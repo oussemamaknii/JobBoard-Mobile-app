@@ -54,7 +54,7 @@ public class Main {
     }
 
     public void start() {
-        new HomeForm().show();
+        new HomeForm(theme).show();
         //new ShopForm().show();
     }
 

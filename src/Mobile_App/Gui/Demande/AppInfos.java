@@ -5,6 +5,7 @@ import Mobile_App.Entities.Offre_Emploi;
 import Mobile_App.Gui.HomeForm;
 import Mobile_App.Gui.Offre_Emploi.AddOffer;
 import Mobile_App.Gui.Offre_Emploi.ListViewOffer;
+import Mobile_App.Gui.SideMenu;
 import Mobile_App.Main;
 import Mobile_App.Service.DemandeService;
 import Mobile_App.Service.Offer_Service;
@@ -12,10 +13,14 @@ import com.codename1.components.ImageViewer;
 import com.codename1.ui.*;
 import com.codename1.ui.layouts.BoxLayout;
 import com.codename1.ui.layouts.FlowLayout;
+import com.codename1.ui.util.Resources;
 
-public class AppInfos extends Form {
+public class AppInfos extends SideMenu {
 
-    public AppInfos(Demande_Recrutement s, Form previous) {
+    public AppInfos(Demande_Recrutement s, Form previous, Resources res) {
+        Toolbar tb = getToolbar();
+        tb.setTitleCentered(false);
+        setupSideMenu(res);
         this.setTitle("Apps Infos");
         this.setLayout(new FlowLayout(CENTER, CENTER));
         this.getToolbar().addMaterialCommandToLeftBar("", FontImage.MATERIAL_ARROW_BACK
@@ -40,12 +45,12 @@ public class AppInfos extends Form {
             delete.addActionListener(e -> {
                 Offer_Service.getInstance().deleteoffer(s.getId());
                 Dialog.show("Success", "Deleted Successfully !", new Command("OK"));
-                Form f2 = new ListViewOffer(new HomeForm());
+                Form f2 = new ListViewOffer(new HomeForm(res),res);
                 f2.show();
             });
             Update.addActionListener(e -> {
                 //Offer_Service.getInstance().treat();
-                Form f = new ListApps(this);
+                Form f = new ListApps(this,res);
                 f.show();
             });
 
