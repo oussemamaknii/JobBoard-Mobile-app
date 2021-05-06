@@ -5,6 +5,7 @@ import Mobile_App.Gui.SideMenu;
 import Mobile_App.Main;
 import Mobile_App.Service.Offer_Service;
 import com.codename1.components.ImageViewer;
+import com.codename1.components.MultiButton;
 import com.codename1.ui.*;
 import com.codename1.ui.layouts.BoxLayout;
 import com.codename1.ui.util.Resources;
@@ -15,9 +16,36 @@ import java.util.List;
 public class ListViewOffer extends SideMenu {
 
     public ListViewOffer(Form previous, Resources res) {
+
         Toolbar tb = getToolbar();
         tb.setTitleCentered(false);
         setupSideMenu(res);
+        tb.addSearchCommand(e -> {
+            String text = (String)e.getSource();
+            if(text == null || text.length() == 0) {
+                // clear search
+                for(Component cmp : this.getContentPane()) {
+                    cmp.setHidden(false);
+                    cmp.setVisible(true);
+                }
+                this.getContentPane().animateLayout(150);
+            } else {
+                text = text.toLowerCase();
+                for(Component cmp : this.getContentPane()) {
+                    Container mb = (Container)cmp;
+                    List<Component> line1 = mb.getChildrenAsList(false);
+                    Container line2 = (Container) line1.get(1);
+                    List<Component> line3 = line2.getChildrenAsList(false);
+                    Container line4 = (Container) line3.get(0);
+                    List<Component> line5 = line4.getChildrenAsList(false);
+                    Label titre =(Label) line5.get(0);
+                    boolean show = titre.getText() != null && titre.getText().toLowerCase().indexOf(text) > -1 ;
+                    mb.setHidden(!show);
+                    mb.setVisible(show);
+                }
+                this.getContentPane().animateLayout(150);
+            }
+        }, 4);
 
         this.setTitle("liste des series");
         this.setLayout(BoxLayout.y());
