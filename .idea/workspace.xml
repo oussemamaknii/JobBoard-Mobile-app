@@ -23,11 +23,66 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="20ad8530-0994-414f-a681-8ba82ed47fc9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/debug.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/GoogleMaps.cn1lib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/GoogleMaps.ver" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/impl/cls/com/codename1/googlemaps/InternalNativeMaps.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/impl/cls/com/codename1/googlemaps/MapContainer$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/impl/cls/com/codename1/googlemaps/MapContainer$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/impl/cls/com/codename1/googlemaps/MapContainer$3$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/impl/cls/com/codename1/googlemaps/MapContainer$3$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/impl/cls/com/codename1/googlemaps/MapContainer$3$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/impl/cls/com/codename1/googlemaps/MapContainer$3$4.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/impl/cls/com/codename1/googlemaps/MapContainer$3$5$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/impl/cls/com/codename1/googlemaps/MapContainer$3$5.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/impl/cls/com/codename1/googlemaps/MapContainer$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/impl/cls/com/codename1/googlemaps/MapContainer$4.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/impl/cls/com/codename1/googlemaps/MapContainer$5.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/impl/cls/com/codename1/googlemaps/MapContainer$6.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/impl/cls/com/codename1/googlemaps/MapContainer$7.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/impl/cls/com/codename1/googlemaps/MapContainer$BrowserBridge.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/impl/cls/com/codename1/googlemaps/MapContainer$MapObject.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/impl/cls/com/codename1/googlemaps/MapContainer$MarkerOptions.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/impl/cls/com/codename1/googlemaps/MapContainer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/impl/cls/com/codename1/googlemaps/MapLayout$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/impl/cls/com/codename1/googlemaps/MapLayout.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/impl/cls/com_codename1_googlemaps.cn1mf.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/impl/cls/com_codename1_googlemaps_MapContainer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/impl/native/android/com/codename1/googlemaps/InternalNativeMapsImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/impl/native/ios/com_codename1_googlemaps_InternalNativeMapsImpl.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/impl/native/ios/com_codename1_googlemaps_InternalNativeMapsImpl.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/impl/native/j2me/com/codename1/googlemaps/InternalNativeMapsImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/impl/native/javascript/com_codename1_googlemaps_InternalNativeMaps.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/impl/native/javase/com/codename1/googlemaps/InternalNativeMapsImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/impl/native/rim/com/codename1/googlemaps/InternalNativeMapsImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/impl/native/win/com/codename1/googlemaps/InternalNativeMapsImpl.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/Offre_Emploi/GoogleMapsTestApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/Offre_Emploi/test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/ListViewOffer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/ListViewOffer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/SideMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/SideMenu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Gui/Offre_Emploi/ListViewOffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/Offre_Emploi/ListViewOffer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Gui/SideMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/SideMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Versions.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Versions.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/built-jar.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/built-jar.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codenameone_settings.properties" beforeDir="false" afterPath="$PROJECT_DIR$/codenameone_settings.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/impl/native/android/com/codename1/ext/filechooser/FileChooserNativeImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/impl/native/android/com/codename1/ext/filechooser/FileChooserNativeImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/impl/native/ios/com_codename1_ext_filechooser_FileChooserNativeImpl.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/impl/native/ios/com_codename1_ext_filechooser_FileChooserNativeImpl.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/impl/native/ios/com_codename1_ext_filechooser_FileChooserNativeImpl.m" beforeDir="false" afterPath="$PROJECT_DIR$/lib/impl/native/ios/com_codename1_ext_filechooser_FileChooserNativeImpl.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/impl/native/j2me/com/codename1/ext/filechooser/FileChooserNativeImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/impl/native/j2me/com/codename1/ext/filechooser/FileChooserNativeImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/impl/native/javascript/com_codename1_ext_filechooser_FileChooserNative.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/impl/native/javascript/com_codename1_ext_filechooser_FileChooserNative.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/impl/native/javase/com/codename1/ext/filechooser/FileChooserNativeImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/impl/native/javase/com/codename1/ext/filechooser/FileChooserNativeImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/impl/native/rim/com/codename1/ext/filechooser/FileChooserNativeImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/impl/native/rim/com/codename1/ext/filechooser/FileChooserNativeImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/impl/stubs/com/codename1/ext/filechooser/FileChooser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/impl/stubs/com/codename1/ext/filechooser/FileChooserNative.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/AddOffer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/AddOffer$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/AddOffer$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/AddOffer$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/AddOffer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/AddOffer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/Offer_Service$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/Offer_Service$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/Offer_Service.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/Offer_Service.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/theme.res" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/theme.res" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/theme.xml" beforeDir="false" afterPath="$PROJECT_DIR$/res/theme.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Gui/Offre_Emploi/AddOffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/Offre_Emploi/AddOffer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Service/Offer_Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Service/Offer_Service.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/theme.res" beforeDir="false" afterPath="$PROJECT_DIR$/src/theme.res" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,14 +124,17 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../AutoCompleteWebservice-master" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.13927579" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="Mobile_App.Gui.Offre_Emploi" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\souso\Desktop\Mobile App\src" />
       <recent name="C:\Users\souso\Desktop\Mobile App\res\offerInfos" />
@@ -94,7 +152,16 @@
       <recent name="Mobile_App.Gui" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Codename One.Run in Device Simulator (1)">
+    <configuration name="Run in Device Simulator (1)" type="#com.codename1.plugin.intellij.run.CodenameOneConfigurationType" factoryName="Codename One" temporary="true">
+      <setting name="mainClass" value="Mobile_App.Main" />
+      <setting name="vmparams" value="" />
+      <setting name="workDir" value="" />
+      <setting name="debug" value="false" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Run in Device Simulator" type="#com.codename1.plugin.intellij.run.CodenameOneConfigurationType" factoryName="Codename One">
       <setting name="mainClass" value="Mobile_App.Main" />
       <setting name="vmparams" value="" />
@@ -104,6 +171,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Codename One.Run in Device Simulator (1)" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -130,5 +202,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

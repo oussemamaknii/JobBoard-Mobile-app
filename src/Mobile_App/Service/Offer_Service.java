@@ -67,7 +67,7 @@ public class Offer_Service {
         return resultOK;
     }
 
-    public ArrayList<Offre_Emploi> parseTasks(String jsonText) {
+    public ArrayList<Offre_Emploi> parseOffers(String jsonText) {
         try {
             Offers = new ArrayList<>();
             JSONParser j = new JSONParser();
@@ -124,7 +124,7 @@ public class Offer_Service {
         req.addResponseListener(new ActionListener<NetworkEvent>() {
             @Override
             public void actionPerformed(NetworkEvent evt) {
-                Offers = parseTasks(new String(req.getResponseData()));
+                Offers = parseOffers(new String(req.getResponseData()));
                 req.removeResponseListener(this);
             }
         });
