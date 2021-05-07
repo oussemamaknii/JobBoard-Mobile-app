@@ -15,7 +15,6 @@ public class AddOffer extends Form {
     public AddOffer(Form previous) {
         setTitle("Add a new Offer");
         setLayout(BoxLayout.y());
-
         TextField tfTitle = new TextField("", "Offer Title");
         TextField tfPost = new TextField("", "Post");
         TextField tfdescription = new TextField("", "Description");
@@ -28,9 +27,7 @@ public class AddOffer extends Form {
         Picker dateTimePicker = new Picker();
         dateTimePicker.setType(Display.PICKER_TYPE_DATE_AND_TIME);
 
-
         Button btnValider = new Button("Add Offer");
-
         btnValider.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent evt) {

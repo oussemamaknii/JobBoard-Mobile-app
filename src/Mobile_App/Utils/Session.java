@@ -1,8 +1,9 @@
 package Mobile_App.Utils;
 
-import com.codename1.facebook.User;
-import com.codename1.io.CharArrayReader;
-import com.codename1.io.JSONParser;
+
+import Mobile_App.Entities.User;
+import com.codename1.io.*;
+import com.codename1.ui.events.ActionListener;
 
 import java.io.IOException;
 import java.time.LocalDate;
@@ -57,5 +58,41 @@ public class Session {
         this.email = email;
         this.password = password;
     }
+    public ArrayList<User> getListUsers(String json) {
 
-}
+        ArrayList<User> listUsers = new ArrayList<>();
+
+        try {
+            // System.out.println(json);
+            JSONParser j = new JSONParser();
+
+            Map<String, Object> Users = j.parseJSON(new CharArrayReader(json.toCharArray()));
+            List<Map<String, Object>> list = (List<Map<String, Object>>) Users.get("root");
+            System.out.println("97" + list);
+            for (Map<String, Object> mapUser : list) {
+                User user = new User();
+                user.setId((int) Float.parseFloat(mapUser.get("id").toString()));
+                user.setAdresse(mapUser.get("username").toString());
+                user.setRoles(mapUser.get("roles").toString());
+                user.setFirstName(mapUser.get("nom").toString());
+                user.setLastName(mapUser.get("prenom").toString());
+                user.setImageName(mapUser.get("imageId").toString());
+                user.setEmail(mapUser.get("email").toString());
+                user.setPhone(Integer.parseInt(mapUser.get("phone").toString()));
+                user.setDateOfBirth(LocalDate.parse(mapUser.get("dateOfBirth").toString()));
+
+                listUsers.add(user);
+
+            }
+
+        } catch (IOException ex) {
+        }
+        System.out.println(listUsers);
+        return listUsers;
+
+    }
+
+
+    }
+
+

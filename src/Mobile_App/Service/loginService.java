@@ -1,7 +1,8 @@
 package Mobile_App.Service;
 
+import Mobile_App.Entities.User;
 import Mobile_App.Utils.Session;
-import com.codename1.facebook.User;
+
 import com.codename1.io.*;
 import com.codename1.ui.events.ActionListener;
 
@@ -44,19 +45,5 @@ public class loginService {
 
 
     }
-    ArrayList<User> listUsers = new ArrayList<>();
 
-    public ArrayList<User> getListUser2() {
-        ConnectionRequest con = new ConnectionRequest();
-        con.setUrl("http://127.0.0.1/Pi-Dev-Web/web/app_dev.php/mobile/allusers");
-        con.addResponseListener(new ActionListener<NetworkEvent>() {
-            @Override
-            public void actionPerformed(NetworkEvent evt) {
-                Session ser = new Session();
-                listUsers = ser.getListusers(new String(con.getResponseData()));
-            }
-        });
-        NetworkManager.getInstance().addToQueueAndWait(con);
-        return listUsers;
-    }
 }
