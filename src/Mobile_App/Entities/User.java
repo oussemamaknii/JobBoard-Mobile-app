@@ -3,15 +3,15 @@ package Mobile_App.Entities;
 import java.time.LocalDate;
 import java.util.Objects;
 
-public class user {
+public class User {
     private int id,isActive,phone;
     private String email,password,firstName,lastName,roles,token,imageName,adresse,professionalTitle;
     private LocalDate dateOfBirth,createdAt,updatedAt,activatedAt;
 
-    public user() {
+    public User() {
     }
 
-    public user(int id, int isActive, int phone, String email, String password, String firstName, String lastName, String roles, String token, String imageName, String adresse, String professionalTitle, LocalDate dateOfBirth, LocalDate createdAt, LocalDate updatedAt, LocalDate activatedAt) {
+    public User(int id, int isActive, int phone, String email, String password, String firstName, String lastName, String roles, String token, String imageName, String adresse, String professionalTitle, LocalDate dateOfBirth, LocalDate createdAt, LocalDate updatedAt, LocalDate activatedAt) {
         this.id = id;
         this.isActive = isActive;
         this.phone = phone;
@@ -162,7 +162,7 @@ public class user {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        user user = (user) o;
+        User user = (User) o;
         return getId() == user.getId() && getIsActive() == user.getIsActive() && getPhone() == user.getPhone() && getEmail().equals(user.getEmail()) && getPassword().equals(user.getPassword()) && Objects.equals(getFirstName(), user.getFirstName()) && Objects.equals(getLastName(), user.getLastName()) && Objects.equals(getRoles(), user.getRoles()) && Objects.equals(getToken(), user.getToken()) && Objects.equals(getImageName(), user.getImageName()) && Objects.equals(getAdresse(), user.getAdresse()) && Objects.equals(getProfessionalTitle(), user.getProfessionalTitle()) && Objects.equals(getDateOfBirth(), user.getDateOfBirth()) && Objects.equals(getCreatedAt(), user.getCreatedAt()) && Objects.equals(getUpdatedAt(), user.getUpdatedAt()) && Objects.equals(getActivatedAt(), user.getActivatedAt());
     }
 
@@ -173,7 +173,7 @@ public class user {
 
     @Override
     public String toString() {
-        return "user{" +
+        return "User{" +
                 "id=" + id +
                 ", isActive=" + isActive +
                 ", phone=" + phone +
