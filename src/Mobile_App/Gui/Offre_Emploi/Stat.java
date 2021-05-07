@@ -1,6 +1,7 @@
 package Mobile_App.Gui.Offre_Emploi;
 
 import Mobile_App.Gui.SideMenu;
+import Mobile_App.Service.Offer_Service;
 import com.codename1.charts.ChartComponent;
 import com.codename1.charts.models.CategorySeries;
 import com.codename1.charts.renderers.DefaultRenderer;
@@ -13,6 +14,9 @@ import com.codename1.ui.Toolbar;
 import com.codename1.ui.layouts.BorderLayout;
 import com.codename1.ui.layouts.FlowLayout;
 import com.codename1.ui.util.Resources;
+
+import java.awt.*;
+import java.util.ArrayList;
 
 public class Stat extends SideMenu {
     public Stat(Form previous, Resources res) {
@@ -38,18 +42,13 @@ public class Stat extends SideMenu {
         return renderer;
     }
 
-    /**
-     * Builds a category series using the provided values.
-     *
-     * @param titles the series titles
-     * @param values the values
-     * @return the category series
-     */
     protected CategorySeries buildCategoryDataset(String title, double[] values) {
         CategorySeries series = new CategorySeries(title);
-        int k = 0;
-        for (double value : values) {
-            series.add("Project " + ++k, value);
+
+        ArrayList<ArrayList<String>> arr = Offer_Service.getInstance().getdata();
+        for (int i = 0; i < arr.size(); i++) {
+            String tit = arr.get(i).get(1);
+            series.add("Category " + tit, values[i]);
         }
 
         return series;
@@ -57,10 +56,21 @@ public class Stat extends SideMenu {
 
     public Form createPieChartForm() {
         // Generate the values
-        double[] values = new double[]{12, 14, 11, 10, 19};
+        ArrayList<ArrayList<String>> arr = Offer_Service.getInstance().getdata();
+        double[] values = new double[arr.size()];
+        int[] colors = new int[arr.size()];
+        String[] titres = new String[arr.size()];
+        for (int i = 0; i < arr.size(); i++) {
+            double val = Double.parseDouble(arr.get(i).get(0));
+            values[i] = val;
+            Color hex = new Color(Integer.parseInt(arr.get(i).get(2),16));
+            colors[i] = hex.getRGB();
+            System.out.println(arr.size());
+            String tit = arr.get(i).get(1);
+            titres[i] = tit;
+        }
 
         // Set up the renderer
-        int[] colors = new int[]{ColorUtil.BLUE, ColorUtil.GREEN, ColorUtil.MAGENTA, ColorUtil.YELLOW, ColorUtil.CYAN};
         DefaultRenderer renderer = buildCategoryRenderer(colors);
         renderer.setZoomButtonsVisible(true);
         renderer.setZoomEnabled(true);

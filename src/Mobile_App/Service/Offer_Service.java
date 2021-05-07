@@ -15,6 +15,7 @@ import java.util.Map;
 public class Offer_Service {
     public ArrayList<Offre_Emploi> Offers;
     public ArrayList<Category> categ;
+    public ArrayList<ArrayList<String>> data;
 
     public static Offer_Service instance = null;
     public boolean resultOK;
@@ -130,6 +131,39 @@ public class Offer_Service {
         });
         NetworkManager.getInstance().addToQueueAndWait(req);
         return Offers;
+    }
+
+    public ArrayList<ArrayList<String>> getdata() {
+        String url = Statics.BASE_URL + "/data";
+        req.setUrl(url);
+        req.setPost(false);
+        req.addResponseListener(new ActionListener<NetworkEvent>() {
+            @Override
+            public void actionPerformed(NetworkEvent evt) {
+                data = parseData(new String(req.getResponseData()));
+                req.removeResponseListener(this);
+            }
+        });
+        NetworkManager.getInstance().addToQueueAndWait(req);
+        return data;
+    }
+
+    private ArrayList<ArrayList<String>> parseData(String jsonText) {
+        try {
+            data = new ArrayList<ArrayList<String>>();
+            JSONParser j = new JSONParser();
+            Map<String, Object> tasksListJson = j.parseJSON(new CharArrayReader(jsonText.toCharArray()));
+            List<Map<String, Object>> list = (List<Map<String, Object>>) tasksListJson.get("root");
+            for (Map<String, Object> obj : list) {
+                ArrayList<String> t = new ArrayList<>();
+                t.add(obj.get("nbr").toString());
+                t.add(obj.get("titre").toString());
+                t.add(obj.get("color").toString().substring(1));
+                data.add(t);
+            }
+        } catch (IOException ex) {
+        }
+        return data;
     }
 
     public void deleteoffer(int o) {

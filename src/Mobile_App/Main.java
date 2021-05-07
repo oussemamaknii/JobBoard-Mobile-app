@@ -19,7 +19,9 @@ import com.codename1.ui.util.Resources;
 import com.codename1.io.Log;
 import com.codename1.ui.Toolbar;
 
+import java.awt.*;
 import java.io.IOException;
+import java.lang.reflect.Field;
 
 import com.codename1.ui.layouts.BoxLayout;
 import com.codename1.io.NetworkEvent;
@@ -56,7 +58,7 @@ public class Main {
         });
     }
 
-    public void start() {
+    public void start()  {
         //new test1().createPieChartForm().show();
         //new GoogleMapsTestApp().start();
         new HomeForm(theme).show();
