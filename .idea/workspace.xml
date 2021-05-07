@@ -24,16 +24,19 @@
   <component name="ChangeListManager">
     <list default="true" id="20ad8530-0994-414f-a681-8ba82ed47fc9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/Stat.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/Stat.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/AddOffer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/AddOffer$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/AddOffer$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/AddOffer$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/AddOffer$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/AddOffer$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/AddOffer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/AddOffer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/test$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/test$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/test1.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/Offer_Service$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/Offer_Service$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/Offer_Service$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/Offer_Service$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/Offer_Service$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/Offer_Service$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/Offer_Service$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/Offer_Service$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/Offer_Service.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/Offer_Service.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Gui/Offre_Emploi/Stat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/Offre_Emploi/Stat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Gui/Offre_Emploi/AddOffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/Offre_Emploi/AddOffer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Gui/Offre_Emploi/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/Offre_Emploi/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Gui/Offre_Emploi/test1.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Mobile_App/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Service/Offer_Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Service/Offer_Service.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +78,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../JobHub-Desktop-Application" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../New folder/PI-MOBILE3A27" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.13927579" />
     <property name="project.structure.side.proportion" value="0.2" />

@@ -43,7 +43,7 @@ import java.util.Date;
 public class AddOffer extends SideMenu {
 
     private static final String HTML_API_KEY = "AIzaSyAM6hBJIe9C4K0UcegqEjf6O0psKXNGcQU";
-    private static final String apiKey = "AIzaSyDeLKairWJQj4083je1h-J6J23aggAgBo4";
+    private static final String apiKey = "AIzaSyBr4DKSW58r6tZXyZDYnPTBc7IRAQS2R1U";
 
     public AddOffer(Form previous, Offre_Emploi o, Resources res) {
 
@@ -66,6 +66,7 @@ public class AddOffer extends SideMenu {
                         return false;
                     }
                     String[] l = searchLocations(text);
+                    System.out.println(l);
                     if(l == null || l.length == 0) {
                         return false;
                     }
@@ -73,6 +74,7 @@ public class AddOffer extends SideMenu {
                     options.removeAll();
                     for(String s : l) {
                         options.addItem(s);
+                        System.out.println(options);
                     }
                     return true;
                 }
@@ -298,6 +300,7 @@ public class AddOffer extends SideMenu {
                 NetworkManager.getInstance().addToQueueAndWait(r);
                 Map<String,Object> result = new JSONParser().parseJSON(new InputStreamReader(new ByteArrayInputStream(r.getResponseData()), "UTF-8"));
                 String[] res = Result.fromContent(result).getAsStringArray("//description");
+                System.out.println(res);
                 return res;
             }
         } catch(Exception err) {
