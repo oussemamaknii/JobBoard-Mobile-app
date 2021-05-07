@@ -23,66 +23,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="20ad8530-0994-414f-a681-8ba82ed47fc9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/debug.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/GoogleMaps.cn1lib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/GoogleMaps.ver" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/impl/cls/com/codename1/googlemaps/InternalNativeMaps.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/impl/cls/com/codename1/googlemaps/MapContainer$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/impl/cls/com/codename1/googlemaps/MapContainer$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/impl/cls/com/codename1/googlemaps/MapContainer$3$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/impl/cls/com/codename1/googlemaps/MapContainer$3$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/impl/cls/com/codename1/googlemaps/MapContainer$3$3.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/impl/cls/com/codename1/googlemaps/MapContainer$3$4.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/impl/cls/com/codename1/googlemaps/MapContainer$3$5$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/impl/cls/com/codename1/googlemaps/MapContainer$3$5.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/impl/cls/com/codename1/googlemaps/MapContainer$3.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/impl/cls/com/codename1/googlemaps/MapContainer$4.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/impl/cls/com/codename1/googlemaps/MapContainer$5.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/impl/cls/com/codename1/googlemaps/MapContainer$6.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/impl/cls/com/codename1/googlemaps/MapContainer$7.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/impl/cls/com/codename1/googlemaps/MapContainer$BrowserBridge.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/impl/cls/com/codename1/googlemaps/MapContainer$MapObject.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/impl/cls/com/codename1/googlemaps/MapContainer$MarkerOptions.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/impl/cls/com/codename1/googlemaps/MapContainer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/impl/cls/com/codename1/googlemaps/MapLayout$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/impl/cls/com/codename1/googlemaps/MapLayout.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/impl/cls/com_codename1_googlemaps.cn1mf.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/impl/cls/com_codename1_googlemaps_MapContainer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/impl/native/android/com/codename1/googlemaps/InternalNativeMapsImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/impl/native/ios/com_codename1_googlemaps_InternalNativeMapsImpl.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/impl/native/ios/com_codename1_googlemaps_InternalNativeMapsImpl.m" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/impl/native/j2me/com/codename1/googlemaps/InternalNativeMapsImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/impl/native/javascript/com_codename1_googlemaps_InternalNativeMaps.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/impl/native/javase/com/codename1/googlemaps/InternalNativeMapsImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/impl/native/rim/com/codename1/googlemaps/InternalNativeMapsImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/impl/native/win/com/codename1/googlemaps/InternalNativeMapsImpl.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/Offre_Emploi/GoogleMapsTestApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/Offre_Emploi/test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/Offre_Emploi/Stat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/Offre_Emploi/test1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Versions.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Versions.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/built-jar.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/built-jar.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codenameone_settings.properties" beforeDir="false" afterPath="$PROJECT_DIR$/codenameone_settings.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/impl/native/android/com/codename1/ext/filechooser/FileChooserNativeImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/impl/native/android/com/codename1/ext/filechooser/FileChooserNativeImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/impl/native/ios/com_codename1_ext_filechooser_FileChooserNativeImpl.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/impl/native/ios/com_codename1_ext_filechooser_FileChooserNativeImpl.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/impl/native/ios/com_codename1_ext_filechooser_FileChooserNativeImpl.m" beforeDir="false" afterPath="$PROJECT_DIR$/lib/impl/native/ios/com_codename1_ext_filechooser_FileChooserNativeImpl.m" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/impl/native/j2me/com/codename1/ext/filechooser/FileChooserNativeImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/impl/native/j2me/com/codename1/ext/filechooser/FileChooserNativeImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/impl/native/javascript/com_codename1_ext_filechooser_FileChooserNative.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/impl/native/javascript/com_codename1_ext_filechooser_FileChooserNative.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/impl/native/javase/com/codename1/ext/filechooser/FileChooserNativeImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/impl/native/javase/com/codename1/ext/filechooser/FileChooserNativeImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/impl/native/rim/com/codename1/ext/filechooser/FileChooserNativeImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/impl/native/rim/com/codename1/ext/filechooser/FileChooserNativeImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/impl/stubs/com/codename1/ext/filechooser/FileChooser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/impl/stubs/com/codename1/ext/filechooser/FileChooserNative.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/AddOffer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/AddOffer$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/AddOffer$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/AddOffer$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/AddOffer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/AddOffer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/HomeForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/HomeForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/test$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/test$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/SideMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/SideMenu.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/Offer_Service$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/Offer_Service$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/Offer_Service.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/Offer_Service.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/theme.res" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/theme.res" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/theme.xml" beforeDir="false" afterPath="$PROJECT_DIR$/res/theme.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Gui/Offre_Emploi/AddOffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/Offre_Emploi/AddOffer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Gui/HomeForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/HomeForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Gui/SideMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/SideMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Mobile_App/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Service/Offer_Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Service/Offer_Service.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme.res" beforeDir="false" afterPath="$PROJECT_DIR$/src/theme.res" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,7 +75,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../AutoCompleteWebservice-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Charts-master" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.13927579" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -133,6 +84,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="Mobile_App.Gui" />
       <recent name="Mobile_App.Gui.Offre_Emploi" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -146,6 +98,7 @@
       <recent name="C:\Users\souso\Desktop\Mobile App\lib" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Mobile_App.Gui.Offre_Emploi" />
       <recent name="Mobile_App.Gui.Demande" />
       <recent name="Mobile_App.Entities.GestionProduit_Commande" />
       <recent name="Mobile_App.Utils" />

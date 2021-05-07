@@ -8,6 +8,7 @@ package Mobile_App.Gui;
 import Mobile_App.Gui.Demande.ListApps;
 import Mobile_App.Gui.Offre_Emploi.AddOffer;
 import Mobile_App.Gui.Offre_Emploi.ListViewOffer;
+import Mobile_App.Gui.Offre_Emploi.Stat;
 import com.codename1.ui.Button;
 import com.codename1.ui.Form;
 import com.codename1.ui.Label;

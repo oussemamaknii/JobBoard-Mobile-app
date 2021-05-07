@@ -8,6 +8,7 @@ import Mobile_App.Gui.GestionProduit_Commande.ShopForm;
 import Mobile_App.Gui.HomeForm;
 import Mobile_App.Gui.Offre_Emploi.GoogleMapsTestApp;
 import Mobile_App.Gui.Offre_Emploi.test;
+import Mobile_App.Gui.Offre_Emploi.test1;
 import Mobile_App.Service.DemandeService;
 import com.codename1.ui.Display;
 import com.codename1.ui.Form;
@@ -56,9 +57,9 @@ public class Main {
     }
 
     public void start() {
-        new test().start();
+        //new test1().createPieChartForm().show();
         //new GoogleMapsTestApp().start();
-        //new HomeForm(theme).show();
+        new HomeForm(theme).show();
         //new ShopForm().show();
     }
 
