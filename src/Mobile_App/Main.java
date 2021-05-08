@@ -4,19 +4,23 @@ package Mobile_App;
 import static com.codename1.ui.CN.*;
 
 import Mobile_App.Gui.BaseForm;
-import Mobile_App.Gui.GestionProduit_Commande.ShopForm;
 import Mobile_App.Gui.HomeForm;
-import Mobile_App.Service.DemandeService;
-import com.codename1.ui.Display;
-import com.codename1.ui.Form;
-import com.codename1.ui.Dialog;
-import com.codename1.ui.Label;
+import Mobile_App.Gui.User.Register;
+import Mobile_App.Utils.Session;
+import com.codename1.components.FloatingHint;
+import com.codename1.ui.*;
+import com.codename1.ui.events.ActionEvent;
+import com.codename1.ui.events.ActionListener;
+import com.codename1.ui.layouts.BorderLayout;
+import com.codename1.ui.layouts.FlowLayout;
 import com.codename1.ui.plaf.UIManager;
 import com.codename1.ui.util.Resources;
 import com.codename1.io.Log;
-import com.codename1.ui.Toolbar;
+import Mobile_App.Gui.User.forgetPassword;
 
 import java.io.IOException;
+import java.util.Random;
+import Mobile_App.Service.LoginService;
 
 import com.codename1.ui.layouts.BoxLayout;
 import com.codename1.io.NetworkEvent;
@@ -29,6 +33,20 @@ public class Main {
 
     private Form current;
     public static Resources theme;
+//    UtilService utilService = UtilService.getInstance();
+    public static String Codex;
+    private Form f;
+    private TextField username;
+    private TextField password;
+    private Button connecter;
+    private Button SignUp;
+    private Button Forget_Password;
+    public static final String ACCOUNT_SID = "AC6a762dea99d61dd7cf18dfcf3a04ffcd";
+    public static final String AUTH_TOKEN = "0589edc431682c6c0267d6a9850518c8";
+
+
+
+
 
     public void init(Object context) {
         // use two network threads instead of one
@@ -53,20 +71,77 @@ public class Main {
         });
     }
 
+
     public void start() {
-        new HomeForm().show();
-        //new ShopForm().show();
-    }
-
-    public void stop() {
-        current = getCurrentForm();
-        if (current instanceof Dialog) {
-            ((Dialog) current).dispose();
-            current = getCurrentForm();
+        if (current != null) {
+            current.show();
+            return;
         }
-    }
+        theme = UIManager.initFirstTheme("/theme_login");
+        f = new Form();
+        f.getTitleArea().setUIID("Container");
+        f.setUIID("SignIn");
+        f.add(new Label(theme.getImage("logo-white.png"), "LogoLabel"));
+        TextField username = new TextField("", "Email", 20, TextField.ANY);
+        TextField password = new TextField("", "Password", 20, TextField.PASSWORD);
+        username.setSingleLineTextArea(false);
+        password.setSingleLineTextArea(false);
+        Button signIn = new Button("Sign In");
+        Button signUp = new Button("Sign Up");
+        Button forget_password = new Button("Forgot password ?");
+        signUp.setUIID("Link");
+        Label doneHaveAnAccount = new Label("Don't have an account?");
+        Button signUp1 = new Button("Sign Up Vie Web");
+        Container content = BoxLayout.encloseY(
+                new FloatingHint(username),
+                    new FloatingHint(password),
+                signIn,
+                FlowLayout.encloseCenter(doneHaveAnAccount, signUp, forget_password, signUp1)
+        );
+        signUp1.addActionListener(e -> {
+//            WebDriver driver = new ChromeDriver();
+//            driver.get(Controller.ip+"/Pidev-web/web/app_dev.php/api/login");
+        });
 
-    public void destroy() {
+        forget_password.addActionListener(e -> {
+            new forgetPassword(theme).show();
+        });
+        signIn.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent evt) {
+                LoginService ser =new LoginService();
+                ser.login(username.getText(), password.getText());
+                if (Session.ConnectedUser.getId()>0) {
+                    new HomeForm().show();
+                } else {
+                    Dialog.show("Error!", "Login ou mot de passe incorrect!", "Ok", null);
+                }
+            }
+        });
+
+        signUp.addActionListener(new ActionListener() {
+
+            @Override
+            public void actionPerformed(ActionEvent evt) {
+                Form mainForm = new Form();
+                mainForm.setLayout(new BorderLayout());
+                mainForm.getToolbar().setHidden(true);
+                mainForm.getContentPane().removeAll();
+                Register reg = new Register(current,theme);
+                mainForm.addComponent(BorderLayout.CENTER, reg);
+                mainForm.revalidate();
+                mainForm.show();
+
+            }
+        });
+
+        content.setScrollableY(true);
+        f.add(content);
+        signIn.requestFocus();
+        signIn.addActionListener(e -> {
+        });
+        f.revalidate();
+        f.show();
     }
 
 }

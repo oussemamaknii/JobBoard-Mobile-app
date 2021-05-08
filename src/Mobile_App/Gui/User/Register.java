@@ -1,4 +1,4 @@
-package Mobile_App.Gui;
+package Mobile_App.Gui.User;
 
 import Mobile_App.Entities.User;
 import com.codename1.components.ImageViewer;
@@ -52,7 +52,7 @@ public class Register extends Form {
             @Override
             public void actionPerformed(ActionEvent evt) {
 
-                new login(current, res).show();
+                new login(res).show();
 
             }
         });

@@ -20,12 +20,10 @@ import com.codename1.ui.layouts.BoxLayout;
 public class HomeForm extends Form {
 
     Form current;
-    
     public HomeForm() {
         current = this;
         setTitle("Home");
         setLayout(BoxLayout.y());
-
         add(new Label("Choose an option"));
         Button btnAddTask = new Button("Add Offer");
         Button btnListTasks = new Button("List Offers");

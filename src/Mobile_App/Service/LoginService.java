@@ -20,25 +20,18 @@ public class LoginService {
         con.setUrl("http://127.0.0.1/jobBoard/public/api/loginApiTest");
         User user = new User();
         con.addResponseListener((NetworkEvent evt) -> {
-            try {
-                JSONParser jsonp = new JSONParser();
-                Map<String, Object> mapUser = (Map<String, Object>) jsonp.parseJSON(new CharArrayReader(new String(con.getResponseData()).toCharArray()));
-                System.out.println("mapUser : " + mapUser.get("id").toString());
-
-                float id = (int) Float.parseFloat(mapUser.get("id").toString());
-                System.out.println("id : " + mapUser);
-                user.setId((int) id);
-
-                Session.ConnectedUser.setPassword(password);
+            if (con.getResponseCode() == 200) {
                 try {
+                    JSONParser jsonp = new JSONParser();
+                    Map<String, Object> mapUser = (Map<String, Object>) jsonp.parseJSON(new CharArrayReader(new String(con.getResponseData()).toCharArray()));
+                    float id = (int) Float.parseFloat(mapUser.get("id").toString());
+                    user.setId((int) id);
+                    Session.ConnectedUser.setPassword(password);
                     Session.ConnectedUser.setId((int) Float.parseFloat(mapUser.get("id").toString()));
                     Session.ConnectedUser.setEmail(mapUser.get("email").toString());
                     System.out.println("connected User : " + Session.ConnectedUser);
-                } catch (NullPointerException n) {
-
+                } catch (IOException ex) {
                 }
-                //}
-            } catch (IOException ex) {
             }
         });
         NetworkManager.getInstance().addToQueueAndWait(con);

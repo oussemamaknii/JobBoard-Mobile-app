@@ -1,4 +1,4 @@
-package Mobile_App.Gui;
+package Mobile_App.Gui.User;
 
 import Mobile_App.Entities.User;
 import Mobile_App.Utils.Session;
@@ -16,9 +16,7 @@ import com.codename1.ui.util.Resources;
 public class login extends Form {
     Form current;
     private static User User;
-
-
-    public login(Form previous, Resources res) {
+    public login(Resources res) {
         super(new BorderLayout(BorderLayout.CENTER_BEHAVIOR_CENTER_ABSOLUTE));
         setUIID("LoginForm");
         Container welcome = FlowLayout.encloseCenter(
@@ -69,12 +67,12 @@ public class login extends Form {
             spaceLabel = new Label(" ");
         }
 
-        Container logoC = BoxLayout.encloseY(
-                new ImageViewer(res.getImage("blancTitan.png").scaled(500, 100))
-
-
-        );
-        add(BorderLayout.OVERLAY, logoC);
+//        Container logoC = BoxLayout.encloseY(
+//                new ImageViewer(res.getImage("blancTitan.png").scaled(500, 100))
+//
+//
+//        );
+//        add(BorderLayout.OVERLAY, logoC);
         Container by = BoxLayout.encloseY(
                 welcome,
 
@@ -87,7 +85,6 @@ public class login extends Form {
                 createNewAccount
         );
         add(BorderLayout.CENTER, by);
-        // for low res and landscape devices
         by.setScrollableY(true);
         by.setScrollVisible(false);
     }
