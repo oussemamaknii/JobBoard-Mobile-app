@@ -50,4 +50,5 @@ public class AddOffer extends Form {
                 , e -> previous.showBack());
 
     }
+
 }

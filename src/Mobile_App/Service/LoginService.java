@@ -10,7 +10,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Map;
 
-public class loginService {
+public class LoginService {
     public void login(String email, String password) {
         ConnectionRequest con = new ConnectionRequest();
         con.addRequestHeader("Content-Type", "application/json");
