@@ -1,12 +1,12 @@
 package Mobile_App.Service;
 
+import Mobile_App.Entities.Category;
 import Mobile_App.Entities.Offre_Emploi;
 import Mobile_App.Utils.Statics;
 import com.codename1.io.*;
 import com.codename1.ui.events.ActionListener;
 
 import java.io.IOException;
-import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -14,6 +14,7 @@ import java.util.Map;
 
 public class Offer_Service {
     public ArrayList<Offre_Emploi> Offers;
+    public ArrayList<Category> categ;
 
     public static Offer_Service instance = null;
     public boolean resultOK;
@@ -31,14 +32,34 @@ public class Offer_Service {
     }
 
     public boolean addOffer(Offre_Emploi t) {
-        String url = Statics.BASE_URL + "/offre_emploi/" + t.getTitre() + "/" + t.getPoste() + "/" + t.getDescription() + "/" + t.getLocation()
-                + "/" + t.getFile() + "/" + t.getEmail() + "/" + t.getDate_debut() + "/" + t.getDate_expiration()
-                + "/" + t.getMax_salary() + "/" + t.getMin_salary() + "/" + t.getCategory_id(); //création de l'URL
+        String url = Statics.BASE_URL + "/addofferjson?titre=" + t.getTitre() + "&poste=" + t.getPoste() +
+                "&description=" + t.getDescription() + "&location=" + t.getLocation()
+                + "&file=" + t.getFile() + "&email=" + t.getEmail() + "&maxSalary=" + t.getMax_salary() +
+                "&minSalary=" + t.getMin_salary() + "&categ=" + t.getCategory_id();
+        System.out.println(url);
         req.setUrl(url);
         req.addResponseListener(new ActionListener<NetworkEvent>() {
             @Override
             public void actionPerformed(NetworkEvent evt) {
-                resultOK = req.getResponseCode() == 200; //Code HTTP 200 OK
+                resultOK = req.getResponseCode() == 200;
+                req.removeResponseListener(this);
+            }
+        });
+        NetworkManager.getInstance().addToQueueAndWait(req);
+        return resultOK;
+    }
+
+    public boolean modOffer(Offre_Emploi t) {
+        String url = Statics.BASE_URL + "/updateofferjson?id=" + t.getId() + "&titre=" + t.getTitre() + "&poste=" + t.getPoste() +
+                "&description=" + t.getDescription() + "&location=" + t.getLocation()
+                + "&file=" + t.getFile() + "&email=" + t.getEmail() + "&maxSalary=" + t.getMax_salary() +
+                "&minSalary=" + t.getMin_salary() + "&categ=" + t.getCategory_id();
+        System.out.println(url);
+        req.setUrl(url);
+        req.addResponseListener(new ActionListener<NetworkEvent>() {
+            @Override
+            public void actionPerformed(NetworkEvent evt) {
+                resultOK = req.getResponseCode() == 200;
                 req.removeResponseListener(this);
             }
         });
@@ -51,22 +72,26 @@ public class Offer_Service {
             Offers = new ArrayList<>();
             JSONParser j = new JSONParser();
             Map<String, Object> tasksListJson = j.parseJSON(new CharArrayReader(jsonText.toCharArray()));
-            System.out.println(jsonText);
             List<Map<String, Object>> list = (List<Map<String, Object>>) tasksListJson.get("root");
             for (Map<String, Object> obj : list) {
                 Offre_Emploi t = new Offre_Emploi();
                 float id = Float.parseFloat(obj.get("id").toString());
+                float min_salary = Float.parseFloat(obj.get("minSalary").toString());
+                float max_salary = Float.parseFloat(obj.get("maxSalary").toString());
                 t.setId((int) id);
                 t.setTitre(obj.get("titre").toString());
                 t.setPoste(obj.get("poste").toString());
                 t.setDescription(obj.get("description").toString());
-                t.setDate_debut((LocalDate) obj.get("date_debut"));
-                t.setTitre(obj.get("date_expiration").toString());
+                t.setDate_debut((Date) obj.get("date_debut"));
+                t.setDate_expiration((Date) obj.get("date_expiration"));
                 t.setFile(obj.get("file").toString());
                 t.setLocation(obj.get("location").toString());
-                t.setMin_salary(Integer.parseInt(obj.get("min_salary").toString()));
-                t.setMax_salary(Integer.parseInt(obj.get("email").toString()));
-                t.setCategory_id(Integer.parseInt(obj.get("categorie_id").toString()));
+                t.setMin_salary((int) min_salary);
+                t.setMax_salary((int) max_salary);
+                t.setEmail(obj.get("email").toString());
+                Map<String, Object> categ = (Map<String, Object>) obj.get("categorie");
+                t.setCategory_id((int) Float.parseFloat(categ.get("id").toString()));
+                t.setCatname(categ.get("titre").toString());
                 Offers.add(t);
             }
         } catch (IOException ex) {
@@ -74,8 +99,26 @@ public class Offer_Service {
         return Offers;
     }
 
+    public ArrayList<Category> parseCategs(String jsonText) {
+        try {
+            categ = new ArrayList<>();
+            JSONParser j = new JSONParser();
+            Map<String, Object> tasksListJson = j.parseJSON(new CharArrayReader(jsonText.toCharArray()));
+            List<Map<String, Object>> list = (List<Map<String, Object>>) tasksListJson.get("root");
+            for (Map<String, Object> obj : list) {
+                Category t = new Category();
+                float id = Float.parseFloat(obj.get("id").toString());
+                t.setId((int) id);
+                t.setTitre(obj.get("titre").toString());
+                categ.add(t);
+            }
+        } catch (IOException ex) {
+        }
+        return categ;
+    }
+
     public ArrayList<Offre_Emploi> getAllOffers() {
-        String url = Statics.BASE_URL + "/offre_emploi/";
+        String url = Statics.BASE_URL + "/listofferjson";
         req.setUrl(url);
         req.setPost(false);
         req.addResponseListener(new ActionListener<NetworkEvent>() {
@@ -87,5 +130,27 @@ public class Offer_Service {
         });
         NetworkManager.getInstance().addToQueueAndWait(req);
         return Offers;
+    }
+
+    public void deleteoffer(int o) {
+        String url = Statics.BASE_URL + "/deleteofferjson?id="+o;
+        req.setUrl(url);
+        req.setPost(false);
+        NetworkManager.getInstance().addToQueueAndWait(req);
+    }
+
+    public ArrayList<Category> getcategnames() {
+        String url = Statics.BASE_URL + "/listcategjson";
+        req.setUrl(url);
+        req.setPost(false);
+        req.addResponseListener(new ActionListener<NetworkEvent>() {
+            @Override
+            public void actionPerformed(NetworkEvent evt) {
+                categ = parseCategs(new String(req.getResponseData()));
+                req.removeResponseListener(this);
+            }
+        });
+        NetworkManager.getInstance().addToQueueAndWait(req);
+        return categ;
     }
 }

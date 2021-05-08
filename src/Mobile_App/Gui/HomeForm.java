@@ -5,6 +5,9 @@
  */
 package Mobile_App.Gui;
 
+import Mobile_App.Gui.Demande.ListApps;
+import Mobile_App.Gui.Offre_Emploi.AddOffer;
+import Mobile_App.Gui.Offre_Emploi.ListViewOffer;
 import com.codename1.ui.Button;
 import com.codename1.ui.Form;
 import com.codename1.ui.Label;
@@ -17,22 +20,21 @@ import com.codename1.ui.layouts.BoxLayout;
 public class HomeForm extends Form {
 
     Form current;
-    /*Garder traçe de la Form en cours pour la passer en paramètres 
-    aux interfaces suivantes pour pouvoir y revenir plus tard en utilisant
-    la méthode showBack*/
     
     public HomeForm() {
-        current = this; //Récupération de l'interface(Form) en cours
+        current = this;
         setTitle("Home");
         setLayout(BoxLayout.y());
 
         add(new Label("Choose an option"));
-        Button btnAddTask = new Button("Add Task");
-        Button btnListTasks = new Button("List Tasks");
+        Button btnAddTask = new Button("Add Offer");
+        Button btnListTasks = new Button("List Offers");
+        Button btnListapps = new Button("List Applications");
 
-        btnAddTask.addActionListener(e -> new AddOffer(current).show());
-        btnListTasks.addActionListener(e -> new ListOfferForm(current).show());
-        addAll(btnAddTask, btnListTasks);
+        btnAddTask.addActionListener(e -> new AddOffer(current,null).show());
+        btnListTasks.addActionListener(e -> new ListViewOffer(current).show());
+        btnListapps.addActionListener(e -> new ListApps(current).show());
+        addAll(btnAddTask, btnListTasks,btnListapps);
 
     }
 

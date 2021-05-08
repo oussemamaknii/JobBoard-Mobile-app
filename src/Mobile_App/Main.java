@@ -3,7 +3,10 @@ package Mobile_App;
 
 import static com.codename1.ui.CN.*;
 
+import Mobile_App.Gui.BaseForm;
+import Mobile_App.Gui.GestionProduit_Commande.ShopForm;
 import Mobile_App.Gui.HomeForm;
+import Mobile_App.Service.DemandeService;
 import com.codename1.ui.Display;
 import com.codename1.ui.Form;
 import com.codename1.ui.Dialog;
@@ -25,7 +28,7 @@ import com.codename1.io.NetworkEvent;
 public class Main {
 
     private Form current;
-    private Resources theme;
+    public static Resources theme;
 
     public void init(Object context) {
         // use two network threads instead of one
@@ -52,6 +55,7 @@ public class Main {
 
     public void start() {
         new HomeForm().show();
+        //new ShopForm().show();
     }
 
     public void stop() {

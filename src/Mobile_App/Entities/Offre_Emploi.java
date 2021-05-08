@@ -1,11 +1,11 @@
 package Mobile_App.Entities;
 
-import java.time.LocalDate;
+import java.util.Date;
 
 public class Offre_Emploi {
     private int id,category_id;
     private String titre, poste, description, location, file, email,catname;
-    private LocalDate date_debut, date_expiration;
+    private Date date_debut, date_expiration;
 
     public int getCategory_id() {
         return category_id;
@@ -28,7 +28,7 @@ public class Offre_Emploi {
     public Offre_Emploi() {
     }
 
-    public Offre_Emploi(int category_id, String titre, String poste, String description, String location, String file, String email, LocalDate date_debut, LocalDate date_expiration, int max_salary, int min_salary) {
+    public Offre_Emploi(int id,int category_id, String titre, String poste, String description, String location, String file, String email, Date date_debut, Date date_expiration, int max_salary, int min_salary) {
         this.category_id = category_id;
         this.titre = titre;
         this.poste = poste;
@@ -40,6 +40,7 @@ public class Offre_Emploi {
         this.date_expiration = date_expiration;
         this.max_salary = max_salary;
         this.min_salary = min_salary;
+        this.id = id;
     }
 
     public int getId() {
@@ -98,19 +99,19 @@ public class Offre_Emploi {
         this.email = email;
     }
 
-    public LocalDate getDate_debut() {
+    public Date getDate_debut() {
         return date_debut;
     }
 
-    public void setDate_debut(LocalDate date_debut) {
+    public void setDate_debut(Date date_debut) {
         this.date_debut = date_debut;
     }
 
-    public LocalDate getDate_expiration() {
+    public Date getDate_expiration() {
         return date_expiration;
     }
 
-    public void setDate_expiration(LocalDate date_expiration) {
+    public void setDate_expiration(Date date_expiration) {
         this.date_expiration = date_expiration;
     }
 
