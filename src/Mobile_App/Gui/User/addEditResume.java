@@ -21,7 +21,8 @@ public class addEditResume extends Form {
     public addEditResume(Form previous, candidateResume resume) {
         setTitle("Add your Resume");
         setLayout(BoxLayout.y());
-        if (resume.getUser_id() != Session.ConnectedUser.getId()) {
+        if (resume == null) {
+          //  resume.getUser_id() != Session.ConnectedUser.getId()
             TextField tfResumeHeadline = new TextField("", "Ex: Web Developper");
             TextField tfSkills = new TextField("", "Ex: php, symfony, js");
             TextField tfExperience = new TextField("", "Ex: worked 3years @ Facebook");
@@ -41,8 +42,9 @@ public class addEditResume extends Form {
                     }
                 }
             });
-
+            addAll(tfResumeHeadline,tfSkills,tfExperience);
+            getToolbar().addMaterialCommandToLeftBar("", FontImage.MATERIAL_ARROW_BACK
+                    , e -> previous.showBack());
         }
-
     }
 }

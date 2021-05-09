@@ -12,6 +12,7 @@ import com.codename1.ui.Button;
 import com.codename1.ui.Form;
 import com.codename1.ui.Label;
 import com.codename1.ui.layouts.BoxLayout;
+import Mobile_App.Gui.User.addEditResume;
 
 /**
  *
@@ -28,11 +29,12 @@ public class HomeForm extends Form {
         Button btnAddTask = new Button("Add Offer");
         Button btnListTasks = new Button("List Offers");
         Button btnListapps = new Button("List Applications");
-
+        Button btnResume = new Button("Resume");
         btnAddTask.addActionListener(e -> new AddOffer(current,null).show());
         btnListTasks.addActionListener(e -> new ListViewOffer(current).show());
+        btnResume.addActionListener(e -> new addEditResume(current,null).show());
         btnListapps.addActionListener(e -> new ListApps(current).show());
-        addAll(btnAddTask, btnListTasks,btnListapps);
+        addAll(btnAddTask, btnListTasks,btnListapps,btnResume);
 
     }
 
