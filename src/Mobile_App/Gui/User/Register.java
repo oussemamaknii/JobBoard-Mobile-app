@@ -48,12 +48,9 @@ public class Register extends Form {
         Button login = new Button("Sign In");
         login.setUIID("CreateNewAccountButton");
         login.addActionListener(new ActionListener() {
-
             @Override
             public void actionPerformed(ActionEvent evt) {
-
                 new login(res).show();
-
             }
         });
         // We remove the extra space for low resolution devices so things fit better
@@ -63,9 +60,8 @@ public class Register extends Form {
         } else {
             spaceLabel = new Label(" ");
         }
-
         Container logoC = BoxLayout.encloseY(
-                new ImageViewer(res.getImage("blancTitan.png").scaled(500, 100))
+                new ImageViewer(res.getImage("logo.png").scaled(500, 100))
         );
         add(BorderLayout.OVERLAY, logoC);
         Container by = BoxLayout.encloseY(

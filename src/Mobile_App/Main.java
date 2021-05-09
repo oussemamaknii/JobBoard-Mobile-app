@@ -91,17 +91,16 @@ public class Main {
         Button forget_password = new Button("Forgot password ?");
         signUp.setUIID("Link");
         Label doneHaveAnAccount = new Label("Don't have an account?");
-        Button signUp1 = new Button("Sign Up Vie Web");
         Container content = BoxLayout.encloseY(
                 new FloatingHint(username),
                     new FloatingHint(password),
                 signIn,
-                FlowLayout.encloseCenter(doneHaveAnAccount, signUp, forget_password, signUp1)
+                FlowLayout.encloseCenter(doneHaveAnAccount, signUp, forget_password)
         );
-        signUp1.addActionListener(e -> {
+     //   signUp1.addActionListener(e -> {
 //            WebDriver driver = new ChromeDriver();
 //            driver.get(Controller.ip+"/Pidev-web/web/app_dev.php/api/login");
-        });
+   //     });
 
         forget_password.addActionListener(e -> {
             new forgetPassword(theme).show();
@@ -123,6 +122,7 @@ public class Main {
 
             @Override
             public void actionPerformed(ActionEvent evt) {
+                theme = UIManager.initFirstTheme("/theme");
                 Form mainForm = new Form();
                 mainForm.setLayout(new BorderLayout());
                 mainForm.getToolbar().setHidden(true);
@@ -131,7 +131,6 @@ public class Main {
                 mainForm.addComponent(BorderLayout.CENTER, reg);
                 mainForm.revalidate();
                 mainForm.show();
-
             }
         });
 

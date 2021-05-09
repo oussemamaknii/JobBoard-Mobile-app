@@ -9,7 +9,6 @@ import com.codename1.ui.events.ActionListener;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Map;
-
 public class LoginService {
     public void login(String email, String password) {
         ConnectionRequest con = new ConnectionRequest();
