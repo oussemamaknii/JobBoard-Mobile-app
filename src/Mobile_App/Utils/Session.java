@@ -76,7 +76,7 @@ public class Session {
                 user.setRoles(mapUser.get("roles").toString());
                 user.setFirstName(mapUser.get("nom").toString());
                 user.setLastName(mapUser.get("prenom").toString());
-                user.setImageName(mapUser.get("imageId").toString());
+                user.setImageName(mapUser.get("imageName").toString());
                 user.setEmail(mapUser.get("email").toString());
                 user.setPhone(Integer.parseInt(mapUser.get("phone").toString()));
                 DateFormat format = new SimpleDateFormat("yyyy-MM-dd");

@@ -1,6 +1,9 @@
 package Mobile_App.Gui.User;
 
 import Mobile_App.Entities.User;
+import Mobile_App.Gui.HomeForm;
+import Mobile_App.Service.LoginService;
+import com.codename1.capture.Capture;
 import com.codename1.components.ImageViewer;
 import com.codename1.ui.*;
 import com.codename1.ui.events.ActionEvent;
@@ -11,10 +14,14 @@ import com.codename1.ui.layouts.FlowLayout;
 import com.codename1.ui.spinner.Picker;
 import com.codename1.ui.util.Resources;
 
+import java.io.IOException;
+
 public class Register extends Form {
 
     Form current;
+    private Image img;
     private static User User;
+    private String imgPath;
 
     public Register(Form previous, Resources res) {
         super(new BorderLayout(BorderLayout.CENTER_BEHAVIOR_CENTER_ABSOLUTE));
@@ -43,6 +50,27 @@ public class Register extends Form {
         address.getAllStyles().setMargin(LEFT, 0);
         professionalTitle.getAllStyles().setMargin(LEFT, 0);
         date.getAllStyles().setMargin(LEFT, 0);
+        Image profilePic = res.getImage("20187112601561032514-512.png");
+        Image mask = res.getImage("round-mask.png");
+        mask = mask.scaledHeight(mask.getHeight() / 4 * 3);
+        profilePic = profilePic.fill(mask.getWidth(), mask.getHeight());
+        Button photobutton = new Button("", profilePic);
+        photobutton.getIcon();
+        photobutton.setUIID("SignUpPhotoButton");
+
+        photobutton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent evt) {
+                try {
+                    imgPath = Capture.capturePhoto(Display.getInstance().getDisplayWidth(), -1);
+                    img = Image.createImage(imgPath);
+                } catch (IOException ex) {
+                }
+            }
+
+        });
+
+
         Button RegisterButton = new Button("Register");
         RegisterButton.setUIID("LoginButton");
         Button login = new Button("Sign In");
@@ -63,10 +91,22 @@ public class Register extends Form {
         Container logoC = BoxLayout.encloseY(
                 new ImageViewer(res.getImage("logo.png").scaled(500, 100))
         );
+        RegisterButton.addActionListener(new ActionListener() {
+
+            @Override
+            public void actionPerformed(ActionEvent evt) {
+                LoginService service = new LoginService();
+                service.SingUp(firstName.getText(), password.getText(), lastName.getText(), mail.getText(), date.getText(), professionalTitle.getText(), imgPath);
+                new HomeForm(res).show();
+            }
+
+        });
+
         add(BorderLayout.OVERLAY, logoC);
         Container by = BoxLayout.encloseY(
                 spaceLabel,
                 welcome,
+                photobutton,
                 BorderLayout.center(firstName),
                 BorderLayout.center(lastName),
                 BorderLayout.center(mail),

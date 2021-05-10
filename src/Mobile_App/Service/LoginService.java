@@ -2,7 +2,11 @@ package Mobile_App.Service;
 
 import Mobile_App.Entities.User;
 import Mobile_App.Utils.Session;
+import Mobile_App.Utils.Statics;
 import com.codename1.io.*;
+import com.codename1.ui.Dialog;
+import com.codename1.ui.events.ActionListener;
+
 import java.io.IOException;
 import java.text.DateFormat;
 import java.text.ParseException;
@@ -51,6 +55,32 @@ public class LoginService {
         NetworkManager.getInstance().addToQueueAndWait(con);
 
 
+    }
+    public void SingUp(String username , String password , String nom, String email , String prenom ,String phonenumber , String imgPath ) {
+//
+//        String hashed = BCrypt.hashpw(password, BCrypt.gensalt(13));
+        System.err.println(username);
+//
+//        ConnectionRequest con=new ConnectionRequest();
+//
+//        con.setUrl(Statics.BASE_URL_RYAAN+"api/register" + username+"&email="+email+"&password=" +hashed.substring(0, 2)+"y"+hashed.substring(3)+"&firstname=" + username +"&prenom="+prenom+"&roles=a:0:{}"+"&pass="+password+"&image="+imgPath+"&phone="+phonenumber);
+//        con.addResponseListener(new ActionListener<NetworkEvent>() {
+//            @Override
+//            public void actionPerformed(NetworkEvent evt) {
+//                byte[] data = (byte[]) evt.getMetaData();
+//                String s = new String(data);
+//                if (s.equals("success")) {
+//                    Dialog.show("Succés", "ajout effectué", "Ok", null);
+//
+//
+//                }
+//                else {
+//
+//                    Dialog.show("Echec", "Utilisateur existe deja", "Ok", null);
+//                }
+//            }
+//        });
+//        NetworkManager.getInstance().addToQueue(con);
     }
 
 }
