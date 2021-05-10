@@ -60,6 +60,7 @@
     <image name="selected-walkthru.png" type="multi"  />
     <image name="sidemenu-top.png" type="multi"  />
     <image name="strtdat.png"  />
+    <image name="temp5568878964956110545..jpg"  />
     <image name="text-field-underline.png"  />
     <theme name="Theme">
         <val key="@hideLeftSideMenuBool" value="true" />

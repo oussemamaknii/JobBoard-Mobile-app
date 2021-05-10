@@ -74,8 +74,10 @@ public class EventsInfod extends SideMenu {
                 comments.add(addComm(comm.get(i), res));
             }
             Container ajout = new Container(BoxLayout.x());
-            Button btnaj = new Button("add new comment");
+            Button btnaj = new Button("COMMENT");
+            btnaj.setWidth(1);
             TextField newc = new TextField("", "New Comment");
+            newc.setWidth(2);
             btnaj.addActionListener(e -> {
                 Comment newa = new Comment(0, "user name", "user email",
                         9693, newc.getText(), (Date) new Date(System.currentTimeMillis()), s.getId());

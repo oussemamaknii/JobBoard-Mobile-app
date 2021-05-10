@@ -27,20 +27,38 @@ import com.codename1.ui.layouts.FlowLayout;
 import com.codename1.ui.layouts.LayeredLayout;
 import com.codename1.ui.list.DefaultListModel;
 import com.codename1.ui.plaf.Style;
+import com.codename1.ui.plaf.UIManager;
 import com.codename1.ui.spinner.Picker;
 import com.codename1.ui.util.Resources;
 
 import java.io.ByteArrayInputStream;
+import java.io.File;
+import java.io.IOException;
 import java.io.InputStreamReader;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.time.Instant;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 import java.util.Map;
 
 public class AddEvent extends SideMenu {
 
     private static final String HTML_API_KEY = "AIzaSyAM6hBJIe9C4K0UcegqEjf6O0psKXNGcQU";
     private static final String apiKey = "AIzaSyBr4DKSW58r6tZXyZDYnPTBc7IRAQS2R1U";
+
+
+    private File selectedFile2;
+    private File getImageFile()
+    {
+        return this.selectedFile2=selectedFile2;
+    }
+
+    private void setImageFile(File file2)
+    {
+        this.selectedFile2=file2;
+    }
 
     public AddEvent(Form previous, Events o, Resources res) {
 
@@ -81,25 +99,29 @@ public class AddEvent extends SideMenu {
                 @Override
                 public void actionPerformed(ActionEvent evt) {
                     try {
-                        SimpleDateFormat f = new SimpleDateFormat("yyyy-MM-dd");
                         Date date = new Date(System.currentTimeMillis());
-                        Date date1 = new Date((String) dateTimePicker.getValue());
-                        Events offer = new Events(0, tfTitle.getText(), date1, tfdescription.getText(), Integer.parseInt(tflocation.getText()),
-                                tfPost.getText(), tffile.getText(), Integer.parseInt(nbr.getText()));
+
+                        setImageFile(new File(tffile.getText()));
+                        File f=new File(getImageFile().getAbsolutePath());
+                        Events offer = new Events(0, tfTitle.getText(), dateTimePicker.getDate(), tfdescription.getText(), Integer.parseInt(tflocation.getText()),
+                                tfPost.getText(), f.getName(), Integer.parseInt(nbr.getText()));
+                        Files.move(Paths.get(tffile.getText().substring(7)),
+                                Paths.get("C:\\Users\\souso\\Desktop\\Mobile App\\res\\events\\"+f.getName()));
+
                         if (EventService.getInstance().addOffer(offer)) {
                             Dialog.show("Success", "Added Successfully !", new Command("OK"));
                             Form f1 = new ListViewEvent(null, res);
                             f1.show();
                         } else
                             Dialog.show("ERROR", "Server error", new Command("OK"));
-                    } catch (NumberFormatException e) {
+                    } catch (NumberFormatException | IOException e) {
                         Dialog.show("ERROR", "Status must be a number", new Command("OK"));
                     }
                 }
             });
             Container a = new Container(BoxLayout.y());
             Container b = new Container(BoxLayout.y());
-            a.addAll(tfTitle, tfPost, tfdescription, tflocation);
+            a.addAll(tfTitle, tfPost, tfdescription, tflocation,nbr);
             b.addAll(tffile, fc, dateTimePicker, btnValider);
 
             addAll(a, b);
@@ -139,22 +161,28 @@ public class AddEvent extends SideMenu {
                 public void actionPerformed(ActionEvent evt) {
                     try {
                         Date date = new Date(System.currentTimeMillis());
+
+                        setImageFile(new File(tffile.getText()));
+                        File f=new File(getImageFile().getAbsolutePath());
                         Events offer = new Events(o.getId(), tfTitle.getText(), dateTimePicker.getDate(), tfdescription.getText(), Integer.parseInt(tflocation.getText()),
-                                tfPost.getText(), tffile.getText(), Integer.parseInt(nbr.getText()));
+                                tfPost.getText(), f.getName(), Integer.parseInt(nbr.getText()));
+                        Files.move(Paths.get(tffile.getText().substring(7)),
+                                Paths.get("C:\\Users\\souso\\Desktop\\Mobile App\\res\\events\\"+f.getName()));
+
                         if (EventService.getInstance().modOffer(offer)) {
                             Dialog.show("Success", "UPDATED Successfully !", new Command("OK"));
                             Form f1 = new ListViewEvent(null, res);
                             f1.show();
                         } else
                             Dialog.show("ERROR", "Server error", new Command("OK"));
-                    } catch (NumberFormatException e) {
+                    } catch (NumberFormatException | IOException e) {
                         Dialog.show("ERROR", "Status must be a number", new Command("OK"));
                     }
                 }
             });
             Container a = new Container(BoxLayout.y());
             Container b = new Container(BoxLayout.y());
-            a.addAll(tfTitle, tfPost, tfdescription, tflocation);
+            a.addAll(tfTitle, tfPost, tfdescription, tflocation,nbr);
             b.addAll(tffile, fc, dateTimePicker, btnValider);
 
             addAll(a, b);

@@ -35,7 +35,7 @@ public class EventService {
     }
 
     public boolean addOffer(Events t) {
-        String url = Statics.BASE_URL + "/addofferjson?nom=" + t.getNom() + "&date=" + t.getDate() +
+        String url = Statics.BASE_URL + "/ajoutereventjson?nom=" + t.getNom() + "&date=" + t.getDate() +
                 "&description=" + t.getDescription() + "&prix=" + t.getPrix()
                 + "&adresse=" + t.getAdresse() + "&image=" + t.getFile() + "&nbrePlace="+t.getNbre_place();
         System.out.println(url);

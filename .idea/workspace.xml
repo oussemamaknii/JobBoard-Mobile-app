@@ -23,20 +23,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="20ad8530-0994-414f-a681-8ba82ed47fc9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/CommentsService$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/CommentsService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Mobile_App/Service/CommentsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/theme.rar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/CN1FileChooser.ver" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/impl/stubs/com/codename1/ext/filechooser/FileChooser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/impl/stubs/com/codename1/ext/filechooser/FileChooserNative.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/impl/stubs/com/codename1/googlemaps/InternalNativeMaps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/impl/stubs/com/codename1/googlemaps/MapContainer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/impl/stubs/com/codename1/googlemaps/MapLayout.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/events/temp5568878964956110545..jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/theme/temp5568878964956110545..jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/json_simple_1_1_1.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Entities/Comment.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Entities/Comment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaSE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/JavaSE.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Versions.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Versions.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/built-jar.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/built-jar.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codenameone_settings.properties" beforeDir="false" afterPath="$PROJECT_DIR$/codenameone_settings.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/CodenameOne.jar" beforeDir="false" afterPath="$PROJECT_DIR$/lib/CodenameOne.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/CodenameOne_SRC.zip" beforeDir="false" afterPath="$PROJECT_DIR$/lib/CodenameOne_SRC.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/event/AddEvent$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/event/AddEvent$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/event/AddEvent$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/event/AddEvent$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/event/AddEvent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/event/AddEvent.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/event/EventsInfod.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/event/EventsInfod.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/EventService$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/EventService$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/EventService$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/EventService$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/event/ListViewEvent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/event/ListViewEvent.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/EventService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/EventService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/Offer_Service.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/Offer_Service.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Entities/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Entities/Comment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/theme.res" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/theme.res" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/theme.xml" beforeDir="false" afterPath="$PROJECT_DIR$/res/theme.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Gui/event/AddEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/event/AddEvent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Mobile_App/Gui/event/EventsInfod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/event/EventsInfod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Gui/event/ListViewEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/event/ListViewEvent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Mobile_App/Service/EventService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Service/EventService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/theme.rar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/theme.res" beforeDir="false" afterPath="$PROJECT_DIR$/src/theme.res" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +96,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../JobHub-Desktop-Application" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.13927579" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
@@ -108,16 +125,7 @@
       <recent name="Mobile_App.Gui" />
     </key>
   </component>
-  <component name="RunManager" selected="Codename One.Run in Device Simulator (1)">
-    <configuration name="Run in Device Simulator (1)" type="#com.codename1.plugin.intellij.run.CodenameOneConfigurationType" factoryName="Codename One" temporary="true">
-      <setting name="mainClass" value="Mobile_App.Main" />
-      <setting name="vmparams" value="" />
-      <setting name="workDir" value="" />
-      <setting name="debug" value="false" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager">
     <configuration name="Run in Device Simulator" type="#com.codename1.plugin.intellij.run.CodenameOneConfigurationType" factoryName="Codename One">
       <setting name="mainClass" value="Mobile_App.Main" />
       <setting name="vmparams" value="" />
@@ -127,11 +135,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Codename One.Run in Device Simulator (1)" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
