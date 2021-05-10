@@ -7,6 +7,7 @@ import com.codename1.io.*;
 import com.codename1.ui.events.ActionListener;
 
 import java.io.IOException;
+import java.time.Instant;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -54,7 +55,8 @@ public class Offer_Service {
         String url = Statics.BASE_URL + "/updateofferjson?id=" + t.getId() + "&titre=" + t.getTitre() + "&poste=" + t.getPoste() +
                 "&description=" + t.getDescription() + "&location=" + t.getLocation()
                 + "&file=" + t.getFile() + "&email=" + t.getEmail() + "&maxSalary=" + t.getMax_salary() +
-                "&minSalary=" + t.getMin_salary() + "&categ=" + t.getCategory_id();
+                "&minSalary=" + t.getMin_salary() + "&categ=" + t.getCategory_id() + "&date-debut=" + t.getDate_debut() +
+                "&date_expiration=" + t.getDate_expiration();
         System.out.println(url);
         req.setUrl(url);
         req.addResponseListener(new ActionListener<NetworkEvent>() {
@@ -83,8 +85,10 @@ public class Offer_Service {
                 t.setTitre(obj.get("titre").toString());
                 t.setPoste(obj.get("poste").toString());
                 t.setDescription(obj.get("description").toString());
-                t.setDate_debut((Date) obj.get("date_debut"));
-                t.setDate_expiration((Date) obj.get("date_expiration"));
+                /*Date date2 = Date.from(Instant.parse(obj.get("date_debut").toString()));
+                t.setDate_debut(date2);
+                Date date1 = Date.from(Instant.parse(obj.get("date_expiration").toString()));
+                t.setDate_expiration(date1);*/
                 t.setFile(obj.get("file").toString());
                 t.setLocation(obj.get("location").toString());
                 t.setMin_salary((int) min_salary);
@@ -167,7 +171,7 @@ public class Offer_Service {
     }
 
     public void deleteoffer(int o) {
-        String url = Statics.BASE_URL + "/deleteofferjson?id="+o;
+        String url = Statics.BASE_URL + "/deleteofferjson?id=" + o;
         req.setUrl(url);
         req.setPost(false);
         NetworkManager.getInstance().addToQueueAndWait(req);

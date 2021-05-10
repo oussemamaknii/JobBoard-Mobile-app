@@ -2,6 +2,7 @@ package Mobile_App.Gui;
 
 import Mobile_App.Gui.Offre_Emploi.ListViewOffer;
 import Mobile_App.Gui.Offre_Emploi.Stat;
+import Mobile_App.Gui.event.ListViewEvent;
 import com.codename1.ui.*;
 import com.codename1.ui.layouts.BorderLayout;
 import com.codename1.ui.layouts.Layout;
@@ -42,6 +43,8 @@ public class SideMenu extends Form {
         getToolbar().addMaterialCommandToSideMenu("  Home", FontImage.MATERIAL_HOME, e -> new HomeForm(res).show());
         getToolbar().addMaterialCommandToSideMenu("  Job Offers", FontImage.MATERIAL_LOCAL_OFFER, e ->
                 new ListViewOffer(this, res).show());
+        getToolbar().addMaterialCommandToSideMenu("  Events", FontImage.MATERIAL_LOCAL_OFFER, e ->
+                new ListViewEvent(this, res).show());
         getToolbar().addMaterialCommandToSideMenu("  Statistics", FontImage.MATERIAL_ANALYTICS, e ->
                 new Stat(this, res).createPieChartForm().show());
         getToolbar().addMaterialCommandToSideMenu("  Meetings", FontImage.MATERIAL_TRENDING_UP, null);

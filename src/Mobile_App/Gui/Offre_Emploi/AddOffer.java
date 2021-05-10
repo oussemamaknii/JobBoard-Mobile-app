@@ -1,11 +1,13 @@
 package Mobile_App.Gui.Offre_Emploi;
 
+import Mobile_App.Gui.event.AddEvent;
 import com.codename1.io.ConnectionRequest;
 import com.codename1.io.JSONParser;
 import com.codename1.ui.Display;
 import com.codename1.ui.Form;
 import com.codename1.ui.Dialog;
 import com.codename1.ui.Label;
+import com.codename1.ui.plaf.UIManager;
 import com.codename1.ui.util.Resources;
 import com.codename1.io.Log;
 import com.codename1.io.NetworkManager;
@@ -14,9 +16,11 @@ import com.codename1.ui.AutoCompleteTextField;
 import com.codename1.ui.Toolbar;
 import com.codename1.ui.layouts.BoxLayout;
 import com.codename1.ui.list.DefaultListModel;
+
 import java.io.ByteArrayInputStream;
 import java.io.InputStreamReader;
 import java.util.Map;
+
 import Mobile_App.Entities.Category;
 import Mobile_App.Entities.Offre_Emploi;
 import Mobile_App.Gui.SideMenu;
@@ -50,29 +54,31 @@ public class AddOffer extends SideMenu {
         Toolbar tb = getToolbar();
         tb.setTitleCentered(false);
         setupSideMenu(res);
+        Style s1 = UIManager.getInstance().getComponentStyle("TitleCommand");
+        FontImage icon = FontImage.createMaterial(FontImage.MATERIAL_ADD, s1);
+        tb.addCommandToRightBar("", icon, (e) -> new ListViewOffer(this, res).show());
         setTitle("Add a new Offer");
         setLayout(BoxLayout.y());
         if (o == null) {
             TextField tfTitle = new TextField("", "Offer Title");
             TextField tfPost = new TextField("", "Post");
             TextField tfdescription = new TextField("", "Description");
-            //TextField tflocation = new TextField("", "Location");
 
             final DefaultListModel<String> options = new DefaultListModel<>();
             AutoCompleteTextField tflocation = new AutoCompleteTextField(options) {
                 @Override
                 protected boolean filter(String text) {
-                    if(text.length() == 0) {
+                    if (text.length() == 0) {
                         return false;
                     }
                     String[] l = searchLocations(text);
                     System.out.println(l);
-                    if(l == null || l.length == 0) {
+                    if (l == null || l.length == 0) {
                         return false;
                     }
 
                     options.removeAll();
-                    for(String s : l) {
+                    for (String s : l) {
                         options.addItem(s);
                         System.out.println(options);
                     }
@@ -86,7 +92,7 @@ public class AddOffer extends SideMenu {
             final MapContainer cnt = new MapContainer(HTML_API_KEY);
 
             Button btnMoveCamera = new Button("Move Camera");
-            btnMoveCamera.addActionListener(e->{
+            btnMoveCamera.addActionListener(e -> {
                 cnt.setCameraPosition(new Coord(-33.867, 151.206));
             });
             Style s = new Style();
@@ -95,7 +101,7 @@ public class AddOffer extends SideMenu {
             FontImage markerImg = FontImage.createMaterial(FontImage.MATERIAL_PLACE, s, Display.getInstance().convertToPixels(3));
 
             Button btnAddMarker = new Button("Add Marker");
-            btnAddMarker.addActionListener(e->{
+            btnAddMarker.addActionListener(e -> {
 
                 cnt.setCameraPosition(new Coord(41.889, -87.622));
                 cnt.addMarker(
@@ -111,7 +117,7 @@ public class AddOffer extends SideMenu {
             });
 
             Button btnAddPath = new Button("Add Path");
-            btnAddPath.addActionListener(e->{
+            btnAddPath.addActionListener(e -> {
 
                 cnt.addPath(
                         cnt.getCameraPosition(),
@@ -123,24 +129,24 @@ public class AddOffer extends SideMenu {
             });
 
             Button btnClearAll = new Button("Clear All");
-            btnClearAll.addActionListener(e->{
+            btnClearAll.addActionListener(e -> {
                 cnt.clearMapLayers();
             });
 
-            cnt.addTapListener(e->{
+            cnt.addTapListener(e -> {
                 TextField enterName = new TextField();
                 Container wrapper = BoxLayout.encloseY(new Label("Name:"), enterName);
                 InteractionDialog dlg = new InteractionDialog("Add Marker");
                 dlg.getContentPane().add(wrapper);
-                enterName.setDoneListener(e2->{
+                enterName.setDoneListener(e2 -> {
                     String txt = enterName.getText();
                     cnt.addMarker(
                             EncodedImage.createFromImage(markerImg, false),
                             cnt.getCoordAtPosition(e.getX(), e.getY()),
                             enterName.getText(),
                             "",
-                            e3->{
-                                ToastBar.showMessage("You clicked "+txt, FontImage.MATERIAL_PLACE);
+                            e3 -> {
+                                ToastBar.showMessage("You clicked " + txt, FontImage.MATERIAL_PLACE);
                             }
                     );
                     dlg.dispose();
@@ -155,7 +161,7 @@ public class AddOffer extends SideMenu {
                             FlowLayout.encloseBottom(btnMoveCamera, btnAddMarker, btnAddPath, btnClearAll)
                     )
             );
-            map.add( root);
+            map.add(root);
             map.setHeight(1);
 
             TextField tffile = new TextField("", "File");
@@ -194,10 +200,9 @@ public class AddOffer extends SideMenu {
                 @Override
                 public void actionPerformed(ActionEvent evt) {
                     try {
-                        SimpleDateFormat f = new SimpleDateFormat("yyyy-MM-dd");
                         Date date = new Date(System.currentTimeMillis());
                         Offre_Emploi offer = new Offre_Emploi(0, categ.getSelectedItem().getId(), tfTitle.getText(), tfPost.getText(), tfdescription.getText(), tflocation.getText(),
-                                tffile.getText(), tfemail.getText(), date, (Date) dateTimePicker.getValue(), Integer.parseInt(tfmax.getText()),
+                                tffile.getText(), tfemail.getText(), date, dateTimePicker.getDate(), Integer.parseInt(tfmax.getText()),
                                 Integer.parseInt(tfmin.getText()));
                         if (Offer_Service.getInstance().addOffer(offer)) {
                             Dialog.show("Success", "Added Successfully !", new Command("OK"));
@@ -212,10 +217,10 @@ public class AddOffer extends SideMenu {
             });
             Container a = new Container(BoxLayout.y());
             Container b = new Container(BoxLayout.y());
-            a.addAll(tfTitle,tfPost,tfdescription,tflocation);
-            b.addAll(tffile,fc,tfemail,dateTimePicker,tfmax,tfmin,categ,btnValider);
+            a.addAll(tfTitle, tfPost, tfdescription, tflocation);
+            b.addAll(tffile, fc, tfemail, dateTimePicker, tfmax, tfmin, categ, btnValider);
 
-            addAll(a,map,b);
+            addAll(a, map, b);
             getToolbar().addMaterialCommandToLeftBar("", FontImage.MATERIAL_ARROW_BACK
                     , e -> previous.showBack());
         } else {
@@ -289,21 +294,22 @@ public class AddOffer extends SideMenu {
         }
 
     }
+
     String[] searchLocations(String text) {
         try {
-            if(text.length() > 0) {
+            if (text.length() > 0) {
                 ConnectionRequest r = new ConnectionRequest();
                 r.setPost(false);
                 r.setUrl("https://maps.googleapis.com/maps/api/place/autocomplete/json");
                 r.addArgument("key", apiKey);
                 r.addArgument("input", text);
                 NetworkManager.getInstance().addToQueueAndWait(r);
-                Map<String,Object> result = new JSONParser().parseJSON(new InputStreamReader(new ByteArrayInputStream(r.getResponseData()), "UTF-8"));
+                Map<String, Object> result = new JSONParser().parseJSON(new InputStreamReader(new ByteArrayInputStream(r.getResponseData()), "UTF-8"));
                 String[] res = Result.fromContent(result).getAsStringArray("//description");
                 System.out.println(res);
                 return res;
             }
-        } catch(Exception err) {
+        } catch (Exception err) {
             Log.e(err);
         }
         return null;

@@ -2,12 +2,15 @@ package Mobile_App.Gui.Offre_Emploi;
 
 import Mobile_App.Entities.Offre_Emploi;
 import Mobile_App.Gui.SideMenu;
+import Mobile_App.Gui.event.AddEvent;
 import Mobile_App.Main;
 import Mobile_App.Service.Offer_Service;
 import com.codename1.components.ImageViewer;
 import com.codename1.components.MultiButton;
 import com.codename1.ui.*;
 import com.codename1.ui.layouts.BoxLayout;
+import com.codename1.ui.plaf.Style;
+import com.codename1.ui.plaf.UIManager;
 import com.codename1.ui.util.Resources;
 
 import java.io.IOException;
@@ -20,6 +23,11 @@ public class ListViewOffer extends SideMenu {
         Toolbar tb = getToolbar();
         tb.setTitleCentered(false);
         setupSideMenu(res);
+
+        Style s = UIManager.getInstance().getComponentStyle("TitleCommand");
+        FontImage icon = FontImage.createMaterial(FontImage.MATERIAL_ADD, s);
+        tb.addCommandToRightBar("", icon, (e) -> new AddOffer(this, null, res).show());
+
         tb.addSearchCommand(e -> {
             String text = (String)e.getSource();
             if(text == null || text.length() == 0) {
@@ -47,7 +55,7 @@ public class ListViewOffer extends SideMenu {
             }
         }, 4);
 
-        this.setTitle("liste des series");
+        this.setTitle("list Offers");
         this.setLayout(BoxLayout.y());
 
         List<Offre_Emploi> offers = Offer_Service.getInstance().getAllOffers();
@@ -65,6 +73,7 @@ public class ListViewOffer extends SideMenu {
             Container titleDuree = new Container(BoxLayout.x());;
 
             ImageViewer image = new ImageViewer(Main.theme.getImage("job.png").scaled(250, 350));
+            System.out.println(s.getDate_debut());
 
             Label lbTitle = new Label(s.getTitre());
             Label lDescription = new Label(s.getDescription());
