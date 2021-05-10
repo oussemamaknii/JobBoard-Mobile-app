@@ -96,12 +96,11 @@ public class Register extends Form {
             @Override
             public void actionPerformed(ActionEvent evt) {
                 LoginService service = new LoginService();
-                service.SingUp(firstName.getText(), password.getText(), lastName.getText(), mail.getText(), date.getText(), professionalTitle.getText(), imgPath);
+                service.SingUp(firstName.getText(),lastName.getText(),date.getDate(),Integer.parseInt(phone.getText()),address.getText(),professionalTitle.getText(),password.getText(),mail.getText());
                 new HomeForm(res).show();
             }
 
         });
-
         add(BorderLayout.OVERLAY, logoC);
         Container by = BoxLayout.encloseY(
                 spaceLabel,

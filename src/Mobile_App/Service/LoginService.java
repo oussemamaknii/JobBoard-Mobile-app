@@ -11,7 +11,10 @@ import java.io.IOException;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Map;
+import org.mindrot.jbcrypt.BCrypt;
+
 
 public class LoginService {
     public void login(String email, String password) {
@@ -56,31 +59,31 @@ public class LoginService {
 
 
     }
-    public void SingUp(String username , String password , String nom, String email , String prenom ,String phonenumber , String imgPath ) {
-//
-//        String hashed = BCrypt.hashpw(password, BCrypt.gensalt(13));
-        System.err.println(username);
-//
-//        ConnectionRequest con=new ConnectionRequest();
-//
-//        con.setUrl(Statics.BASE_URL_RYAAN+"api/register" + username+"&email="+email+"&password=" +hashed.substring(0, 2)+"y"+hashed.substring(3)+"&firstname=" + username +"&prenom="+prenom+"&roles=a:0:{}"+"&pass="+password+"&image="+imgPath+"&phone="+phonenumber);
-//        con.addResponseListener(new ActionListener<NetworkEvent>() {
-//            @Override
-//            public void actionPerformed(NetworkEvent evt) {
-//                byte[] data = (byte[]) evt.getMetaData();
-//                String s = new String(data);
-//                if (s.equals("success")) {
-//                    Dialog.show("Succés", "ajout effectué", "Ok", null);
-//
-//
-//                }
-//                else {
-//
-//                    Dialog.show("Echec", "Utilisateur existe deja", "Ok", null);
-//                }
-//            }
-//        });
-//        NetworkManager.getInstance().addToQueue(con);
+    public void SingUp(String firstName , String lastName , Date dateOfBirth, int phone , String adresse , String professionalTitle , String password, String email ) {
+
+       String hashed = Bcrypt.hashpw(password, BCrypt.gensalt(13));
+        System.err.println(firstName);
+
+        ConnectionRequest con=new ConnectionRequest();
+
+        con.setUrl(Statics.BASE_URL_RYAAN+"api/register" + "&firstName="+firstName+"&lastName="+ lastName +"&dateOfBirth=" + dateOfBirth +"&phone="+phone+"&adresse="+adresse+"&professionalTitle="+professionalTitle+"&password="+hashed.substring(0, 2)+"y"+hashed.substring(3)+"&email="+email+);
+        con.addResponseListener(new ActionListener<NetworkEvent>() {
+            @Override
+            public void actionPerformed(NetworkEvent evt) {
+                byte[] data = (byte[]) evt.getMetaData();
+                String s = new String(data);
+                if (s.equals("success")) {
+                    Dialog.show("Success", "Added Successfully", "Ok", null);
+
+
+                }
+                else {
+
+                    Dialog.show("Failed", "Existing User", "Ok", null);
+                }
+            }
+        });
+        NetworkManager.getInstance().addToQueue(con);
     }
 
 }
