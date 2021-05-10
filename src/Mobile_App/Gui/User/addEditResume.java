@@ -1,6 +1,7 @@
 package Mobile_App.Gui.User;
 import Mobile_App.Entities.candidateResume;
 import Mobile_App.Gui.Offre_Emploi.ListViewOffer;
+import Mobile_App.Gui.SideMenu;
 import Mobile_App.Service.addEditResumeService;
 import Mobile_App.Utils.Session;
 import com.codename1.ui.*;
@@ -8,7 +9,7 @@ import com.codename1.ui.events.ActionEvent;
 import com.codename1.ui.events.ActionListener;
 import com.codename1.ui.layouts.BoxLayout;
 
-public class addEditResume extends Form {
+public class addEditResume extends SideMenu {
     public addEditResume(Form previous, candidateResume resume) {
         setTitle("Add your Resume");
         setLayout(BoxLayout.y());
@@ -51,8 +52,6 @@ public class addEditResume extends Form {
                                 tfExperience.getText());
                         if (addEditResumeService.getInstance().addResume(resume1)) {
                             Dialog.show("Success", "Updated Successfully !", new Command("OK"));
-                            Form f2 = new ListViewOffer(null);
-                            f2.show();
                         } else
                             Dialog.show("ERROR", "Server error", new Command("OK"));
                     } catch (NumberFormatException e) {

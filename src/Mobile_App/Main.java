@@ -33,6 +33,7 @@ public class Main {
 
     private Form current;
     public static Resources theme;
+    public static Resources theme1;
 //    UtilService utilService = UtilService.getInstance();
     public static String Codex;
     private Form f;
@@ -53,6 +54,7 @@ public class Main {
         updateNetworkThreadCount(2);
 
         theme = UIManager.initFirstTheme("/theme");
+
 
         // Enable Toolbar on all Forms by default
         Toolbar.setGlobalToolbar(true);
@@ -111,7 +113,9 @@ public class Main {
                 LoginService ser =new LoginService();
                 ser.login(username.getText(), password.getText());
                 if (Session.ConnectedUser.getId()>0) {
-                    new HomeForm().show();
+                    System.out.println(theme);
+                    theme1 = UIManager.initFirstTheme("/theme");
+                    new HomeForm(theme1).show();
                 } else {
                     Dialog.show("Error!", "Login ou mot de passe incorrect!", "Ok", null);
                 }

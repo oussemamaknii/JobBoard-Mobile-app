@@ -1,6 +1,6 @@
 package Mobile_App.Gui.Offre_Emploi;
 
-import Mobile_App.Gui.event.AddEvent;
+import Mobile_App.Gui.event.*;
 import com.codename1.io.ConnectionRequest;
 import com.codename1.io.JSONParser;
 import com.codename1.ui.Display;

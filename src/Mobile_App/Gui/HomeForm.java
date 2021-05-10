@@ -37,16 +37,11 @@ public class HomeForm extends SideMenu {
         Button btnListTasks = new Button("List Offers");
         Button btnListapps = new Button("List Applications");
         Button btnResume = new Button("Resume");
-        btnAddTask.addActionListener(e -> new AddOffer(current,null).show());
-        btnListTasks.addActionListener(e -> new ListViewOffer(current).show());
+        btnAddTask.addActionListener(e -> new AddOffer(current,null,res).show());
+        btnListTasks.addActionListener(e -> new ListViewOffer(current,res).show());
         btnResume.addActionListener(e -> new addEditResume(current,null).show());
-        btnListapps.addActionListener(e -> new ListApps(current).show());
+        btnListapps.addActionListener(e -> new ListApps(current,res).show());
         addAll(btnAddTask, btnListTasks,btnListapps,btnResume);
-
-        btnAddTask.addActionListener(e -> new AddOffer(current,null, res).show());
-        btnListTasks.addActionListener(e -> new ListViewOffer(current, res).show());
-        btnListapps.addActionListener(e -> new ListApps(current, res).show());
-        addAll(btnAddTask, btnListTasks,btnListapps);
 
     }
 
