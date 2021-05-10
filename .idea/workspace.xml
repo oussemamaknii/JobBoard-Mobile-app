@@ -23,24 +23,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="20ad8530-0994-414f-a681-8ba82ed47fc9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Mobile_App/Entities/Comment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Mobile_App/Entities/Events.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/event/AddEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/event/EventsInfod.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/event/ListViewEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Mobile_App/Service/EventService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/CommentsService$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/CommentsService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Mobile_App/Service/CommentsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/theme.rar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codenameone_kotlin.properties" beforeDir="false" afterPath="$PROJECT_DIR$/codenameone_kotlin.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/ListViewOffer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/ListViewOffer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/test$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/SideMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/SideMenu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Gui/Offre_Emploi/AddOffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/Offre_Emploi/AddOffer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Gui/Offre_Emploi/ListViewOffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/Offre_Emploi/ListViewOffer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Gui/SideMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/SideMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Service/Offer_Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Service/Offer_Service.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Entities/Comment.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Entities/Comment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/event/EventsInfod.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/event/EventsInfod.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/EventService$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/EventService$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/EventService$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/EventService$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/EventService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/EventService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/Offer_Service.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/Offer_Service.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Entities/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Entities/Comment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Gui/event/EventsInfod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/event/EventsInfod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Service/EventService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Service/EventService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -51,23 +51,6 @@ public class EventService {
         return resultOK;
     }
 
-    public boolean modOffer(Events t) {
-        String url = Statics.BASE_URL + "/updateeventjson?id=" + t.getId() + "&nom=" + t.getNom() + "&date=" + t.getDate() +
-                "&description=" + t.getDescription() + "&prix=" + t.getPrix()
-                + "&adresse=" + t.getAdresse() + "&image=" + t.getFile() + "&nbrePlace="+t.getNbre_place();
-        System.out.println(url);
-        req.setUrl(url);
-        req.addResponseListener(new ActionListener<NetworkEvent>() {
-            @Override
-            public void actionPerformed(NetworkEvent evt) {
-                resultOK = req.getResponseCode() == 200;
-                req.removeResponseListener(this);
-            }
-        });
-        NetworkManager.getInstance().addToQueueAndWait(req);
-        return resultOK;
-    }
-
     public ArrayList<Events> parseEvents(String jsonText) {
         try {
             SimpleDateFormat f = new SimpleDateFormat("yyyy-MM-dd");
@@ -118,5 +101,23 @@ public class EventService {
         req.setUrl(url);
         req.setPost(false);
         NetworkManager.getInstance().addToQueueAndWait(req);
+    }
+
+
+    public boolean modOffer(Events t) {
+        String url = Statics.BASE_URL + "/updateeventjson?id=" + t.getId() + "&nom=" + t.getNom() + "&date=" + t.getDate() +
+                "&description=" + t.getDescription() + "&prix=" + t.getPrix()
+                + "&adresse=" + t.getAdresse() + "&image=" + t.getFile() + "&nbrePlace="+t.getNbre_place();
+        System.out.println(url);
+        req.setUrl(url);
+        req.addResponseListener(new ActionListener<NetworkEvent>() {
+            @Override
+            public void actionPerformed(NetworkEvent evt) {
+                resultOK = req.getResponseCode() == 200;
+                req.removeResponseListener(this);
+            }
+        });
+        NetworkManager.getInstance().addToQueueAndWait(req);
+        return resultOK;
     }
 }

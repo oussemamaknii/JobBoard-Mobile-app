@@ -1,6 +1,7 @@
 package Mobile_App.Entities;
 
 import java.time.LocalDate;
+import java.util.Date;
 
 public class Comment {
 
@@ -9,10 +10,10 @@ public class Comment {
     private String email;
     private long phone;
     private String message;
-    private LocalDate created_at;
+    private Date created_at;
     private int idEvent;
 
-    public Comment(int id, String name, String email, long phone, String message, LocalDate created_at, int idEvent) {
+    public Comment(int id, String name, String email, long phone, String message, Date created_at, int idEvent) {
         this.id = id;
         this.name = name;
         this.email = email;
@@ -66,11 +67,11 @@ public class Comment {
         this.message = message;
     }
 
-    public LocalDate getCreated_at() {
+    public Date getCreated_at() {
         return created_at;
     }
 
-    public void setCreated_at(LocalDate created_at) {
+    public void setCreated_at(Date created_at) {
         this.created_at = created_at;
     }
 
