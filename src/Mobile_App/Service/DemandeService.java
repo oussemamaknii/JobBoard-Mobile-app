@@ -35,6 +35,14 @@ public class DemandeService {
         return instance;
     }
 
+
+    public void deleteapp(int o) {
+        String url = Statics.BASE_URL + "/deleteappjson?id="+o;
+        req.setUrl(url);
+        req.setPost(false);
+        NetworkManager.getInstance().addToQueueAndWait(req);
+    }
+
     public void applytojob(int idoffer, int iduser) {
         String url = Statics.BASE_URL + "/applyjson?idoffer=" + idoffer + "&iduser=" + iduser;
         req.setUrl(url);
