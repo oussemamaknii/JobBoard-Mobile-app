@@ -23,7 +23,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="20ad8530-0994-414f-a681-8ba82ed47fc9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaSE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/JavaSE.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Versions.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Versions.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/built-jar.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/built-jar.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codenameone_settings.properties" beforeDir="false" afterPath="$PROJECT_DIR$/codenameone_settings.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/CodenameOne.jar" beforeDir="false" afterPath="$PROJECT_DIR$/lib/CodenameOne.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/CodenameOne_SRC.zip" beforeDir="false" afterPath="$PROJECT_DIR$/lib/CodenameOne_SRC.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/impl/native/android/com/codename1/ext/filechooser/FileChooserNativeImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/impl/native/android/com/codename1/ext/filechooser/FileChooserNativeImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/impl/native/ios/com_codename1_ext_filechooser_FileChooserNativeImpl.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/impl/native/ios/com_codename1_ext_filechooser_FileChooserNativeImpl.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/impl/native/ios/com_codename1_ext_filechooser_FileChooserNativeImpl.m" beforeDir="false" afterPath="$PROJECT_DIR$/lib/impl/native/ios/com_codename1_ext_filechooser_FileChooserNativeImpl.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/impl/native/j2me/com/codename1/ext/filechooser/FileChooserNativeImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/impl/native/j2me/com/codename1/ext/filechooser/FileChooserNativeImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/impl/native/javascript/com_codename1_ext_filechooser_FileChooserNative.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/impl/native/javascript/com_codename1_ext_filechooser_FileChooserNative.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/impl/native/javase/com/codename1/ext/filechooser/FileChooserNativeImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/impl/native/javase/com/codename1/ext/filechooser/FileChooserNativeImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/impl/native/rim/com/codename1/ext/filechooser/FileChooserNativeImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/impl/native/rim/com/codename1/ext/filechooser/FileChooserNativeImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/impl/stubs/com/codename1/ext/filechooser/FileChooser.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/impl/stubs/com/codename1/ext/filechooser/FileChooser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/impl/stubs/com/codename1/ext/filechooser/FileChooserNative.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/impl/stubs/com/codename1/ext/filechooser/FileChooserNative.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/User/addEditResume$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/User/addEditResume$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/User/addEditResume.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/User/addEditResume.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/addEditResumeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/addEditResumeService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Utils/Session.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Utils/Session.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Mobile_App/Gui/User/addEditResume.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/User/addEditResume.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Service/addEditResumeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Service/addEditResumeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Utils/Session.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Utils/Session.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +63,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitSEFilterConfiguration">
