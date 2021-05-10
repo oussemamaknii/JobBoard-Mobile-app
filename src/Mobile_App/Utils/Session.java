@@ -4,7 +4,9 @@ package Mobile_App.Utils;
 import Mobile_App.Entities.User;
 import com.codename1.io.*;
 import java.io.IOException;
-import java.time.LocalDate;
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -77,13 +79,13 @@ public class Session {
                 user.setImageName(mapUser.get("imageId").toString());
                 user.setEmail(mapUser.get("email").toString());
                 user.setPhone(Integer.parseInt(mapUser.get("phone").toString()));
-                user.setDateOfBirth(LocalDate.parse(mapUser.get("dateOfBirth").toString()));
-
+                DateFormat format = new SimpleDateFormat("yyyy-MM-dd");
+                user.setDateOfBirth(format.parse(mapUser.get("dateOfBirth").toString()));
                 listUsers.add(user);
 
             }
 
-        } catch (IOException ex) {
+        } catch (IOException | ParseException ex) {
         }
         System.out.println(listUsers);
         return listUsers;

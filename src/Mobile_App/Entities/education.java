@@ -1,19 +1,19 @@
 package Mobile_App.Entities;
 
 
-import java.time.LocalDate;
+import java.util.Date;
 import java.util.Objects;
 
 public class education {
     private int id,resume_id;
     private String course,institute;
-    private LocalDate dateFrom,dateTo;
+    private Date dateFrom,dateTo;
 
 
     public education() {
     }
 
-    public education(int id, int resume_id, String course, String institute, LocalDate dateFrom, LocalDate dateTo) {
+    public education(int id, int resume_id, String course, String institute, Date dateFrom, Date dateTo) {
         this.id = id;
         this.resume_id = resume_id;
         this.course = course;

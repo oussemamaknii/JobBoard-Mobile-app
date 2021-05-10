@@ -1,17 +1,20 @@
 package Mobile_App.Entities;
 
-import java.time.LocalDate;
+import java.util.Date;
 import java.util.Objects;
 
 public class User {
     private int id,isActive,phone;
     private String email,password,firstName,lastName,roles,token,imageName,adresse,professionalTitle;
-    private LocalDate dateOfBirth,createdAt,updatedAt,activatedAt;
+    private Date dateOfBirth;
+    private Date createdAt;
+    private Date updatedAt;
+    private Date activatedAt;
 
     public User() {
     }
 
-    public User(int id, int isActive, int phone, String email, String password, String firstName, String lastName, String roles, String token, String imageName, String adresse, String professionalTitle, LocalDate dateOfBirth, LocalDate createdAt, LocalDate updatedAt, LocalDate activatedAt) {
+    public User(int id, int isActive, int phone, String email, String password, String firstName, String lastName, String roles, String token, String imageName, String adresse, String professionalTitle, Date dateOfBirth, Date createdAt, Date updatedAt, Date activatedAt) {
         this.id = id;
         this.isActive = isActive;
         this.phone = phone;
@@ -126,35 +129,35 @@ public class User {
         this.professionalTitle = professionalTitle;
     }
 
-    public LocalDate getDateOfBirth() {
+    public Date getDateOfBirth() {
         return dateOfBirth;
     }
 
-    public void setDateOfBirth(LocalDate dateOfBirth) {
+    public void setDateOfBirth(Date dateOfBirth) {
         this.dateOfBirth = dateOfBirth;
     }
 
-    public LocalDate getCreatedAt() {
+    public Date getCreatedAt() {
         return createdAt;
     }
 
-    public void setCreatedAt(LocalDate createdAt) {
+    public void setCreatedAt(Date createdAt) {
         this.createdAt = createdAt;
     }
 
-    public LocalDate getUpdatedAt() {
+    public Date getUpdatedAt() {
         return updatedAt;
     }
 
-    public void setUpdatedAt(LocalDate updatedAt) {
+    public void setUpdatedAt(Date updatedAt) {
         this.updatedAt = updatedAt;
     }
 
-    public LocalDate getActivatedAt() {
+    public Date getActivatedAt() {
         return activatedAt;
     }
 
-    public void setActivatedAt(LocalDate activatedAt) {
+    public void setActivatedAt(Date activatedAt) {
         this.activatedAt = activatedAt;
     }
 

@@ -1,19 +1,19 @@
 package Mobile_App.Entities;
 
-import java.time.LocalDate;
+import java.util.Date;
 import java.util.Objects;
 
 public class company {
     private int id,user_id,status,contactPhone;
     private double stars;
     private String website,category,country,description,companyName,contactEmail,companyAddress,facebookLink,twitterLink,companyImageName;
-    private LocalDate foundedDate;
+    private Date foundedDate;
 
 
     public company() {
     }
 
-    public company(int id, int user_id, int status, int contactPhone, double stars, String website, String category, String country, String description, String companyName, String contactEmail, String companyAddress, String facebookLink, String twitterLink, String companyImageName, LocalDate foundedDate) {
+    public company(int id, int user_id, int status, int contactPhone, double stars, String website, String category, String country, String description, String companyName, String contactEmail, String companyAddress, String facebookLink, String twitterLink, String companyImageName, Date foundedDate) {
         this.id = id;
         this.user_id = user_id;
         this.status = status;

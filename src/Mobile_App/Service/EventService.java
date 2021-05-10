@@ -5,13 +5,12 @@ import Mobile_App.Entities.Events;
 import Mobile_App.Entities.Offre_Emploi;
 import Mobile_App.Utils.Statics;
 import com.codename1.io.*;
-import com.codename1.l10n.ParseException;
 import com.codename1.l10n.SimpleDateFormat;
 import com.codename1.ui.events.ActionListener;
 
 import java.io.IOException;
 import java.time.Instant;
-import java.time.LocalDate;
+import java.util.Date;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
 
