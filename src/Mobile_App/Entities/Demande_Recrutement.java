@@ -8,7 +8,7 @@ public class Demande_Recrutement {
     private int id, offre_id, candidat_id;
     LocalDate date_debut, date_expiration;
     String offtit, username;
-    boolean status;
+    String status;
 
     public String getOfftit() {
         return offtit;
@@ -54,7 +54,7 @@ public class Demande_Recrutement {
         return getId() == that.getId() && getOffre_id() == that.getOffre_id() && getCandidat_id() == that.getCandidat_id();
     }
 
-    public Demande_Recrutement(int id, int offre_id, int candidat_id, LocalDate date_debut, LocalDate date_expiration, boolean status) {
+    public Demande_Recrutement(int id, int offre_id, int candidat_id, LocalDate date_debut, LocalDate date_expiration, String status) {
         this.id = id;
         this.offre_id = offre_id;
         this.candidat_id = candidat_id;
@@ -104,11 +104,11 @@ public class Demande_Recrutement {
         this.date_expiration = date_expiration;
     }
 
-    public boolean getStatus() {
+    public String getStatus() {
         return status;
     }
 
-    public void setStatus(boolean status) {
+    public void setStatus(String status) {
         this.status = status;
     }
 }

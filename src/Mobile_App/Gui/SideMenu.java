@@ -60,6 +60,4 @@ public class SideMenu extends Form {
         getToolbar().addMaterialCommandToSideMenu("  Logout", FontImage.MATERIAL_EXIT_TO_APP, null/*e -> new Login(current, res).show()*/);
 
     }
-
-    //protected abstract void showOtherForm(/*User u,*/ Resources res);
 }

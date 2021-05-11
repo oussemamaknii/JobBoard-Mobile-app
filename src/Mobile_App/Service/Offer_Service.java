@@ -191,4 +191,12 @@ public class Offer_Service {
         NetworkManager.getInstance().addToQueueAndWait(req);
         return categ;
     }
+
+    public void treat(int id) {
+        String url = Statics.BASE_URL + "/treatappjson?id=" + id;
+        System.out.println(url);
+        req.setUrl(url);
+        req.setPost(false);
+        NetworkManager.getInstance().addToQueueAndWait(req);
+    }
 }

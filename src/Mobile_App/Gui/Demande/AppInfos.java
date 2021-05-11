@@ -9,6 +9,7 @@ import Mobile_App.Gui.SideMenu;
 import Mobile_App.Main;
 import Mobile_App.Service.DemandeService;
 import Mobile_App.Service.Offer_Service;
+import com.codename1.charts.util.ColorUtil;
 import com.codename1.components.ImageViewer;
 import com.codename1.ui.*;
 import com.codename1.ui.layouts.BoxLayout;
@@ -29,15 +30,23 @@ public class AppInfos extends SideMenu {
             Container details = new Container(BoxLayout.y());
             Container titleDuree = new Container(BoxLayout.x());
 
-            ImageViewer image = new ImageViewer(Main.theme.getImage("job.png").scaled(250, 350));
+            ImageViewer image = new ImageViewer(Main.theme.getImage("jobapp.png").scaled(250, 350));
+            ImageViewer job = new ImageViewer(Main.theme.getImage("job.png").scaled(100, 150));
+            ImageViewer user = new ImageViewer(Main.theme.getImage("user.png").scaled(100, 150));
+
+            Container c1 =new Container(BoxLayout.x());
+            Container c2 =new Container(BoxLayout.x());
 
             Label lbTitle = new Label(s.getOfftit());
-            Label lDescription = new Label(s.getOfftit());
+            Label lDescription = new Label(s.getUsername());
             Label lDuree;
-            if (s.getStatus())
+            if (s.getStatus() == "true") {
                 lDuree = new Label("Treated !");
-            else
-                lDuree = new Label("Loadinf ..");
+                lDuree.getAllStyles().setFgColor(ColorUtil.GREEN);
+            } else {
+                lDuree = new Label("Loading ..");
+                lDuree.getAllStyles().setFgColor(ColorUtil.rgb(139, 0, 0));
+            }
 
             Container buttons = new Container(BoxLayout.x());
             Button delete = new Button("Delete");
@@ -45,19 +54,26 @@ public class AppInfos extends SideMenu {
             delete.addActionListener(e -> {
                 Offer_Service.getInstance().deleteoffer(s.getId());
                 Dialog.show("Success", "Deleted Successfully !", new Command("OK"));
-                Form f2 = new ListViewOffer(new HomeForm(res),res);
+                Form f2 = new ListViewOffer(new HomeForm(res), res);
                 f2.show();
             });
             Update.addActionListener(e -> {
-                //Offer_Service.getInstance().treat();
-                Form f = new ListApps(this,res);
+                if (s.getStatus() == "false"){
+                Offer_Service.getInstance().treat(s.getId());
+                    Dialog.show("Success", "Apply treated Successfully !", new Command("OK"));
+                }
+                else{
+                    Dialog.show("Success", "Apply treated Already !", new Command("OK"));
+                }
+                Form f = new ListApps(this, res);
                 f.show();
             });
 
             buttons.addAll(delete, Update);
 
-            titleDuree.addAll(lbTitle, lDuree);
-            details.addAll(titleDuree, lDescription);
+            c1.addAll(job,lbTitle);
+            c2.addAll(user,lDescription);
+            details.addAll(c1, c2);
 
             this.addAll(image, details, buttons);
         } catch (NullPointerException e) {

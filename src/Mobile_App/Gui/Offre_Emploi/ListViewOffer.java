@@ -71,10 +71,7 @@ public class ListViewOffer extends SideMenu {
             Container holder = new Container(BoxLayout.x());
             Container details = new Container(BoxLayout.y());
             Container titleDuree = new Container(BoxLayout.x());;
-
             ImageViewer image = new ImageViewer(Main.theme.getImage("job.png").scaled(250, 350));
-            System.out.println(s.getDate_debut());
-
             Label lbTitle = new Label(s.getTitre());
             Label lDescription = new Label(s.getDescription());
             Label lDuree = new Label(String.valueOf(s.getEmail()));
