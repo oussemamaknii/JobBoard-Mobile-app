@@ -23,6 +23,7 @@ import static com.codename1.ui.layouts.GroupLayout.CENTER;
 public class OfferInfos extends SideMenu {
 
     public OfferInfos(Offre_Emploi s, Form previous, Resources res) {
+
         Toolbar tb = getToolbar();
         tb.setTitleCentered(false);
         setupSideMenu(res);
@@ -69,16 +70,24 @@ public class OfferInfos extends SideMenu {
 
             all.addAll(image, details, buttons);
 
-            Container titre = new Container(new FlowLayout(CENTER,CENTER));
+            Container titre = new Container(new FlowLayout(CENTER, CENTER));
             titre.add(new Label("Job Offer Applications"));
             Container applies = new Container();
             applies.add(titre);
             List<Demande_Recrutement> apps = DemandeService.getInstance().getAllApps();
             for (int i = 0; i < apps.size(); i++) {
                 if (apps.get(i).getOffre_id() == s.getId())
-                applies.add(addSeriesHolder(apps.get(i), res));
+                    applies.add(addSeriesHolder(apps.get(i), res));
             }
-            this.addAll(all,applies);
+
+            Container desc = new Container(new FlowLayout(CENTER, CENTER));
+            desc.add(new Label("Job Offer Requirements"));
+
+            ImageViewer image2 = new ImageViewer(Main.theme.getImage("desc.png").scaled(this.getWidth(), Main.theme.getImage("desc.png").getHeight() * 2));
+            desc.add(image2);
+
+
+            this.addAll(all, applies, desc);
         } catch (NullPointerException e) {
             System.out.println(e.getMessage());
         }

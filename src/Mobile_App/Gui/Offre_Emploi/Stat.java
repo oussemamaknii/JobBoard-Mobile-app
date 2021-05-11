@@ -6,10 +6,11 @@ import com.codename1.charts.ChartComponent;
 import com.codename1.charts.models.CategorySeries;
 import com.codename1.charts.renderers.DefaultRenderer;
 import com.codename1.charts.renderers.SimpleSeriesRenderer;
-import com.codename1.charts.util.ColorUtil;
 import com.codename1.charts.views.PieChart;
 import com.codename1.ui.FontImage;
 import com.codename1.ui.Form;
+import com.codename1.ui.Font;
+import com.codename1.ui.Label;
 import com.codename1.ui.Toolbar;
 import com.codename1.ui.layouts.BorderLayout;
 import com.codename1.ui.layouts.FlowLayout;
@@ -65,26 +66,21 @@ public class Stat extends SideMenu {
             values[i] = val;
             Color hex = new Color(Integer.parseInt(arr.get(i).get(2),16));
             colors[i] = hex.getRGB();
-            System.out.println(arr.size());
             String tit = arr.get(i).get(1);
             titres[i] = tit;
         }
 
         // Set up the renderer
         DefaultRenderer renderer = buildCategoryRenderer(colors);
-        renderer.setZoomButtonsVisible(true);
-        renderer.setZoomEnabled(true);
-        renderer.setChartTitleTextSize(20);
+        renderer.setChartTitleTextSize(50);
+        renderer.setLabelsTextSize(60);
+        renderer.setLegendTextFont(Font.createSystemFont(Font.FACE_PROPORTIONAL, Font.STYLE_ITALIC, 12));
         renderer.setDisplayValues(true);
         renderer.setShowLabels(true);
-        SimpleSeriesRenderer r = renderer.getSeriesRendererAt(0);
-        r.setGradientEnabled(true);
-        r.setGradientStart(0, ColorUtil.BLUE);
-        r.setGradientStop(0, ColorUtil.GREEN);
-        r.setHighlighted(true);
 
         // Create the chart ... pass the values and renderer to the chart object.
         PieChart chart = new PieChart(buildCategoryDataset("Offer Statistics", values), renderer);
+
 
         // Wrap the chart in a Component so we can add it to a form
         ChartComponent c = new ChartComponent(chart);

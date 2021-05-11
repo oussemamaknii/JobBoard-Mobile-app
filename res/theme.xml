@@ -19,6 +19,7 @@
     <image name="claim1.png"  />
     <image name="claim2.png"  />
     <image name="crossIcon.png"  />
+    <image name="desc.png"  />
     <image name="duke.png" type="multi"  />
     <image name="email.png"  />
     <image name="enddat.png"  />
