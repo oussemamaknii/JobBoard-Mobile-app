@@ -1,26 +1,19 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Mobile_App.Entities;
 
 import java.time.LocalDate;
+import java.util.Date;
 
-/**
- *
- * @author ASUS
- */
-public class comment {
+public class Comment {
+
     private int id;
     private String name;
     private String email;
     private long phone;
     private String message;
-    private LocalDate created_at;
+    private Date created_at;
     private int idEvent;
 
-    public comment(int id, String name, String email, long phone, String message, LocalDate created_at, int idEvent) {
+    public Comment(int id, String name, String email, long phone, String message, Date created_at, int idEvent) {
         this.id = id;
         this.name = name;
         this.email = email;
@@ -30,16 +23,7 @@ public class comment {
         this.idEvent = idEvent;
     }
 
-     public comment(String name, String email, long phone, String message, LocalDate created_at, int idEvent) {
-        this.name = name;
-        this.email = email;
-        this.phone = phone;
-        this.message = message;
-        this.created_at = created_at;
-        this.idEvent = idEvent;
-    }
-
-    public comment() {
+    public Comment() {
 
     }
 
@@ -83,11 +67,11 @@ public class comment {
         this.message = message;
     }
 
-    public LocalDate getCreated_at() {
+    public Date getCreated_at() {
         return created_at;
     }
 
-    public void setCreated_at(LocalDate created_at) {
+    public void setCreated_at(Date created_at) {
         this.created_at = created_at;
     }
 
@@ -105,6 +89,4 @@ public class comment {
     public String toString() {
         return "comment{" + "id=" + id + ", name=" + name + ", email=" + email + ", phone=" + phone + ", message=" + message + ", created_at=" + created_at + ", idEvent=" + idEvent + '}';
     }
-
-
 }

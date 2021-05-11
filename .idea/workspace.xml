@@ -23,37 +23,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="20ad8530-0994-414f-a681-8ba82ed47fc9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/ant.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/built-jar.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/CN1FileChooser.cn1lib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/impl/cls/com/codename1/ext/filechooser/FileChooser.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/impl/cls/com/codename1/ext/filechooser/FileChooserNative.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/impl/native/android/com/codename1/ext/filechooser/FileChooserNativeImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/impl/native/ios/com_codename1_ext_filechooser_FileChooserNativeImpl.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/impl/native/ios/com_codename1_ext_filechooser_FileChooserNativeImpl.m" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/impl/native/j2me/com/codename1/ext/filechooser/FileChooserNativeImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/impl/native/javascript/com_codename1_ext_filechooser_FileChooserNative.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/impl/native/javase/com/codename1/ext/filechooser/FileChooserNativeImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/impl/native/rim/com/codename1/ext/filechooser/FileChooserNativeImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/impl/native/win/com/codename1/ext/filechooser/FileChooserNativeImpl.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/impl/stubs/com/codename1/ext/filechooser/FileChooser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/impl/stubs/com/codename1/ext/filechooser/FileChooserNative.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeNameOneBuildClient.jar" beforeDir="false" afterPath="$PROJECT_DIR$/CodeNameOneBuildClient.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Versions.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Versions.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codenameone_settings.properties" beforeDir="false" afterPath="$PROJECT_DIR$/codenameone_settings.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/impl/readme.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Entities/Category.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Entities/Category.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Entities/Offre_Emploi.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Entities/Offre_Emploi.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/AddOffer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/AddOffer$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/AddOffer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/AddOffer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/Offer_Service$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/Offer_Service$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/Offer_Service$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/Offer_Service$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/Offer_Service.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/Offer_Service.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Entities/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Entities/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Entities/Offre_Emploi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Entities/Offre_Emploi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Gui/AddOffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/AddOffer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Service/Offer_Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Service/Offer_Service.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Gui/event/AddEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/event/AddEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Gui/event/EventsInfod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/event/EventsInfod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Gui/event/ListViewEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/event/ListViewEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Service/CommentsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Service/CommentsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Service/EventService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Service/EventService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,22 +70,33 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/deps/json-simple-1.1.1.jar" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../JobHub-Desktop-Application" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.13927579" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="Mobile_App.Gui" />
+      <recent name="Mobile_App.Gui.Offre_Emploi" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\souso\Desktop\Mobile App\src\Mobile_App\Gui\event" />
+      <recent name="C:\Users\souso\Desktop\Mobile App\src" />
+      <recent name="C:\Users\souso\Desktop\Mobile App\res\offerInfos" />
+      <recent name="C:\Users\souso\Desktop\Mobile App\res\offer infos" />
       <recent name="E:\Etudes\ESPRIT\Esprit_3A28\Semestre 2\PiDev\Mobile\Mobile-app\src\Mobile_App\Service\ServiceGPC" />
-      <recent name="E:\Etudes\ESPRIT\Esprit_3A28\Semestre 2\PiDev\Mobile\Mobile-app\src\Mobile_App\Images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\souso\Desktop\Mobile App\lib" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Mobile_App.Gui.Offre_Emploi" />
+      <recent name="Mobile_App.Gui.Demande" />
       <recent name="Mobile_App.Entities.GestionProduit_Commande" />
       <recent name="Mobile_App.Utils" />
       <recent name="Mobile_App.Gui" />
@@ -135,8 +121,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1619779868610</updated>
+      <workItem from="1620734354742" duration="359000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -152,5 +142,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
