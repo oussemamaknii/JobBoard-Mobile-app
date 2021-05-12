@@ -1,6 +1,7 @@
 package Mobile_App.Service;
 
 import Mobile_App.Entities.User;
+import Mobile_App.Utils.BCrypt;
 import Mobile_App.Utils.Session;
 import Mobile_App.Utils.Statics;
 import com.codename1.io.*;
@@ -13,10 +14,9 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Map;
-import org.mindrot.jbcrypt.BCrypt;
-
 
 public class LoginService {
+
     public void login(String email, String password) {
         ConnectionRequest con = new ConnectionRequest();
         con.addRequestHeader("Content-Type", "application/json");
@@ -59,26 +59,32 @@ public class LoginService {
 
 
     }
-    public void SingUp(String firstName , String lastName , Date dateOfBirth, int phone , String adresse , String professionalTitle , String password, String email ) {
 
-       String hashed = Bcrypt.hashpw(password, BCrypt.gensalt(13));
-        System.err.println(firstName);
+    public void SingUp(String firstName, String lastName, Date dateOfBirth, int phone, String adresse, String professionalTitle, String password, String email) {
 
-        ConnectionRequest con=new ConnectionRequest();
+        String hashed = BCrypt.hashpw(password, BCrypt.gensalt(13));
 
-        con.setUrl(Statics.BASE_URL_RYAAN+"api/register" + "&firstName="+firstName+"&lastName="+ lastName +"&dateOfBirth=" + dateOfBirth +"&phone="+phone+"&adresse="+adresse+"&professionalTitle="+professionalTitle+"&password="+hashed.substring(0, 2)+"y"+hashed.substring(3)+"&email="+email+);
+        System.err.println(hashed);
+
+        MultipartRequest con = new MultipartRequest();
+        con.setUrl(Statics.BASE_URL_RYAAN + "api/register" + "?firstName=" + firstName + "&lastName=" + lastName + "&dateOfBirth=" + dateOfBirth + "&phone=" + phone + "&adresse=" + adresse + "&professionalTitle=" + professionalTitle + "&password=" + password + "&email=" + email);
+        con.setPost(true);
+        String filePath = FileSystemStorage.getInstance().getAppHomePath() ;
+        String mime = "image/jpeg";
+        String fichernom = System.currentTimeMillis() + ".jpeg";
+        con.setFilename("file", fichernom);
+        System.out.println(filePath);
+        try {
+            con.addData("file", filePath, mime);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         con.addResponseListener(new ActionListener<NetworkEvent>() {
             @Override
             public void actionPerformed(NetworkEvent evt) {
-                byte[] data = (byte[]) evt.getMetaData();
-                String s = new String(data);
-                if (s.equals("success")) {
+                if (con.getResponseCode() == 200) {
                     Dialog.show("Success", "Added Successfully", "Ok", null);
-
-
-                }
-                else {
-
+                } else {
                     Dialog.show("Failed", "Existing User", "Ok", null);
                 }
             }

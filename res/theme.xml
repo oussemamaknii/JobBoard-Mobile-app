@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <resource majorVersion="1" minorVersion="11" useXmlUI="false">
+    <image name="0cc6fd8ab4a3da0256fa115de7823d38.jpg"  />
     <image name="20187112601561032514-512.png"  />
     <image name="active.png"  />
     <image name="amir.jpg"  />
@@ -30,7 +31,6 @@
     <image name="file.png"  />
     <image name="form.png"  />
     <image name="gradient-overlay.png"  />
-    <image name="hd.png"  />
     <image name="icon.png"  />
     <image name="icons8_Box_32px.png"  />
     <image name="icons8_GPS_Antenna_64px_1.png"  />
@@ -42,6 +42,7 @@
     <image name="icons8_Sign_Out_32px.png"  />
     <image name="icons8_Slider__32px.png"  />
     <image name="icons8_Xbox_Menu_32px.png"  />
+    <image name="images.jpg"  />
     <image name="img_avatar2.png"  />
     <image name="issue.png"  />
     <image name="jimmy-fallon.png"  />
@@ -154,7 +155,7 @@
         <val key="LoginButton.sel#padding" value="2.0,2.0,2.0,2.0" />
         <val key="LoginButton.sel#transparency" value="255" />
         <val key="LoginButton.transparency" value="255" />
-        <val key="LoginForm.bgImage" value="blackkkkkkk.JPG" />
+        <val key="LoginForm.bgImage" value="images.jpg" />
         <val key="LoginForm.bgType" value="33" />
         <val key="LoginForm.fgColor" value="ffffff" />
         <val key="LoginForm.margin" value="0.0,0.0,0.0,0.0" />

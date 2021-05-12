@@ -23,13 +23,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="20ad8530-0994-414f-a681-8ba82ed47fc9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/deps/bcrypt-0.4.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deps/bytes-0.4.6.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deps/jBCrypt-0.4.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deps/jar_files.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/0cc6fd8ab4a3da0256fa115de7823d38.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jbcrypt-0.3m.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/theme/0cc6fd8ab4a3da0256fa115de7823d38.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/theme/images.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Versions.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Versions.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deps/bcrypt-0.4.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deps/bytes-0.4.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deps/jar_files.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jbcrypt/BCrypt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbproject/private/private.properties" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/private/private.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/private/private.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/User/Register$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/User/Register$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/User/Register.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/User/Register.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/loginService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/loginService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/theme.res" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/theme.res" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/theme.xml" beforeDir="false" afterPath="$PROJECT_DIR$/res/theme.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Mobile_App/Gui/User/Register.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/User/Register.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Gui/User/forgetPassword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/User/forgetPassword.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Mobile_App/Service/LoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Service/LoginService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/theme.res" beforeDir="false" afterPath="$PROJECT_DIR$/src/theme.res" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,14 +95,14 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Downloaded.Files.Path.Enabled" value="true" />
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
-    <property name="Repository.Attach.Sources" value="false" />
+    <property name="Repository.Attach.Sources" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/deps/bytes-0.4.6.jar" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.13927579" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -99,13 +114,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Ryaan\Desktop\kraya\pi\Mobile-app" />
+      <recent name="C:\Users\Ryaan\Desktop\kraya\pi\Mobile-app\lib" />
       <recent name="C:\Users\Ryaan\Desktop\kraya\pi\Mobile-app\res\theme" />
       <recent name="C:\Users\Ryaan\Desktop\kraya\pi\Mobile-app\res" />
       <recent name="C:\Users\Ryaan\Desktop\kraya\pi\Mobile-app\src\Mobile_App" />
-      <recent name="C:\Users\souso\Desktop\Mobile App\res\offer infos" />
-      <recent name="E:\Etudes\ESPRIT\Esprit_3A28\Semestre 2\PiDev\Mobile\Mobile-app\src\Mobile_App\Service\ServiceGPC" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Ryaan\Desktop\kraya\pi\Mobile-app\lib" />
       <recent name="C:\Users\Ryaan\Desktop\kraya\pi\Mobile-app\res\theme" />
       <recent name="C:\Users\Ryaan\Desktop\kraya\pi\Mobile-app\src" />
       <recent name="C:\Users\souso\Desktop\Mobile App\lib" />

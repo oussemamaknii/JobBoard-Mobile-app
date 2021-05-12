@@ -36,16 +36,15 @@ public class Register extends Form {
         TextField lastName = new TextField(null, "Enter your last name", 20, TextField.ANY);
         TextField mail = new TextField(null, "Enter your mail", 20, TextField.ANY);
         TextField password = new TextField(null, "Enter your password", 20, TextField.PASSWORD);
-        TextField confpass = new TextField(null, "Confirm your password ", 20, TextField.ANY);
         TextField phone = new TextField(null, "Enter your phone number ", 20, TextField.NUMERIC);
         TextField address = new TextField(null, "Enter your address", 20, TextField.ANY);
         TextField professionalTitle = new TextField(null, "Enter your professional title ", 20, TextField.NUMERIC);
         Picker date = new Picker();
+        firstName.getAllStyles().setBgColor(1);
         firstName.getAllStyles().setMargin(LEFT, 0);
         lastName.getAllStyles().setMargin(LEFT, 0);
         mail.getAllStyles().setMargin(LEFT, 0);
         password.getAllStyles().setMargin(LEFT, 0);
-        confpass.getAllStyles().setMargin(LEFT, 0);
         phone.getAllStyles().setMargin(LEFT, 0);
         address.getAllStyles().setMargin(LEFT, 0);
         professionalTitle.getAllStyles().setMargin(LEFT, 0);
@@ -64,13 +63,11 @@ public class Register extends Form {
                 try {
                     imgPath = Capture.capturePhoto(Display.getInstance().getDisplayWidth(), -1);
                     img = Image.createImage(imgPath);
-                } catch (IOException ex) {
+                } catch (IOException ignored) {
                 }
             }
 
         });
-
-
         Button RegisterButton = new Button("Register");
         RegisterButton.setUIID("LoginButton");
         Button login = new Button("Sign In");
@@ -111,7 +108,6 @@ public class Register extends Form {
                 BorderLayout.center(mail),
                 BorderLayout.center(phone),
                 BorderLayout.center(password),
-                BorderLayout.center(confpass),
                 BorderLayout.center(address),
                 BorderLayout.center(professionalTitle),
                 BorderLayout.center(date),
