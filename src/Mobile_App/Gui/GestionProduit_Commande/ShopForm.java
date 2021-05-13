@@ -8,17 +8,12 @@ import Mobile_App.Service.ServiceGPC.ShopService;
 import com.codename1.components.ImageViewer;
 import com.codename1.io.Storage;
 import com.codename1.ui.*;
-import com.codename1.ui.layouts.BorderLayout;
 import com.codename1.ui.layouts.BoxLayout;
-import com.codename1.ui.plaf.Style;
-import com.codename1.ui.plaf.UIManager;
 import com.codename1.ui.util.Resources;
-import com.codename1.util.StringUtil;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.codename1.ui.plaf.Style.UNIT_TYPE_DIPS;
 
 public class ShopForm extends BaseForm {
 
