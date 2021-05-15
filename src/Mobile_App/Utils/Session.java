@@ -72,10 +72,11 @@ public class Session {
             for (Map<String, Object> mapUser : list) {
                 User user = new User();
                 user.setId((int) Float.parseFloat(mapUser.get("id").toString()));
+                user.setActive(Boolean.parseBoolean(mapUser.get("isActive").toString()));
                 user.setAdresse(mapUser.get("username").toString());
                 user.setRoles(mapUser.get("roles").toString());
-                user.setFirstName(mapUser.get("nom").toString());
-                user.setLastName(mapUser.get("prenom").toString());
+                user.setFirstName(mapUser.get("firstName").toString());
+                user.setLastName(mapUser.get("lastName").toString());
                 user.setImageName(mapUser.get("imageName").toString());
                 user.setEmail(mapUser.get("email").toString());
                 user.setPhone(Integer.parseInt(mapUser.get("phone").toString()));

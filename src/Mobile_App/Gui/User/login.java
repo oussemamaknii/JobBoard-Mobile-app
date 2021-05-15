@@ -44,11 +44,18 @@ public class login extends Form {
             public void actionPerformed(ActionEvent evt) {
                 LoginService ser =new LoginService();
                 ser.login(login.getText(), password.getText());
-                if (Session.ConnectedUser.getId()>0) {
+
+                if (Session.ConnectedUser.getId()>0 && Session.ConnectedUser.isActive()) {
                     Toolbar.setGlobalToolbar(true);
                     new HomeForm(res).show();
                 } else {
-                    Dialog.show("Error!", "Login ou mot de passe incorrect!", "Ok", null);
+                    if(!Session.ConnectedUser.isActive()){
+                        Dialog.show("Disabled Account!", "Check Admin for futher informations!", "Ok", null);
+
+                    } else  {
+                        Dialog.show("Error!", "Login ou mot de passe incorrect!", "Ok", null);
+
+                    }
                 }
 
             }

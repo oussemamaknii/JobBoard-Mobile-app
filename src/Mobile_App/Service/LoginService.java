@@ -35,6 +35,7 @@ public class LoginService {
                     Session.ConnectedUser.setPassword(password);
                     Session.ConnectedUser.setId((int) Float.parseFloat(mapUser.get("id").toString()));
                     Session.ConnectedUser.setEmail(mapUser.get("email").toString());
+                    Session.ConnectedUser.setActive(Boolean.parseBoolean(mapUser.get("isActive").toString()));
                     Session.ConnectedUser.setFirstName(mapUser.get("firstName").toString());
                     Session.ConnectedUser.setLastName(mapUser.get("lastName").toString());
                     Session.ConnectedUser.setPhone((int) Float.parseFloat(mapUser.get("phone").toString()));

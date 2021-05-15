@@ -11,13 +11,13 @@ import com.codename1.ui.layouts.BoxLayout;
 import com.codename1.ui.spinner.Picker;
 import com.codename1.ui.util.Resources;
 
-import java.util.Date;
 
 public class AddEditCompany extends SideMenu {
     public AddEditCompany(Form previous, company comp, Resources res) {
         setTitle("Update Company");
         setLayout(BoxLayout.y());
         if (comp == null) {
+            System.out.println("hi");
             //  resume.getUser_id() != Session.ConnectedUser.getId()
             TextField tfCompanyName = new TextField("", "Ex: Jobhub");
             //   assert comp != null;
@@ -29,12 +29,10 @@ public class AddEditCompany extends SideMenu {
             TextField tfCompanyAdress = new TextField("", "Ex: Tunisia, Gafsa");
             TextField tfContactPhone = new TextField("", "Ex: +21620202020");
             TextField tfFacebookLink = new TextField("", "Ex: www.facebook.com/jobhub");
-
             Button companyButton = new Button("Add Company");
             companyButton.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent evt) {
-
                     try {
                         company comp = new company(0, Session.ConnectedUser.getId(), 1, Integer.parseInt(tfContactPhone.getText()), tfWebsite.getText(), tfCategory.getText(),
                                 tfDescription.getText(), tfCompanyName.getText(), tfContactEmail.getText(), tfCompanyAdress.getText(), tfFacebookLink.getText(), date.getDate());
@@ -47,7 +45,8 @@ public class AddEditCompany extends SideMenu {
                     }
                 }
             });
-            addAll(tfCompanyName, tfCompanyAdress, tfCategory, tfContactPhone, tfFacebookLink, date, tfWebsite, tfDescription, date, companyButton);
+            addAll(tfCompanyAdress, tfContactEmail, tfWebsite, date, tfCategory, tfDescription, tfCompanyAdress
+                    , tfContactPhone, tfFacebookLink);
             getToolbar().addMaterialCommandToLeftBar("", FontImage.MATERIAL_ARROW_BACK
                     , e -> previous.showBack());
         } else {
@@ -62,9 +61,7 @@ public class AddEditCompany extends SideMenu {
             TextField tfCompanyAdress = new TextField(comp.getCompanyAddress(), "Ex: Tunisia, Gafsa");
             TextField tfContactPhone = new TextField(String.valueOf(comp.getContactPhone()), "Ex: +21620202020");
             TextField tfFacebookLink = new TextField(comp.getFacebookLink(), "Ex: www.facebook.com/jobhub");
-
             Button btnValider = new Button("Update Company");
-
             btnValider.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent evt) {
@@ -80,7 +77,7 @@ public class AddEditCompany extends SideMenu {
                     }
                 }
             });
-
+            removeAll();
             addAll(tfCompanyName, tfCompanyAdress, tfCategory, tfContactPhone, tfFacebookLink, date, tfWebsite, tfDescription, date, btnValider);
             getToolbar().addMaterialCommandToLeftBar("", FontImage.MATERIAL_ARROW_BACK
                     , e -> previous.showBack());

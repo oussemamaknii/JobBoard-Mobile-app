@@ -5,6 +5,7 @@ import static com.codename1.ui.CN.*;
 
 import Mobile_App.Gui.BaseForm;
 import Mobile_App.Gui.HomeForm;
+import Mobile_App.Gui.User.AddEditCompany;
 import Mobile_App.Gui.User.Register;
 import Mobile_App.Gui.User.login;
 import Mobile_App.Utils.Session;
