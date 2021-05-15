@@ -62,9 +62,9 @@ public class LoginService {
 
     public void SingUp(String firstName, String lastName, Date dateOfBirth, int phone, String adresse, String professionalTitle, String password, String email) {
 
- //       String hashed = BCrypt.hashpw(password, BCrypt.gensalt(13));
+     String hashed = BCrypt.hashpw(password, BCrypt.gensalt(13));
 
-      //  System.err.println(hashed);
+        System.err.println(hashed);
 
         MultipartRequest con = new MultipartRequest();
         con.setUrl(Statics.BASE_URL_RYAAN + "api/register" + "?firstName=" + firstName + "&lastName=" + lastName + "&dateOfBirth=" + dateOfBirth + "&phone=" + phone + "&adresse=" + adresse + "&professionalTitle=" + professionalTitle + "&password=" + password + "&email=" + email);

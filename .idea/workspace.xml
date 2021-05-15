@@ -23,7 +23,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="20ad8530-0994-414f-a681-8ba82ed47fc9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/User/AddEditCompany.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Mobile_App/Utils/BCrypt.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Entities/company.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Entities/company.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Gui/HomeForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/HomeForm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Mobile_App/Service/LoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Service/LoginService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Mobile_App/Service/addEditCompanyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Service/addEditCompanyService.java" afterDir="false" />
     </list>
@@ -140,6 +144,31 @@
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
+        <entry key="3a238d38-253c-4797-a098-0315d340213e">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:C:/Users/Ryaan/Desktop/kraya/pi/Mobile-app/src/Mobile_App/Utils" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State>
@@ -157,6 +186,11 @@
             </State>
           </value>
         </entry>
+      </map>
+    </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="3a238d38-253c-4797-a098-0315d340213e" value="TOOL_WINDOW" />
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />

@@ -6,7 +6,6 @@ import Mobile_App.Utils.Session;
 import Mobile_App.Utils.Statics;
 import com.codename1.io.*;
 import com.codename1.ui.events.ActionListener;
-
 import java.io.IOException;
 import java.text.DateFormat;
 import java.text.ParseException;
@@ -31,7 +30,7 @@ public class addEditCompanyService {
         return instance;
     }
     public boolean addEditCompany(company comp) {
-        String url = Statics.BASE_URL_RYAAN + "apiCompany/AddEditCompanyApi?companyName=" + comp.getCompanyName() + "&contactEmail="+comp.getContactEmail()+"&website="+comp.getWebsite()+"&foundedDate="+comp.getFoundedDate()+"&category="+comp.getCategory()+"&country="+comp.getCountry()+"&description="+comp.getDescription()+"&contactPhone="+comp.getContactPhone()+"&companyAdress="+comp.getCompanyAddress()+"&facebookLink="+comp.getFacebookLink();
+        String url = Statics.BASE_URL_RYAAN + "apiCompany/AddEditCompanyApi?companyName=" + comp.getCompanyName() + "&contactEmail="+comp.getContactEmail()+"&website="+comp.getWebsite()+"&foundedDate="+comp.getFoundedDate()+"&category="+comp.getCategory()+"&description="+comp.getDescription()+"&contactPhone="+comp.getContactPhone()+"&companyAdress="+comp.getCompanyAddress()+"&facebookLink="+comp.getFacebookLink();
         System.out.println(url);
         req.setUrl(url);
         req.addResponseListener(new ActionListener<NetworkEvent>() {
@@ -69,7 +68,6 @@ public class addEditCompanyService {
                 } catch (ParseException ex) {
                 }
                 comp.setCategory(obj.get("category").toString());
-                comp.setCountry(obj.get("country").toString());
                 comp.setDescription(obj.get("description").toString());
                 comp.setContactPhone((int) Float.parseFloat(obj.get("contactPhone").toString()));
                 comp.setCompanyAddress(obj.get("companyAdress").toString());

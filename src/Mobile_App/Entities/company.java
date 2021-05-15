@@ -13,12 +13,11 @@ public class company {
     public company() {
     }
 
-    public company(int id, int user_id, int status, int contactPhone, double stars, String website, String category, String country, String description, String companyName, String contactEmail, String companyAddress, String facebookLink, String twitterLink, String companyImageName, Date foundedDate) {
+    public company(int id, int user_id, int status, int contactPhone, String website, String category, String description, String companyName, String contactEmail, String companyAddress, String facebookLink, Date foundedDate) {
         this.id = id;
         this.user_id = user_id;
         this.status = status;
         this.contactPhone = contactPhone;
-        this.stars = stars;
         this.website = website;
         this.category = category;
         this.country = country;
@@ -31,6 +30,8 @@ public class company {
         this.companyImageName = companyImageName;
         this.foundedDate = foundedDate;
     }
+
+
 
     @Override
     public boolean equals(Object o) {
