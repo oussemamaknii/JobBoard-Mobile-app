@@ -41,8 +41,8 @@ public class HomeForm extends SideMenu {
         Button btnCompany = new Button("Update Company");
         btnAddTask.addActionListener(e -> new AddOffer(current,null,res).show());
         btnListTasks.addActionListener(e -> new ListViewOffer(current,res).show());
-        btnResume.addActionListener(e -> new addEditResume(current,null).show());
-        btnCompany.addActionListener(e -> new AddEditCompany(current,null).show());
+        btnResume.addActionListener(e -> new addEditResume(current,null,res).show());
+        btnCompany.addActionListener(e -> new AddEditCompany(current,null,res).show());
 
         btnListapps.addActionListener(e -> new ListApps(current,res).show());
         addAll(btnAddTask, btnListTasks,btnListapps,btnResume,btnCompany);

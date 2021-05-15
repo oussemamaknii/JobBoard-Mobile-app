@@ -48,8 +48,8 @@ public class SideMenu extends Form {
                 new ListViewEvent(this, res).show());
         getToolbar().addMaterialCommandToSideMenu("  Statistics", FontImage.MATERIAL_ANALYTICS, e ->
                 new Stat(this, res).createPieChartForm().show());
-        getToolbar().addMaterialCommandToSideMenu("  Resume", FontImage.MATERIAL_TRENDING_UP,  e ->
-                new addEditResume(this,candidateResume resume,res).createPieChartForm().show());
+//        getToolbar().addMaterialCommandToSideMenu("  Resume", FontImage.MATERIAL_TRENDING_UP,  e ->
+//                new addEditResume(this,res).createPieChartForm().show());
         getToolbar().addMaterialCommandToSideMenu("  Projects", FontImage.MATERIAL_ACCESS_TIME, null);
         getToolbar().addMaterialCommandToSideMenu("  Releases", FontImage.MATERIAL_ACCESS_TIME, null);
 

@@ -1,6 +1,5 @@
 package Mobile_App.Gui.User;
 import Mobile_App.Entities.candidateResume;
-import Mobile_App.Gui.Offre_Emploi.ListViewOffer;
 import Mobile_App.Gui.SideMenu;
 import Mobile_App.Service.addEditResumeService;
 import Mobile_App.Utils.Session;
@@ -8,7 +7,7 @@ import com.codename1.ui.*;
 import com.codename1.ui.events.ActionEvent;
 import com.codename1.ui.events.ActionListener;
 import com.codename1.ui.layouts.BoxLayout;
-import jdk.internal.module.Resources;
+import com.codename1.ui.util.Resources;
 
 public class addEditResume extends SideMenu {
     public addEditResume(Form previous, candidateResume resume, Resources res) {
@@ -39,7 +38,7 @@ public class addEditResume extends SideMenu {
             getToolbar().addMaterialCommandToLeftBar("", FontImage.MATERIAL_ARROW_BACK
                     , e -> previous.showBack());
         } else {
-            TextField tfResumeHeadline = new TextField("", "Ex: Web Developper");
+            TextField tfResumeHeadline = new TextField(resume.getResumeHeadline(), "Ex: Web Developper");
             TextField tfSkills = new TextField("", "Ex: php, symfony, js");
             TextField tfExperience = new TextField("", "Ex: worked 3years @ Facebook");
 
