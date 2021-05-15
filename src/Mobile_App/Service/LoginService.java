@@ -40,6 +40,7 @@ public class LoginService {
                     Session.ConnectedUser.setLastName(mapUser.get("lastName").toString());
                     Session.ConnectedUser.setPhone((int) Float.parseFloat(mapUser.get("phone").toString()));
                     if (mapUser.get("imageName").toString().equals("")) {
+                        //TODO:: exception if image == null
                         Session.ConnectedUser.setImageName("image-blank.jpg");
                     } else Session.ConnectedUser.setImageName(mapUser.get("imageName").toString());
                     Session.ConnectedUser.setRoles(mapUser.get("roles").toString());
@@ -91,6 +92,11 @@ public class LoginService {
             }
         });
         NetworkManager.getInstance().addToQueue(con);
+    }
+    public void doLogout(Session session){
+    session = new Session();
+
+
     }
 
 }

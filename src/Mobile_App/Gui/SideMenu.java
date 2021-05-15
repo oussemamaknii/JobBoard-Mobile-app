@@ -3,7 +3,9 @@ package Mobile_App.Gui;
 import Mobile_App.Gui.Offre_Emploi.ListViewOffer;
 import Mobile_App.Gui.Offre_Emploi.Stat;
 import Mobile_App.Gui.User.addEditResume;
+import Mobile_App.Gui.User.login;
 import Mobile_App.Gui.event.*;
+import Mobile_App.Utils.Session;
 import com.codename1.ui.*;
 import com.codename1.ui.layouts.BorderLayout;
 import com.codename1.ui.layouts.Layout;
@@ -33,8 +35,9 @@ public class SideMenu extends Form {
         Image mask = res.getImage("round-mask.png");
         mask = mask.scaledHeight(mask.getHeight() / 4 * 3);
         profilePic = profilePic.fill(mask.getWidth(), mask.getHeight());
-        Label profilePicLabel = new Label("hama", profilePic, "SideMenuTitle");
+        Label profilePicLabel = new Label(Session.ConnectedUser.getFirstName(), profilePic, "SideMenuTitle");
         profilePicLabel.setMask(mask.createMask());
+
 
         Container sidemenuTop = BorderLayout.center(profilePicLabel);
         sidemenuTop.setUIID("SidemenuTop");
@@ -59,7 +62,7 @@ public class SideMenu extends Form {
         getToolbar().addMaterialCommandToSideMenu("  Meeting Claims", FontImage.MATERIAL_ACCESS_TIME, null);
         getToolbar().addMaterialCommandToSideMenu("  Account Settings", FontImage.MATERIAL_SETTINGS, null);
 
-        getToolbar().addMaterialCommandToSideMenu("  Logout", FontImage.MATERIAL_EXIT_TO_APP, null/*e -> new Login(current, res).show()*/);
+        getToolbar().addMaterialCommandToSideMenu("  Logout", FontImage.MATERIAL_EXIT_TO_APP, 0,e -> new login(res).show());
 
     }
 
