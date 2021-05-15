@@ -8,9 +8,10 @@ import com.codename1.ui.*;
 import com.codename1.ui.events.ActionEvent;
 import com.codename1.ui.events.ActionListener;
 import com.codename1.ui.layouts.BoxLayout;
+import jdk.internal.module.Resources;
 
 public class addEditResume extends SideMenu {
-    public addEditResume(Form previous, candidateResume resume) {
+    public addEditResume(Form previous, candidateResume resume, Resources res) {
         setTitle("Add your Resume");
         setLayout(BoxLayout.y());
         if (resume == null) {
