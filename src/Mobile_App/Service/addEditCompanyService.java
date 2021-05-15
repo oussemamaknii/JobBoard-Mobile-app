@@ -2,11 +2,15 @@ package Mobile_App.Service;
 
 
 import Mobile_App.Entities.company;
+import Mobile_App.Utils.Session;
 import Mobile_App.Utils.Statics;
 import com.codename1.io.*;
 import com.codename1.ui.events.ActionListener;
 
 import java.io.IOException;
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -52,12 +56,24 @@ public class addEditCompanyService {
             for (Map<String, Object> obj : list) {
                 company comp = new company();
                 float id = Float.parseFloat(obj.get("id").toString());
-                float user_id = Float.parseFloat(obj.get("userId").toString());
-                resume.setId((int) id);
-                resume.setUser_id((int)user_id);
-                resume.setResumeHeadline(obj.get("resumeHeadline").toString());
-                resume.setSkills(obj.get("skills").toString());
-                resume.setExperience(obj.get("experience").toString());
+          //      float user_id = Float.parseFloat(obj.get("userId").toString());
+                comp.setId((int) id);
+                comp.setUser_id((Session.ConnectedUser.getId()));
+                comp.setCompanyName(obj.get("companyName").toString());
+                comp.setContactEmail(obj.get("contactEmail").toString());
+                comp.setWebsite(obj.get("website").toString());
+                DateFormat format = new SimpleDateFormat("yyyy-MM-dd");
+                try {
+                    comp.setFoundedDate(format.parse(obj.get("foundedDate").toString()));
+
+                } catch (ParseException ex) {
+                }
+                comp.setCategory(obj.get("category").toString());
+                comp.setCountry(obj.get("country").toString());
+                comp.setDescription(obj.get("description").toString());
+                comp.setContactPhone((int) Float.parseFloat(obj.get("contactPhone").toString()));
+                comp.setCompanyAddress(obj.get("companyAdress").toString());
+                comp.setFacebookLink(obj.get("facebookLink").toString());
                 companies.add(comp);
             }
         } catch (IOException ex) {

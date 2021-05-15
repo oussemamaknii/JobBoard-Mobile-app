@@ -43,8 +43,8 @@ public class LoginService {
                     } else Session.ConnectedUser.setImageName(mapUser.get("imageName").toString());
                     Session.ConnectedUser.setRoles(mapUser.get("roles").toString());
                     Session.ConnectedUser.setAdresse(mapUser.get("adresse").toString());
-                    DateFormat format = new SimpleDateFormat("yyyy-MM-dd");
                     Session.ConnectedUser.setProfessionalTitle(mapUser.get("professionalTitle").toString());
+                    DateFormat format = new SimpleDateFormat("yyyy-MM-dd");
                     try {
                         Session.ConnectedUser.setDateOfBirth(format.parse(mapUser.get("createdAt").toString()));
 
@@ -62,9 +62,9 @@ public class LoginService {
 
     public void SingUp(String firstName, String lastName, Date dateOfBirth, int phone, String adresse, String professionalTitle, String password, String email) {
 
-        String hashed = BCrypt.hashpw(password, BCrypt.gensalt(13));
+ //       String hashed = BCrypt.hashpw(password, BCrypt.gensalt(13));
 
-        System.err.println(hashed);
+      //  System.err.println(hashed);
 
         MultipartRequest con = new MultipartRequest();
         con.setUrl(Statics.BASE_URL_RYAAN + "api/register" + "?firstName=" + firstName + "&lastName=" + lastName + "&dateOfBirth=" + dateOfBirth + "&phone=" + phone + "&adresse=" + adresse + "&professionalTitle=" + professionalTitle + "&password=" + password + "&email=" + email);
