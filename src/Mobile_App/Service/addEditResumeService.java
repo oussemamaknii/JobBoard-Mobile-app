@@ -1,14 +1,11 @@
 package Mobile_App.Service;
 
-import Mobile_App.Entities.Offre_Emploi;
 import Mobile_App.Entities.candidateResume;
 import Mobile_App.Utils.Statics;
 import com.codename1.io.*;
 import com.codename1.ui.events.ActionListener;
-
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 import java.util.Map;
 

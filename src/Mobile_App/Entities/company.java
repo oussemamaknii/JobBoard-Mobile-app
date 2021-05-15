@@ -66,4 +66,132 @@ public class company {
                 ", foundedDate=" + foundedDate +
                 '}';
     }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int getUser_id() {
+        return user_id;
+    }
+
+    public void setUser_id(int user_id) {
+        this.user_id = user_id;
+    }
+
+    public int getStatus() {
+        return status;
+    }
+
+    public void setStatus(int status) {
+        this.status = status;
+    }
+
+    public int getContactPhone() {
+        return contactPhone;
+    }
+
+    public void setContactPhone(int contactPhone) {
+        this.contactPhone = contactPhone;
+    }
+
+    public double getStars() {
+        return stars;
+    }
+
+    public void setStars(double stars) {
+        this.stars = stars;
+    }
+
+    public String getWebsite() {
+        return website;
+    }
+
+    public void setWebsite(String website) {
+        this.website = website;
+    }
+
+    public String getCategory() {
+        return category;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
+    }
+
+    public String getCountry() {
+        return country;
+    }
+
+    public void setCountry(String country) {
+        this.country = country;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public String getCompanyName() {
+        return companyName;
+    }
+
+    public void setCompanyName(String companyName) {
+        this.companyName = companyName;
+    }
+
+    public String getContactEmail() {
+        return contactEmail;
+    }
+
+    public void setContactEmail(String contactEmail) {
+        this.contactEmail = contactEmail;
+    }
+
+    public String getCompanyAddress() {
+        return companyAddress;
+    }
+
+    public void setCompanyAddress(String companyAddress) {
+        this.companyAddress = companyAddress;
+    }
+
+    public String getFacebookLink() {
+        return facebookLink;
+    }
+
+    public void setFacebookLink(String facebookLink) {
+        this.facebookLink = facebookLink;
+    }
+
+    public String getTwitterLink() {
+        return twitterLink;
+    }
+
+    public void setTwitterLink(String twitterLink) {
+        this.twitterLink = twitterLink;
+    }
+
+    public String getCompanyImageName() {
+        return companyImageName;
+    }
+
+    public void setCompanyImageName(String companyImageName) {
+        this.companyImageName = companyImageName;
+    }
+
+    public Date getFoundedDate() {
+        return foundedDate;
+    }
+
+    public void setFoundedDate(Date foundedDate) {
+        this.foundedDate = foundedDate;
+    }
 }
