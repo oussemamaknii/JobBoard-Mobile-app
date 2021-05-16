@@ -23,6 +23,7 @@ import com.codename1.io.Log;
 
 import java.io.IOException;
 import java.util.Random;
+
 import Mobile_App.Service.LoginService;
 
 import com.codename1.ui.layouts.BoxLayout;
@@ -37,7 +38,7 @@ public class Main {
     private Form current;
     public static Resources theme;
     public static Resources theme1;
-//    UtilService utilService = UtilService.getInstance();
+    //    UtilService utilService = UtilService.getInstance();
     public static String Codex;
     private Form f;
     private TextField username;
@@ -45,12 +46,6 @@ public class Main {
     private Button connecter;
     private Button SignUp;
     private Button Forget_Password;
-    public static final String ACCOUNT_SID = "AC6a762dea99d61dd7cf18dfcf3a04ffcd";
-    public static final String AUTH_TOKEN = "0589edc431682c6c0267d6a9850518c8";
-
-
-
-
 
     public void init(Object context) {
         // use two network threads instead of one
@@ -83,71 +78,6 @@ public class Main {
             return;
         }
         new login(theme).show();
-//        theme = UIManager.initFirstTheme("/theme");
-//        f = new Form();
-//        f.getTitleArea().setUIID("Container");
-//        f.setUIID("SignIn");
-//        TextField username = new TextField("", "Email", 20, TextField.ANY);
-//        TextField password = new TextField("", "Password", 20, TextField.PASSWORD);
-//        username.setSingleLineTextArea(false);
-//        password.setSingleLineTextArea(false);
-//        Button signIn = new Button("Sign In");
-//        Button signUp = new Button("Sign Up");
-//        Button forget_password = new Button("Forgot password ?");
-//        signUp.setUIID("Link");
-//        Label doneHaveAnAccount = new Label("Don't have an account?");
-//        Container content = BoxLayout.encloseY(
-//                new FloatingHint(username),
-//                    new FloatingHint(password),
-//                signIn,
-//                FlowLayout.encloseCenter(doneHaveAnAccount, signUp, forget_password)
-//        );
-//     //   signUp1.addActionListener(e -> {
-////            WebDriver driver = new ChromeDriver();
-////            driver.get(Controller.ip+"/Pidev-web/web/app_dev.php/api/login");
-//   //     });
-//
-//        forget_password.addActionListener(e -> {
-//            new forgetPassword(theme).show();
-//        });
-//        signIn.addActionListener(new ActionListener() {
-//            @Override
-//            public void actionPerformed(ActionEvent evt) {
-//                LoginService ser =new LoginService();
-//                ser.login(username.getText(), password.getText());
-//                if (Session.ConnectedUser.getId()>0) {
-//                    System.out.println(theme);
-//                    theme1 = UIManager.initFirstTheme("/theme");
-//                    new HomeForm(theme1).show();
-//                } else {
-//                    Dialog.show("Error!", "Login ou mot de passe incorrect!", "Ok", null);
-//                }
-//            }
-//        });
-//
-//        signUp.addActionListener(new ActionListener() {
-//
-//            @Override
-//            public void actionPerformed(ActionEvent evt) {
-//                theme = UIManager.initFirstTheme("/theme");
-//                Form mainForm = new Form();
-//                mainForm.setLayout(new BorderLayout());
-//                mainForm.getToolbar().setHidden(true);
-//                mainForm.getContentPane().removeAll();
-//                Register reg = new Register(current,theme);
-//                mainForm.addComponent(BorderLayout.CENTER, reg);
-//                mainForm.revalidate();
-//                mainForm.show();
-//            }
-//        });
-//
-//        content.setScrollableY(true);
-//        f.add(content);
-//        signIn.requestFocus();
-//        signIn.addActionListener(e -> {
-//        });
-//        f.revalidate();
-//        f.show();
     }
 
 }

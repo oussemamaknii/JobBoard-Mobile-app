@@ -17,7 +17,8 @@ public class Session {
     private String password;
     private User user;
     private static Session session;
-
+    public static String saltToken;
+    public static String forgetPassMail;
     public Session() {
     }
 
@@ -39,6 +40,22 @@ public class Session {
 
     public String getEmail() {
         return email;
+    }
+
+    public static String getSaltToken() {
+        return saltToken;
+    }
+
+    public static void setSaltToken(String saltToken) {
+        Session.saltToken = saltToken;
+    }
+
+    public static String getForgetPassMail() {
+        return forgetPassMail;
+    }
+
+    public static void setForgetPassMail(String forgetPassMail) {
+        Session.forgetPassMail = forgetPassMail;
     }
 
     public void setEmail(String email) {

@@ -15,10 +15,11 @@ import com.codename1.ui.plaf.UIManager;
 import com.codename1.ui.util.Resources;
 
 
-
 public class login extends Form {
     Form current;
     private static User User;
+    private Button Forget_Password;
+
     public login(Resources res) {
         super(new BorderLayout(BorderLayout.CENTER_BEHAVIOR_CENTER_ABSOLUTE));
         setUIID("LoginForm");
@@ -42,17 +43,17 @@ public class login extends Form {
         loginButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent evt) {
-                LoginService ser =new LoginService();
+                LoginService ser = new LoginService();
                 ser.login(login.getText(), password.getText());
 
-                if (Session.ConnectedUser.getId()>0 && Session.ConnectedUser.isActive()) {
+                if (Session.ConnectedUser.getId() > 0 && Session.ConnectedUser.isActive()) {
                     Toolbar.setGlobalToolbar(true);
                     new HomeForm(res).show();
                 } else {
-                    if(!Session.ConnectedUser.isActive()){
+                    if (!Session.ConnectedUser.isActive()) {
                         Dialog.show("Disabled Account!", "Check Admin for futher informations!", "Ok", null);
 
-                    } else  {
+                    } else {
                         Dialog.show("Error!", "Login ou mot de passe incorrect!", "Ok", null);
 
                     }
@@ -60,11 +61,14 @@ public class login extends Form {
 
             }
         });
+
+        Button forgetPassword = new Button("forget Password?");
+        forgetPassword.setUIID("forgetPassword");
+        forgetPassword.addActionListener(e -> {
+            new forgetPassword(res).show();
+        });
         Button createNewAccount = new Button("CREATE NEW ACCOUNT");
         createNewAccount.setUIID("CreateNewAccountButton");
-//        createNewAccount.addActionListener(e -> {
-//            new forgetPassword(res).show();
-//        });
 
 
         createNewAccount.addActionListener(new ActionListener() {
@@ -75,7 +79,7 @@ public class login extends Form {
                 mainForm.setLayout(new BorderLayout());
                 mainForm.getToolbar().setHidden(true);
                 mainForm.getContentPane().removeAll();
-                Register reg = new Register(current,res);
+                Register reg = new Register(current, res);
                 mainForm.addComponent(BorderLayout.CENTER, reg);
                 mainForm.revalidate();
                 mainForm.show();
@@ -96,7 +100,7 @@ public class login extends Form {
                         add(BorderLayout.WEST, loginIcon),
                 BorderLayout.center(password).
                         add(BorderLayout.WEST, passwordIcon),
-                loginButton,
+                loginButton, forgetPassword,
                 createNewAccount
         );
         add(BorderLayout.CENTER, by);
