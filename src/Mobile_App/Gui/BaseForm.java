@@ -52,7 +52,7 @@ public class BaseForm extends Form {
         getToolbar().addComponentToSideMenu(inbox);
 
        // getToolbar().addCommandToSideMenu("Commande", image_adresse, e -> new ShopForm(res).show());
-        getToolbar().addCommandToSideMenu("Shop", shop_image, e -> new ShopForm().show());
+        getToolbar().addCommandToSideMenu("Shop", shop_image, e -> new ShopForm(this,res).show());
         //getToolbar().addCommandToSideMenu("Produits", shop_image, e -> new ProduitsListForm(this).show());
 
         // spacer

@@ -22,34 +22,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="20ad8530-0994-414f-a681-8ba82ed47fc9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/res/offres/desc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/offres/temp10040234160690228330..png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/offres/temp8905111580985832410..png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/theme/desc.png" afterDir="false" />
+    <list default="true" id="5ee5aa90-0672-4cee-afef-3f759a687b33" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/AddOffer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/AddOffer$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/AddOffer$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/AddOffer$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/AddOffer$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/AddOffer$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/AddOffer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/AddOffer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/ListViewOffer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/ListViewOffer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/OfferInfos.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/OfferInfos.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/Stat.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/Stat.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/theme.res" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/theme.res" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/theme.xml" beforeDir="false" afterPath="$PROJECT_DIR$/res/theme.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Gui/Offre_Emploi/AddOffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/Offre_Emploi/AddOffer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Gui/Offre_Emploi/ListViewOffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/Offre_Emploi/ListViewOffer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Gui/Offre_Emploi/OfferInfos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/Offre_Emploi/OfferInfos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Gui/Offre_Emploi/Stat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/Offre_Emploi/Stat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme.res" beforeDir="false" afterPath="$PROJECT_DIR$/src/theme.res" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/GestionProduit_Commande/PanierForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/GestionProduit_Commande/PanierForm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/GestionProduit_Commande/ShopForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/GestionProduit_Commande/ShopForm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/ServiceGPC/CommandeService$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/ServiceGPC/CommandeService$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/ServiceGPC/CommandeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/ServiceGPC/CommandeService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Gui/BaseForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/BaseForm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Mobile_App/Gui/GestionProduit_Commande/PanierForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/GestionProduit_Commande/PanierForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Gui/GestionProduit_Commande/ProductSingleForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/GestionProduit_Commande/ProductSingleForm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Mobile_App/Gui/GestionProduit_Commande/ShopForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/GestionProduit_Commande/ShopForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Service/ServiceGPC/CommandeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Service/ServiceGPC/CommandeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Gui/HomeForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/HomeForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Gui/SideMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/SideMenu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,10 +73,8 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../JobHub-Desktop-Application" />
-    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../Index_Passée/PIMobile/CyclePro" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.13927579" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
@@ -160,14 +140,11 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
-  <component name="XSLT-Support.FileAssociations.UIState">
-    <expand />
-    <select />
   <component name="WindowStateProjectService">
-    <state x="131" y="102" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1619811271438">
+    <state x="131" y="102" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1621289080716">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state x="131" y="102" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1600.900@0.0.1600.900" timestamp="1619811271438" />
+    <state x="131" y="102" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1600.900@0.0.1600.900" timestamp="1621289080716" />
     <state x="605" y="177" key="#com.intellij.ide.util.MemberChooser" timestamp="1619895913436">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
@@ -180,25 +157,29 @@
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="628" y="167" key="FileChooserDialogImpl/0.0.1600.900@0.0.1600.900" timestamp="1620934986952" />
-    <state width="1540" height="131" key="GridCell.Tab.0.bottom" timestamp="1620936984416">
+    <state width="1540" height="110" key="GridCell.Tab.0.bottom" timestamp="1621293889971">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1540" height="131" key="GridCell.Tab.0.bottom/0.0.1600.900@0.0.1600.900" timestamp="1620936984416" />
-    <state width="1540" height="131" key="GridCell.Tab.0.center" timestamp="1620936984415">
+    <state width="1540" height="110" key="GridCell.Tab.0.bottom/0.0.1600.900@0.0.1600.900" timestamp="1621293889971" />
+    <state width="1540" height="110" key="GridCell.Tab.0.center" timestamp="1621293889971">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1540" height="131" key="GridCell.Tab.0.center/0.0.1600.900@0.0.1600.900" timestamp="1620936984415" />
-    <state width="1540" height="131" key="GridCell.Tab.0.left" timestamp="1620936984415">
+    <state width="1540" height="110" key="GridCell.Tab.0.center/0.0.1600.900@0.0.1600.900" timestamp="1621293889971" />
+    <state width="1540" height="110" key="GridCell.Tab.0.left" timestamp="1621293889971">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1540" height="131" key="GridCell.Tab.0.left/0.0.1600.900@0.0.1600.900" timestamp="1620936984415" />
-    <state width="1540" height="131" key="GridCell.Tab.0.right" timestamp="1620936984416">
+    <state width="1540" height="110" key="GridCell.Tab.0.left/0.0.1600.900@0.0.1600.900" timestamp="1621293889971" />
+    <state width="1540" height="110" key="GridCell.Tab.0.right" timestamp="1621293889971">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1540" height="131" key="GridCell.Tab.0.right/0.0.1600.900@0.0.1600.900" timestamp="1620936984416" />
-    <state x="326" y="67" width="1040" height="807" key="SettingsEditor" timestamp="1619890730387">
+    <state width="1540" height="110" key="GridCell.Tab.0.right/0.0.1600.900@0.0.1600.900" timestamp="1621293889971" />
+    <state x="326" y="67" width="1040" height="807" key="SettingsEditor" timestamp="1621289408318">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state x="326" y="67" width="1040" height="807" key="SettingsEditor/0.0.1600.900@0.0.1600.900" timestamp="1619890730387" />
+    <state x="326" y="67" width="1040" height="807" key="SettingsEditor/0.0.1600.900@0.0.1600.900" timestamp="1621289408318" />
+    <state x="793" y="46" width="814" height="861" key="dock-window-1" timestamp="1621292477373">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state x="793" y="46" width="814" height="861" key="dock-window-1/0.0.1600.900@0.0.1600.900" timestamp="1621292477373" />
   </component>
 </project>

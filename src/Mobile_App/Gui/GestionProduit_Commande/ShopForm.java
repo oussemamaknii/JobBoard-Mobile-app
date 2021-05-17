@@ -3,35 +3,74 @@ package Mobile_App.Gui.GestionProduit_Commande;
 import Mobile_App.Entities.GestionProduit_Commande.LignePanier;
 import Mobile_App.Entities.GestionProduit_Commande.Produit;
 import Mobile_App.Gui.BaseForm;
+import Mobile_App.Gui.Offre_Emploi.AddOffer;
+import Mobile_App.Gui.SideMenu;
 import Mobile_App.Main;
 import Mobile_App.Service.ServiceGPC.ShopService;
 import com.codename1.components.ImageViewer;
 import com.codename1.io.Storage;
 import com.codename1.ui.*;
 import com.codename1.ui.layouts.BoxLayout;
+import com.codename1.ui.plaf.Style;
+import com.codename1.ui.plaf.UIManager;
 import com.codename1.ui.util.Resources;
 
 import java.util.ArrayList;
 import java.util.List;
 
 
-public class ShopForm extends BaseForm {
+public class ShopForm extends SideMenu {
 
-    private Resources theme;
+    private Resources theme=null;
+    Form current = null;
 
-    public ShopForm(){
+    public ShopForm(Form previous, Resources res){
         //super("Border Layout", new BorderLayout());
+        Toolbar tb = getToolbar();
+        tb.setTitleCentered(false);
+        setupSideMenu(res);
+        current = previous;
+        theme = res;
+
+        tb.addSearchCommand(e -> {
+            String text = (String)e.getSource();
+            if(text == null || text.length() == 0) {
+                // clear search
+                for(Component cmp : this.getContentPane()) {
+                    cmp.setHidden(false);
+                    cmp.setVisible(true);
+                }
+                this.getContentPane().animateLayout(150);
+            } else {
+                text = text.toLowerCase();
+                for(Component cmp : this.getContentPane()) {
+                    Container mb = (Container)cmp;
+                    List<Component> a1 = mb.getChildrenAsList(false);
+                    Container holder = (Container) a1.get(1);
+                    List<Component> a2 = holder.getChildrenAsList(false);
+                    Container details = (Container) a2.get(0);
+                    List<Component> a3 = details.getChildrenAsList(false);
+                    Container titcont = (Container) a3.get(0);
+                    List<Component> a5 = titcont.getChildrenAsList(false);
+                    Label titre =(Label) a5.get(1);
+                    boolean show = titre.getText() != null && titre.getText().toLowerCase().indexOf(text) > -1 ;
+                    mb.setHidden(!show);
+                    mb.setVisible(show);
+                }
+                this.getContentPane().animateLayout(150);
+            }
+        }, 4);
+
         setTitle("Shop");
         this.setLayout(BoxLayout.y());
 
         List<Produit> products = new ShopService().getAllProducts();
-
         for(int i = 0; i< products.size(); i++){
-
-            //System.out.println(series.get(i));
-            //ajouter le container à la form
-            this.add(addSeriesHolder(products.get(i)));
+            //this.add(addSeriesHolder(products.get(i)));
+            System.out.println(addSeriesHolder(products.get(i)));
+            System.exit(0);
         }
+        this.getToolbar().addMaterialCommandToLeftBar("", FontImage.MATERIAL_ARROW_BACK, e-> previous.showBack());
         /*
         theme = UIManager.initNamedTheme("/theme", "Theme");
         List<Button> list_button = new ArrayList<Button>();
@@ -123,7 +162,7 @@ public class ShopForm extends BaseForm {
                    List<LignePanier> ProduitSingle = new ArrayList<LignePanier>();
                    ProduitSingle.add(new LignePanier(book.getId(),book.getName(),book.getPrice(),book.getQuantity(),book.getImage(),1));
                    Storage.getInstance().writeObject("ProduitSingle", ProduitSingle);
-                   Form f = new ProductSingleForm(book);
+                   Form f = new ProductSingleForm(book,current,theme);
                    f.show();
                }
 

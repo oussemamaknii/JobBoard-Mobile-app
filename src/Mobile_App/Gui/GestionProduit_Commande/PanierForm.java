@@ -16,6 +16,7 @@ import com.codename1.ui.*;
 import com.codename1.ui.layouts.BoxLayout;
 import com.codename1.ui.plaf.Border;
 import com.codename1.ui.plaf.Style;
+import com.codename1.ui.util.Resources;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -25,12 +26,14 @@ import java.util.List;
 
 public class PanierForm extends BaseForm {
 
-    public PanierForm() {
+
+    public PanierForm(Form previous, Resources res) {
         this.setTitle("Cart");
         this.setLayout(BoxLayout.y());
+        this.getToolbar().addMaterialCommandToLeftBar("", FontImage.MATERIAL_ARROW_BACK, e-> previous.showBack());
         this.getToolbar().addCommandToLeftBar("BackToShop", null, (evt2) -> {
-            Form f1 = new ShopForm();
-            f1.show();
+            /*Form f1 = new ShopForm();
+            f1.show();*/
         });
 
         List<LignePanier> panier = new ArrayList<LignePanier>();
@@ -101,7 +104,7 @@ public class PanierForm extends BaseForm {
                         Panier myCart = new Panier(cart1.getQuantite(), idLastOrder, cart1.getIdProduit());
                         if (new PanierService().addPanier(myCart)) {
                             Dialog.show("Success", "Connection accepted", new Command("OK"));
-                            Form f1 = new ShopForm();
+                            Form f1 = new ShopForm(previous,res);
                             f1.show();
                         } else Dialog.show("ERROR", "Server error", new Command("OK"));
                     }

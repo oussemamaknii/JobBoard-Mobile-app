@@ -1,5 +1,6 @@
 package Mobile_App.Gui;
 
+import Mobile_App.Gui.GestionProduit_Commande.ShopForm;
 import Mobile_App.Gui.Offre_Emploi.ListViewOffer;
 import Mobile_App.Gui.Offre_Emploi.Stat;
 import Mobile_App.Gui.event.ListViewEvent;
@@ -47,6 +48,8 @@ public class SideMenu extends Form {
                 new ListViewEvent(this, res).show());
         getToolbar().addMaterialCommandToSideMenu("  Statistics", FontImage.MATERIAL_ANALYTICS, e ->
                 new Stat(this, res).createPieChartForm().show());
+        getToolbar().addMaterialCommandToSideMenu("  Shop", FontImage.MATERIAL_STORE, e ->
+                new ShopForm(this, res).show());
         getToolbar().addMaterialCommandToSideMenu("  Meetings", FontImage.MATERIAL_TRENDING_UP, null);
         getToolbar().addMaterialCommandToSideMenu("  Projects", FontImage.MATERIAL_ACCESS_TIME, null);
         getToolbar().addMaterialCommandToSideMenu("  Releases", FontImage.MATERIAL_ACCESS_TIME, null);
