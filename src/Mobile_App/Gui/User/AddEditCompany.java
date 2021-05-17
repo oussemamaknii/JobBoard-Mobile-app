@@ -77,7 +77,6 @@ public class AddEditCompany extends SideMenu {
                     }
                 }
             });
-            removeAll();
             addAll(tfCompanyName, tfCompanyAdress, tfCategory, tfContactPhone, tfFacebookLink, date, tfWebsite, tfDescription, date, btnValider);
             getToolbar().addMaterialCommandToLeftBar("", FontImage.MATERIAL_ARROW_BACK
                     , e -> previous.showBack());

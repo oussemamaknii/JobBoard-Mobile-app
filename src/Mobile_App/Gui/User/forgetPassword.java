@@ -10,6 +10,7 @@ import com.codename1.ui.layouts.FlowLayout;
 import com.codename1.ui.util.Resources;
 import com.twilio.Twilio;
 import com.twilio.type.PhoneNumber;
+import com.twilio.rest.api.v2010.account.Message;
 
 import java.util.Random;
 
@@ -35,7 +36,7 @@ public class forgetPassword extends Form {
         TextField email = new TextField("", "Email", 20, TextField.ANY);
         email.setSingleLineTextArea(false);
 
-        Button signIn = new Button("Sign In");
+        Button signIn = new Button("Send");
 
         Container content = BoxLayout.encloseY(
                 new FloatingHint(email),
@@ -48,7 +49,7 @@ public class forgetPassword extends Form {
 
         signIn.addActionListener(e -> {
             if (email.getText().isEmpty()) {
-                Dialog.show("Error", "Email est vide ", "Ok", null);
+                Dialog.show("Error", "Please enter your email", "Ok", null);
 
             } else {
                 Session.setForgetPassMail(email.getText());
@@ -79,10 +80,10 @@ public class forgetPassword extends Form {
         getTitleArea().setUIID("Container");
         setUIID("SignIn");
         add(new Label(res.getImage("Logo.png"), "LogoLabel"));
-        add(new Label("Nous avons envoyer un code à votre numéro"));
+        add(new Label("A message has been sent to your phone number"));
         TextField email1 = new TextField("", "Code", 20, TextField.ANY);
         email1.setSingleLineTextArea(false);
-        Button signIn1 = new Button("Envoyer !");
+        Button signIn1 = new Button("Send !");
         Container content1 = BoxLayout.encloseY(
                 new FloatingHint(email1),
                 new BaseForm().createLineSeparator(),

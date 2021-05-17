@@ -23,19 +23,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4849d1b8-1647-420d-8b15-5bd2191cbf14" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/twilio-7.18.0-jar-with-dependencies.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Codename_One_Libraries.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Codename_One_Libraries.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_5_10_2021_3_14_PM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_5_10_2021_3_14_PM__Default_Changelist_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/twilio-8.11.0.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/User/login$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/User/login$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/User/login.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/User/login.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/loginService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/loginService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Utils/Session.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Utils/Session.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/SideMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/SideMenu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Gui/SideMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/SideMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Gui/User/AddEditCompany.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/User/AddEditCompany.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Mobile_App/Gui/User/forgetPassword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/User/forgetPassword.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Gui/User/login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/User/login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Utils/Session.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Utils/Session.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,8 +86,8 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/twilio-7.18.0-jar-with-dependencies.jar" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../kraya/pi/JobHub-Desktop-Application" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.13927579" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
@@ -105,11 +98,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Ryaan\Desktop\Mobile-app\lib" />
       <recent name="C:\Users\Ryaan\Desktop\kraya\pi\Mobile-app" />
       <recent name="C:\Users\Ryaan\Desktop\kraya\pi\Mobile-app\lib" />
       <recent name="C:\Users\Ryaan\Desktop\kraya\pi\Mobile-app\res\theme" />
       <recent name="C:\Users\Ryaan\Desktop\kraya\pi\Mobile-app\res" />
-      <recent name="C:\Users\Ryaan\Desktop\kraya\pi\Mobile-app\src\Mobile_App" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Ryaan\Desktop\kraya\pi\Mobile-app\lib" />
