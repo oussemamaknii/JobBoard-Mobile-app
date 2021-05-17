@@ -2,6 +2,7 @@ package Mobile_App.Gui;
 
 import Mobile_App.Gui.Offre_Emploi.ListViewOffer;
 import Mobile_App.Gui.Offre_Emploi.Stat;
+import Mobile_App.Gui.User.AddEditCompany;
 import Mobile_App.Gui.User.addEditResume;
 import Mobile_App.Gui.User.login;
 import Mobile_App.Gui.event.*;
@@ -53,14 +54,15 @@ public class SideMenu extends Form {
                 new Stat(this, res).createPieChartForm().show());
         getToolbar().addMaterialCommandToSideMenu("  Resume", FontImage.MATERIAL_TRENDING_UP,  e ->
                 new addEditResume(this,null,res).show());
-        getToolbar().addMaterialCommandToSideMenu("  Projects", FontImage.MATERIAL_ACCESS_TIME, null);
+        getToolbar().addMaterialCommandToSideMenu("  Company", FontImage.MATERIAL_TRENDING_UP,  e ->
+                new AddEditCompany(this,null,res).show());
         getToolbar().addMaterialCommandToSideMenu("  Releases", FontImage.MATERIAL_ACCESS_TIME, null);
 
         getToolbar().addMaterialCommandToSideMenu("  Documents", FontImage.MATERIAL_TRENDING_UP, null);
         getToolbar().addMaterialCommandToSideMenu("  Issues", FontImage.MATERIAL_ACCESS_TIME, null);
 
         getToolbar().addMaterialCommandToSideMenu("  Meeting Claims", FontImage.MATERIAL_ACCESS_TIME, null);
-        getToolbar().addMaterialCommandToSideMenu("  Account Settings", FontImage.MATERIAL_SETTINGS, null);
+        getToolbar().addMaterialCommandToSideMenu(" Update Profile", FontImage.MATERIAL_SETTINGS, null);
 
         getToolbar().addMaterialCommandToSideMenu("  Logout", FontImage.MATERIAL_EXIT_TO_APP, 0,e -> new login(res).show());
 

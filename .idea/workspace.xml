@@ -23,16 +23,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4849d1b8-1647-420d-8b15-5bd2191cbf14" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_5_10_2021_3_14_PM_[Default_Changelist]/ListViewOffer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_5_10_2021_3_14_PM_[Default_Changelist]/Offer_Service.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_5_10_2021_3_14_PM_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_5_10_2021_3_14_PM__Default_Changelist_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/User/addEditResume$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/User/addEditResume$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/User/addEditResume$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/User/addEditResume.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/User/addEditResume.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Gui/User/AddEditCompany.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/User/AddEditCompany.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Gui/User/addEditResume.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/User/addEditResume.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Gui/SideMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/SideMenu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
