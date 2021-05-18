@@ -25,7 +25,7 @@ public class Stat extends SideMenu {
         tb.setTitleCentered(false);
         setupSideMenu(res);
         this.setTitle("Offer Statistics");
-        this.setLayout(new FlowLayout(CENTER, CENTER));
+        this.setLayout(new BorderLayout());
         this.getToolbar().addMaterialCommandToLeftBar("", FontImage.MATERIAL_ARROW_BACK
                 , e -> previous.showBack());
     }
@@ -85,10 +85,8 @@ public class Stat extends SideMenu {
         // Wrap the chart in a Component so we can add it to a form
         ChartComponent c = new ChartComponent(chart);
 
-        // Create a form and show it.
-        Form f = new Form("Offer Statistics", new BorderLayout());
-        f.add(BorderLayout.CENTER, c);
-        return f;
+        this.add(BorderLayout.CENTER, c);
+        return this;
 
     }
 }
