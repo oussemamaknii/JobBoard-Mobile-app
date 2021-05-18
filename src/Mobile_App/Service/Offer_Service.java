@@ -32,7 +32,6 @@ public class Offer_Service {
         }
         return instance;
     }
-
     public boolean addOffer(Offre_Emploi t) {
         String url = Statics.BASE_URL + "/addofferjson?titre=" + t.getTitre() + "&poste=" + t.getPoste() +
                 "&description=" + t.getDescription() + "&location=" + t.getLocation()

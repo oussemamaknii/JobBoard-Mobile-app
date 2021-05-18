@@ -1,5 +1,6 @@
 package Mobile_App.Gui.Offre_Emploi;
 
+import Mobile_App.Gui.event.*;
 import Mobile_App.Entities.Events;
 import Mobile_App.Gui.event.AddEvent;
 import com.codename1.io.ConnectionRequest;

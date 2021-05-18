@@ -3,10 +3,10 @@
     <CLASSES>
       <root url="file://$PROJECT_DIR$/lib/impl/cls" />
       <root url="jar://$PROJECT_DIR$/lib/CodenameOne.jar!/" />
+      <root url="jar://$PROJECT_DIR$/twilio-7.18.0-jar-with-dependencies.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="file://$PROJECT_DIR$/lib/impl/stubs" />
       <root url="jar://$PROJECT_DIR$/lib/CodenameOne_SRC.zip!/" />
       <root url="file://$PROJECT_DIR$/lib/impl/native/android" />
       <root url="file://$PROJECT_DIR$/lib/impl/native/j2me" />
