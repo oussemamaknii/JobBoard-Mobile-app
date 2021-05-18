@@ -1,13 +1,14 @@
 package Mobile_App.Entities;
 
 
+import java.time.LocalDate;
 import java.util.Date;
 
 public class Events {
 
     private int id;
     private String nom;
-    private Date date;
+    private LocalDate date;
     private String description;
     private int prix;
     private String adresse, file;
@@ -16,7 +17,7 @@ public class Events {
     public Events(
             int id,
             String nom,
-            Date date,
+            LocalDate date,
             String description,
             int prix,
             String adresse,
@@ -44,7 +45,7 @@ public class Events {
         return nom;
     }
 
-    public Date getDate() {
+    public LocalDate getDate() {
         return date;
     }
 
@@ -76,7 +77,7 @@ public class Events {
         this.nom = nom;
     }
 
-    public void setDate(Date date) {
+    public void setDate(LocalDate date) {
         this.date = date;
     }
 

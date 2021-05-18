@@ -66,8 +66,9 @@ public class EventService {
                 float nbrePlace = Float.parseFloat(obj.get("nbrePlace").toString());
                 t.setId((int) id);
                 t.setNom(obj.get("nom").toString());
-                Date date1 = Date.from(Instant.parse(obj.get("date").toString()));
-                t.setDate(date1);
+                DateTimeFormatter df = DateTimeFormatter.ofPattern("yyyy-MM-d");
+                LocalDate date1 = LocalDate.parse(obj.get("date").toString().substring(0,9),df);
+                t.setDate( date1);
                 t.setDescription(obj.get("description").toString());
                 t.setPrix((int) prix);
                 t.setAdresse(obj.get("adresse").toString());

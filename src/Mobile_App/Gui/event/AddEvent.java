@@ -15,6 +15,7 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.time.ZoneId;
 import java.util.Date;
 
 public class AddEvent extends SideMenu {
@@ -77,7 +78,9 @@ public class AddEvent extends SideMenu {
 
                         setImageFile(new File(tffile.getText()));
                         File f=new File(getImageFile().getAbsolutePath());
-                        Events offer = new Events(0, tfTitle.getText(), dateTimePicker.getDate(), tfdescription.getText(), Integer.parseInt(tflocation.getText()),
+                        Events offer = new Events(0, tfTitle.getText(), dateTimePicker.getDate().toInstant()
+                                .atZone(ZoneId.systemDefault())
+                                .toLocalDate(), tfdescription.getText(), Integer.parseInt(tflocation.getText()),
                                 tfPost.getText(), "event2.jpg", Integer.parseInt(nbr.getText()));
                         Files.move(Paths.get(tffile.getText().substring(7)),
                                 Paths.get("C:\\Users\\souso\\Desktop\\Mobile App\\res\\events\\"+f.getName()));
@@ -112,7 +115,11 @@ public class AddEvent extends SideMenu {
             Button fc = new Button("file chooser");
             Picker dateTimePicker = new Picker();
             dateTimePicker.setType(Display.PICKER_TYPE_DATE_AND_TIME);
-            dateTimePicker.setDate(o.getDate());
+
+            ZoneId defaultZoneId = ZoneId.systemDefault();
+
+            Date date = Date.from(o.getDate().atStartOfDay(defaultZoneId).toInstant());
+            dateTimePicker.setDate(date);
 
             Button btnValider = new Button("Update Event");
 
@@ -138,12 +145,12 @@ public class AddEvent extends SideMenu {
 
                         setImageFile(new File(tffile.getText()));
                         File f=new File(getImageFile().getAbsolutePath());
-                        Events offer = new Events(o.getId(), tfTitle.getText(), dateTimePicker.getDate(), tfdescription.getText(), Integer.parseInt(tflocation.getText()),
+                        Events offer = new Events(o.getId(), tfTitle.getText(), dateTimePicker.getDate().toInstant()
+                                .atZone(ZoneId.systemDefault())
+                                .toLocalDate(), tfdescription.getText(), Integer.parseInt(tflocation.getText()),
                                 tfPost.getText(), "event2.jpg", Integer.parseInt(nbr.getText()));
                         Files.move(Paths.get(tffile.getText().substring(7)),
                                 Paths.get("C:\\Users\\souso\\Desktop\\Mobile App\\res\\events\\"+f.getName()));
-                        Files.move(Paths.get(tffile.getText().substring(7)),
-                                Paths.get("C:\\wamp64\\www\\jobBoard-web\\public\\uploads\\Image\\"+f.getName()));
 
                         if (EventService.getInstance().modOffer(offer)) {
                             Dialog.show("Success", "UPDATED Successfully !", new Command("OK"));
