@@ -10,6 +10,7 @@ import Mobile_App.Gui.Offre_Emploi.AddOffer;
 import Mobile_App.Gui.Offre_Emploi.ListViewOffer;
 import Mobile_App.Gui.Offre_Emploi.Stat;
 import Mobile_App.Gui.User.AddEditCompany;
+import Mobile_App.Gui.User.showCandidates;
 import com.codename1.ui.Button;
 import com.codename1.ui.Form;
 import com.codename1.ui.Label;
@@ -39,13 +40,16 @@ public class HomeForm extends SideMenu {
         Button btnListapps = new Button("List Applications");
         Button btnResume = new Button("Update Resume");
         Button btnCompany = new Button("Update Company");
+        Button btnCandidates = new Button("Candidates List");
+        btnCandidates.addActionListener(e -> new showCandidates(current, res));
+
         btnAddTask.addActionListener(e -> new AddOffer(current,null,res).show());
         btnListTasks.addActionListener(e -> new ListViewOffer(current,res).show());
         btnResume.addActionListener(e -> new addEditResume(current,null,res).show());
         btnCompany.addActionListener(e -> new AddEditCompany(current,null,res).show());
 
         btnListapps.addActionListener(e -> new ListApps(current,res).show());
-        addAll(btnAddTask, btnListTasks,btnListapps,btnResume,btnCompany);
+        addAll(btnAddTask, btnListTasks,btnListapps,btnResume,btnCompany,btnCandidates);
 
     }
 
