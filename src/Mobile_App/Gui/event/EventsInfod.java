@@ -35,7 +35,7 @@ public class EventsInfod extends SideMenu {
             Container details = new Container(BoxLayout.y());
             Container titleDuree = new Container(BoxLayout.x());
 
-            ImageViewer image = new ImageViewer(Main.theme.getImage("job.png").scaled(250, 350));
+            ImageViewer image = new ImageViewer(res.getImage(s.getFile()).scaled(250, 350));
 
             Label lbTitle = new Label(s.getNom());
             Label lDescription = new Label(s.getDescription());

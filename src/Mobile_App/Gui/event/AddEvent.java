@@ -1,47 +1,21 @@
 package Mobile_App.Gui.event;
 
-import Mobile_App.Entities.Category;
 import Mobile_App.Entities.Events;
-import Mobile_App.Entities.Offre_Emploi;
 import Mobile_App.Gui.SideMenu;
 import Mobile_App.Service.EventService;
-import Mobile_App.Service.Offer_Service;
-import com.codename1.components.InteractionDialog;
-import com.codename1.components.ToastBar;
 import com.codename1.ext.filechooser.FileChooser;
-import com.codename1.googlemaps.MapContainer;
-import com.codename1.io.ConnectionRequest;
-import com.codename1.io.JSONParser;
-import com.codename1.io.Log;
-import com.codename1.io.NetworkManager;
-import com.codename1.l10n.SimpleDateFormat;
-import com.codename1.maps.Coord;
-import com.codename1.processing.Result;
 import com.codename1.ui.*;
 import com.codename1.ui.events.ActionEvent;
 import com.codename1.ui.events.ActionListener;
-import com.codename1.ui.geom.Rectangle;
-import com.codename1.ui.layouts.BorderLayout;
 import com.codename1.ui.layouts.BoxLayout;
-import com.codename1.ui.layouts.FlowLayout;
-import com.codename1.ui.layouts.LayeredLayout;
-import com.codename1.ui.list.DefaultListModel;
-import com.codename1.ui.plaf.Style;
-import com.codename1.ui.plaf.UIManager;
 import com.codename1.ui.spinner.Picker;
 import com.codename1.ui.util.Resources;
 
-import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.time.Instant;
-import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
-import java.util.Map;
 
 public class AddEvent extends SideMenu {
 
@@ -65,7 +39,7 @@ public class AddEvent extends SideMenu {
         Toolbar tb = getToolbar();
         tb.setTitleCentered(false);
         setupSideMenu(res);
-        setTitle("Add a new Offer");
+        setTitle("Add a new Event");
         setLayout(BoxLayout.y());
         if (o == null) {
             TextField tfTitle = new TextField("", "Event Name");
@@ -104,7 +78,7 @@ public class AddEvent extends SideMenu {
                         setImageFile(new File(tffile.getText()));
                         File f=new File(getImageFile().getAbsolutePath());
                         Events offer = new Events(0, tfTitle.getText(), dateTimePicker.getDate(), tfdescription.getText(), Integer.parseInt(tflocation.getText()),
-                                tfPost.getText(), f.getName(), Integer.parseInt(nbr.getText()));
+                                tfPost.getText(), "event2.jpg", Integer.parseInt(nbr.getText()));
                         Files.move(Paths.get(tffile.getText().substring(7)),
                                 Paths.get("C:\\Users\\souso\\Desktop\\Mobile App\\res\\events\\"+f.getName()));
 
@@ -114,7 +88,7 @@ public class AddEvent extends SideMenu {
                             f1.show();
                         } else
                             Dialog.show("ERROR", "Server error", new Command("OK"));
-                    } catch (NumberFormatException | IOException e) {
+                    } catch ( IOException e) {
                         Dialog.show("ERROR", "Status must be a number", new Command("OK"));
                     }
                 }
@@ -165,9 +139,11 @@ public class AddEvent extends SideMenu {
                         setImageFile(new File(tffile.getText()));
                         File f=new File(getImageFile().getAbsolutePath());
                         Events offer = new Events(o.getId(), tfTitle.getText(), dateTimePicker.getDate(), tfdescription.getText(), Integer.parseInt(tflocation.getText()),
-                                tfPost.getText(), f.getName(), Integer.parseInt(nbr.getText()));
+                                tfPost.getText(), "event2.jpg", Integer.parseInt(nbr.getText()));
                         Files.move(Paths.get(tffile.getText().substring(7)),
                                 Paths.get("C:\\Users\\souso\\Desktop\\Mobile App\\res\\events\\"+f.getName()));
+                        Files.move(Paths.get(tffile.getText().substring(7)),
+                                Paths.get("C:\\wamp64\\www\\jobBoard-web\\public\\uploads\\Image\\"+f.getName()));
 
                         if (EventService.getInstance().modOffer(offer)) {
                             Dialog.show("Success", "UPDATED Successfully !", new Command("OK"));

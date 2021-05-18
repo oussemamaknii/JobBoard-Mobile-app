@@ -23,33 +23,76 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="20ad8530-0994-414f-a681-8ba82ed47fc9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/res/offres/temp11122121304940294342..png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/offres/temp13733642292511141448..png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/offres/temp2127034989048007397..png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/offres/temp5779116660877301445..png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/events/temp10430456607835163343..jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/events/temp10496428100696574084..jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/events/temp11813910256630280117..jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/events/temp1219384982339228441..jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/events/temp12575739175555281559..png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/events/temp15172127657984149862..jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/events/temp15751982659186391328..jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/events/temp16432874730479767537..png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/events/temp18208705966610770702..jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/events/temp2316662077251959500..jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/events/temp2537894556410861857..jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/events/temp2602395236985823646..jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/events/temp2755525657648069246..png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/events/temp4824004602856234208..png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/events/temp6899188075192035360..png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/events/temp6914922163573050735..png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/events/temp7190635857533950925..jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/events/temp7197822343397132542..jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/events/temp7380862915367331783..jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/events/temp8421051324248951923..png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/events/temp8628417981851133430..jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/events/temp9003145006754645928..jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/events/temp9300278628449092637..jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/events/temp9385309943362272701..jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/offres/temp10827817241313228418..jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/offres/temp14641399690452995902..png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/offres/temp15453106660726439578..png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/offres/temp6334733401002080221..jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Codename_One_Libraries.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Codename_One_Libraries.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/impl/stubs/com/codename1/ext/filechooser/FileChooser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/impl/stubs/com/codename1/ext/filechooser/FileChooserNative.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/BaseForm$MySheet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/BaseForm$MySheet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/BaseForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/BaseForm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/GestionProduit_Commande/PanierForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/GestionProduit_Commande/PanierForm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/GestionProduit_Commande/ProductSingleForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/GestionProduit_Commande/ProductSingleForm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/GestionProduit_Commande/ShopForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/GestionProduit_Commande/ShopForm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/HomeForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/HomeForm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/AddOffer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/AddOffer$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Entities/Category.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Entities/Category.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Entities/Comment.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Entities/Comment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Entities/Demande_Recrutement.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Entities/Demande_Recrutement.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Entities/Events.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Entities/Events.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Entities/Offre_Emploi.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Entities/Offre_Emploi.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Demande/AppInfos.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Demande/AppInfos.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Demande/ListApps.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Demande/ListApps.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/AddOffer$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/AddOffer$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/AddOffer$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/AddOffer$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/AddOffer$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/AddOffer$4.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/AddOffer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/AddOffer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/GoogleMapsTestApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/GoogleMapsTestApp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/ListViewOffer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/ListViewOffer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/OfferInfos.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/OfferInfos.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/Stat.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/Stat.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/SideMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/SideMenu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/ServiceGPC/CommandeService$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/ServiceGPC/CommandeService$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/ServiceGPC/CommandeService$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/ServiceGPC/CommandeService$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/ServiceGPC/CommandeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/ServiceGPC/CommandeService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/event/AddEvent$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/event/AddEvent$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/event/AddEvent$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/event/AddEvent$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/event/AddEvent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/event/AddEvent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/event/EventsInfod.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/event/EventsInfod.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/event/ListViewEvent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/event/ListViewEvent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/CommentsService$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/CommentsService$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/CommentsService$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/CommentsService$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/CommentsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/CommentsService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/DemandeService$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/DemandeService$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/DemandeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/DemandeService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/EventService$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/EventService$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/EventService$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/EventService$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/EventService$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/EventService$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/EventService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/EventService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/Offer_Service$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/Offer_Service$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/Offer_Service$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/Offer_Service$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/Offer_Service$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/Offer_Service$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/Offer_Service$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/Offer_Service$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/Offer_Service$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/Offer_Service$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/Offer_Service.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/Offer_Service.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Utils/Statics.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Utils/Statics.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Mobile_App/Gui/Offre_Emploi/AddOffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/Offre_Emploi/AddOffer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Gui/Offre_Emploi/Stat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/Offre_Emploi/Stat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Gui/Offre_Emploi/OfferInfos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/Offre_Emploi/OfferInfos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Gui/event/AddEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/event/AddEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Gui/event/EventsInfod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/event/EventsInfod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Gui/event/ListViewEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/event/ListViewEvent.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +134,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../Index_Passée/PIMobile/CyclePro" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.13927579" />
     <property name="project.structure.side.proportion" value="0.2" />

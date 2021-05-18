@@ -8,6 +8,12 @@
     <SOURCES>
       <root url="file://$PROJECT_DIR$/lib/impl/stubs" />
       <root url="jar://$PROJECT_DIR$/lib/CodenameOne_SRC.zip!/" />
+      <root url="file://$PROJECT_DIR$/lib/impl/native/android" />
+      <root url="file://$PROJECT_DIR$/lib/impl/native/j2me" />
+      <root url="file://$PROJECT_DIR$/lib/impl/native/javase" />
+      <root url="file://$PROJECT_DIR$/lib/impl/native/rim" />
+      <root url="file://$PROJECT_DIR$/lib/impl/stubs" />
+      <root url="file://$PROJECT_DIR$/src" />
     </SOURCES>
   </library>
 </component>

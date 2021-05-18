@@ -43,8 +43,8 @@ public class ListViewEvent extends SideMenu {
             Container holder = new Container(BoxLayout.x());
             Container details = new Container(BoxLayout.y());
             Container titleDuree = new Container(BoxLayout.x());
-            ;
 
+            System.out.println(res.getImage(s.getFile()));
             ImageViewer image = new ImageViewer(res.getImage(s.getFile()).scaled(250, 350));
 
             Label lbTitle = new Label(s.getNom());

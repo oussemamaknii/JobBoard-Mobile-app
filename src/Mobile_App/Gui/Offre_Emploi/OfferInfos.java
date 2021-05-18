@@ -83,7 +83,7 @@ public class OfferInfos extends SideMenu {
             Container desc = new Container(new FlowLayout(CENTER, CENTER));
             desc.add(new Label("Job Offer Requirements"));
 
-            ImageViewer image2 = new ImageViewer(Main.theme.getImage("desc.png").scaled(this.getWidth(), Main.theme.getImage("desc.png").getHeight() * 2));
+            ImageViewer image2 = new ImageViewer(res.getImage(s.getFile()).scaled(this.getWidth(), res.getImage(s.getFile()).getHeight() * 3));
             desc.add(image2);
 
 

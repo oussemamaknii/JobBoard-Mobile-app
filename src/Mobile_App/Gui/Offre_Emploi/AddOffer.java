@@ -220,7 +220,7 @@ public class AddOffer extends SideMenu {
                         setImageFile(new File(tffile.getText()));
                         File f=new File(getImageFile().getAbsolutePath());
                         Offre_Emploi offer = new Offre_Emploi(0, categ.getSelectedItem().getId(), tfTitle.getText(), tfPost.getText(), tfdescription.getText(), tflocation.getText(),
-                                f.getName(), tfemail.getText(), date, (Date) dateTimePicker.getValue(), Integer.parseInt(tfmax.getText()),
+                                "desc.png", tfemail.getText(), date, (Date) dateTimePicker.getValue(), Integer.parseInt(tfmax.getText()),
                                 Integer.parseInt(tfmin.getText()));
                         Files.move(Paths.get(tffile.getText().substring(7)),
                                 Paths.get("C:\\Users\\souso\\Desktop\\Mobile App\\res\\offres\\"+f.getName()));
