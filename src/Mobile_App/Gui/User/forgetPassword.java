@@ -1,9 +1,11 @@
 package Mobile_App.Gui.User;
 
 import Mobile_App.Entities.User;
+import Mobile_App.Service.LoginService;
 import Mobile_App.Utils.BaseForm;
 import Mobile_App.Utils.Session;
 import com.codename1.components.FloatingHint;
+import com.codename1.social.Login;
 import com.codename1.ui.*;
 import com.codename1.ui.layouts.BoxLayout;
 import com.codename1.ui.layouts.FlowLayout;
@@ -52,14 +54,18 @@ public class forgetPassword extends Form {
                 Dialog.show("Error", "Please enter your email", "Ok", null);
 
             } else {
-                Session.setForgetPassMail(email.getText());
-                code(res);
+            //    Session.setForgetPassMail(email.getText());
+              LoginService ser = new LoginService();
+              ser.sendEmail(email.getText());
+         //       System.out.println(email.getText());
+
 
             }
         });
         show();
 
     }
+
 
     public void code(Resources res) {
 

@@ -23,8 +23,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4849d1b8-1647-420d-8b15-5bd2191cbf14" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/User/showResume.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/HomeForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/HomeForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/loginService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Service/loginService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Gui/HomeForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/HomeForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Gui/User/forgetPassword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/User/forgetPassword.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Mobile_App/Gui/User/showCandidates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/User/showCandidates.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Service/LoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Service/LoginService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Service/show.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Service/show.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,5 +199,15 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

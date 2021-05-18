@@ -61,6 +61,23 @@ public class LoginService {
 
 
     }
+    public void deleteResume(int id){
+        ConnectionRequest con = new ConnectionRequest();
+        con.addRequestHeader("Content-Type", "application/json");
+        con.setPost(false);
+        con.setUrl(Statics.BASE_URL_RYAAN + "api/deleteresumeApi" + id);
+        con.addResponseListener((NetworkEvent evt) -> {
+            if (con.getResponseCode() == 200){
+                System.out.println("Deleted");
+            } else{
+                System.out.println("Error");
+            }
+        });
+        NetworkManager.getInstance().addToQueueAndWait(con);
+
+
+
+    }
 
     public void SingUp(String firstName, String lastName, Date dateOfBirth, int phone, String adresse, String professionalTitle, String password, String email) {
 
@@ -96,7 +113,27 @@ public class LoginService {
     public void doLogout(Session session){
     session = new Session();
 
+    }
+    public void sendEmail(String email){
+        MultipartRequest con = new MultipartRequest();
 
+        System.out.println(email);
+
+        con.setUrl(Statics.BASE_URL_RYAAN+"api/request-password-api" + "?email="+email);
+        con.setPost(true);
+
+        con.addResponseListener(new ActionListener<NetworkEvent>() {
+            @Override
+            public void actionPerformed(NetworkEvent evt) {
+                if (con.getResponseCode() == 200) {
+                    Dialog.show("Success", "Added Successfully", "Ok", null);
+                } else {
+                    Dialog.show("Failed", "Existing User", "Ok", null);
+                }
+            }
+        });
+    }
     }
 
-}
+
+
