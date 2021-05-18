@@ -83,7 +83,7 @@ public class AddEvent extends SideMenu {
                                 .toLocalDate(), tfdescription.getText(), Integer.parseInt(tflocation.getText()),
                                 tfPost.getText(), "event2.jpg", Integer.parseInt(nbr.getText()));
                         Files.move(Paths.get(tffile.getText().substring(7)),
-                                Paths.get("C:\\Users\\souso\\Desktop\\Mobile App\\res\\events\\"+f.getName()));
+                                Paths.get("C:\\Users\\Ryaan\\Desktop\\Mobile-app\\res\\events\\"+f.getName()));
 
                         if (EventService.getInstance().addOffer(offer)) {
                             Dialog.show("Success", "Added Successfully !", new Command("OK"));

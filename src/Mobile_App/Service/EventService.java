@@ -1,15 +1,12 @@
 package Mobile_App.Service;
 
-import Mobile_App.Entities.Category;
 import Mobile_App.Entities.Events;
-import Mobile_App.Entities.Offre_Emploi;
 import Mobile_App.Utils.Statics;
 import com.codename1.io.*;
 import com.codename1.l10n.SimpleDateFormat;
 import com.codename1.ui.events.ActionListener;
 
 import java.io.IOException;
-import java.time.Instant;
 import java.time.LocalDate;
 import java.util.Date;
 import java.time.format.DateTimeFormatter;
@@ -35,7 +32,7 @@ public class EventService {
     }
 
     public boolean addOffer(Events t) {
-        String url = Statics.BASE_URL + "/ajoutereventjson?nom=" + t.getNom() + "&date=" + t.getDate() +
+        String url = Statics.BASE_URL_RYAAN + "/ajoutereventjson?nom=" + t.getNom() + "&date=" + t.getDate() +
                 "&description=" + t.getDescription() + "&prix=" + t.getPrix()
                 + "&adresse=" + t.getAdresse() + "&image=" + t.getFile() + "&nbrePlace="+t.getNbre_place();
         System.out.println(url);
@@ -66,8 +63,8 @@ public class EventService {
                 float nbrePlace = Float.parseFloat(obj.get("nbrePlace").toString());
                 t.setId((int) id);
                 t.setNom(obj.get("nom").toString());
-                DateTimeFormatter df = DateTimeFormatter.ofPattern("yyyy-MM-d");
-                LocalDate date1 = LocalDate.parse(obj.get("date").toString().substring(0,9),df);
+                DateTimeFormatter df = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+                LocalDate date1 = LocalDate.parse(obj.get("date").toString().substring(0,10),df);
                 t.setDate( date1);
                 t.setDescription(obj.get("description").toString());
                 t.setPrix((int) prix);
@@ -83,7 +80,7 @@ public class EventService {
     }
 
     public ArrayList<Events> getAllEvents() {
-        String url = Statics.BASE_URL + "/listEventjson";
+        String url = Statics.BASE_URL_RYAAN + "/listEventjson";
         req.setUrl(url);
         req.setPost(false);
         req.addResponseListener(new ActionListener<NetworkEvent>() {
@@ -98,7 +95,7 @@ public class EventService {
     }
 
     public void deleteoffer(int o) {
-        String url = Statics.BASE_URL + "/deleteeventjson?id=" + o;
+        String url = Statics.BASE_URL_RYAAN + "/deleteeventjson?id=" + o;
         req.setUrl(url);
         req.setPost(false);
         NetworkManager.getInstance().addToQueueAndWait(req);
