@@ -53,7 +53,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../Index_Passée/PIMobile/CyclePro" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.13927579" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -121,10 +121,10 @@
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="548" y="373" width="506" height="217" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1600.900@0.0.1600.900" timestamp="1620305284552" />
-    <state x="628" y="167" key="FileChooserDialogImpl" timestamp="1620934986952">
+    <state x="628" y="167" key="FileChooserDialogImpl" timestamp="1621349946450">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state x="628" y="167" key="FileChooserDialogImpl/0.0.1600.900@0.0.1600.900" timestamp="1620934986952" />
+    <state x="628" y="167" key="FileChooserDialogImpl/0.0.1600.900@0.0.1600.900" timestamp="1621349946450" />
     <state width="1539" height="155" key="GridCell.Tab.0.bottom" timestamp="1621295441707">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
@@ -141,9 +141,9 @@
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state width="1539" height="155" key="GridCell.Tab.0.right/0.0.1600.900@0.0.1600.900" timestamp="1621295441707" />
-    <state x="326" y="67" width="1040" height="807" key="SettingsEditor" timestamp="1619890730387">
+    <state x="326" y="67" width="1040" height="807" key="SettingsEditor" timestamp="1621349915165">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state x="326" y="67" width="1040" height="807" key="SettingsEditor/0.0.1600.900@0.0.1600.900" timestamp="1619890730387" />
+    <state x="326" y="67" width="1040" height="807" key="SettingsEditor/0.0.1600.900@0.0.1600.900" timestamp="1621349915165" />
   </component>
 </project>
