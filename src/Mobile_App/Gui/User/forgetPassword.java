@@ -59,10 +59,7 @@ public class forgetPassword extends Form {
             }
         });
         show();
-
-
     }
-
 
     public void code(Resources res) {
 
