@@ -1,5 +1,6 @@
 package Mobile_App.Gui;
 
+import Mobile_App.Gui.GestionProduit_Commande.ShopForm;
 import Mobile_App.Gui.Offre_Emploi.ListViewOffer;
 import Mobile_App.Gui.Offre_Emploi.Stat;
 import Mobile_App.Gui.User.AddEditCompany;
@@ -56,6 +57,10 @@ public class SideMenu extends Form {
                 new addEditResume(this,null,res).show());
         getToolbar().addMaterialCommandToSideMenu("  Company", FontImage.MATERIAL_TRENDING_UP,  e ->
                 new AddEditCompany(this,null,res).show());
+        getToolbar().addMaterialCommandToSideMenu("  Shop", FontImage.MATERIAL_STORE, e ->
+                new ShopForm(this, res).show());
+        getToolbar().addMaterialCommandToSideMenu("  Meetings", FontImage.MATERIAL_TRENDING_UP, null);
+        getToolbar().addMaterialCommandToSideMenu("  Projects", FontImage.MATERIAL_ACCESS_TIME, null);
         getToolbar().addMaterialCommandToSideMenu("  Releases", FontImage.MATERIAL_ACCESS_TIME, null);
 
         getToolbar().addMaterialCommandToSideMenu("  Documents", FontImage.MATERIAL_TRENDING_UP, null);
@@ -67,6 +72,4 @@ public class SideMenu extends Form {
         getToolbar().addMaterialCommandToSideMenu("  Logout", FontImage.MATERIAL_EXIT_TO_APP, 0,e -> new login(res).show());
 
     }
-
-    //protected abstract void showOtherForm(/*User u,*/ Resources res);
 }

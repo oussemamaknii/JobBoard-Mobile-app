@@ -36,14 +36,13 @@ public class ListApps extends SideMenu {
             Container holder = new Container(BoxLayout.x());
             Container details = new Container(BoxLayout.y());
             Container titleDuree = new Container(BoxLayout.x());
-            ;
 
             ImageViewer image = new ImageViewer(Main.theme.getImage("jobapp.png").scaled(250, 350));
 
             Label lbTitle = new Label(s.getOfftit());
             Label lDescription = new Label(s.getUsername());
             Label lDuree;
-            if (s.getStatus())
+            if (s.getStatus() == "true")
                 lDuree = new Label("Treated !");
             else
                 lDuree = new Label("Loading ..");

@@ -8,6 +8,7 @@ import com.codename1.io.Storage;
 import com.codename1.ui.*;
 import com.codename1.ui.layouts.BoxLayout;
 import com.codename1.ui.layouts.FlowLayout;
+import com.codename1.ui.util.Resources;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,17 +16,23 @@ import java.util.List;
 public class ProductSingleForm extends Form {
 
     static int nbr_chargement = 0;
+    private Resources theme=null;
+    Form current = null;
 
-    public ProductSingleForm(Produit book){
+    public ProductSingleForm(Produit book, Form previous, Resources res){
+        current = previous;
+        theme = res;
+
         List<LignePanier> ProduitSingle = new ArrayList<LignePanier>();
         List<LignePanier> panier = new ArrayList<LignePanier>();
         ProduitSingle.addAll(((List<LignePanier>) Storage.getInstance().readObject("ProduitSingle")));
 
         this.setTitle("Book Infos");
         this.setLayout(new FlowLayout(CENTER,CENTER));
+        this.getToolbar().addMaterialCommandToLeftBar("", FontImage.MATERIAL_ARROW_BACK, e-> previous.showBack());
         this.getToolbar().addCommandToLeftBar("BackToShop",null,(evt2)->{
-            Form f1= new ShopForm();
-            f1.show();
+           /* Form f1= new ShopForm();
+            f1.show();*/
         });
         try {
             Container holder = new Container(BoxLayout.y());
@@ -58,7 +65,7 @@ public class ProductSingleForm extends Form {
                   //  panier.add(ProductCart);
                     Storage.getInstance().writeObject("Panier", panier);
                     //new PanierForm(resourceObjectInstance).show();
-                    Form f = new PanierForm();
+                    Form f = new PanierForm(current,theme);
                     f.show();
                     this.nbr_chargement++;
                 } else {
@@ -68,7 +75,7 @@ public class ProductSingleForm extends Form {
                     //panier.add(ProductCart);
                     Storage.getInstance().writeObject("Panier", panier);
                     //new PanierForm(resourceObjectInstance).show();
-                    Form f = new PanierForm();
+                    Form f = new PanierForm(current,theme);
                     f.show();
                 }
             });

@@ -4,14 +4,12 @@ import Mobile_App.Entities.User;
 import Mobile_App.Gui.HomeForm;
 import Mobile_App.Service.LoginService;
 import Mobile_App.Utils.Session;
-import com.codename1.components.ImageViewer;
 import com.codename1.ui.*;
 import com.codename1.ui.events.ActionEvent;
 import com.codename1.ui.events.ActionListener;
 import com.codename1.ui.layouts.BorderLayout;
 import com.codename1.ui.layouts.BoxLayout;
 import com.codename1.ui.layouts.FlowLayout;
-import com.codename1.ui.plaf.UIManager;
 import com.codename1.ui.util.Resources;
 
 

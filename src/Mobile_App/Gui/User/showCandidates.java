@@ -1,9 +1,7 @@
 package Mobile_App.Gui.User;
 
 import Mobile_App.Entities.User;
-import Mobile_App.Gui.HomeForm;
 import Mobile_App.Gui.SideMenu;
-import Mobile_App.Service.LoginService;
 import Mobile_App.Service.show;
 import com.codename1.ui.*;
 import com.codename1.ui.util.Resources;

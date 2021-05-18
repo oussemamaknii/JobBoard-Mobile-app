@@ -81,7 +81,7 @@ public class LoginService {
 
     public void SingUp(String firstName, String lastName, Date dateOfBirth, int phone, String adresse, String professionalTitle, String password, String email) {
 
-     String hashed = BCrypt.hashpw(password, BCrypt.gensalt(13));
+        String hashed = BCrypt.hashpw(password, BCrypt.gensalt(13));
 
         System.err.println(hashed);
 
@@ -111,7 +111,7 @@ public class LoginService {
         NetworkManager.getInstance().addToQueue(con);
     }
     public void doLogout(Session session){
-    session = new Session();
+        session = new Session();
 
     }
     public void sendEmail(String email){
@@ -126,14 +126,14 @@ public class LoginService {
             @Override
             public void actionPerformed(NetworkEvent evt) {
                 if (con.getResponseCode() == 200) {
-                    Dialog.show("Success", "Added Successfully", "Ok", null);
+                    Dialog.show("Success", "Reset Password Sent Successfuly", "Ok", null);
                 } else {
-                    Dialog.show("Failed", "Existing User", "Ok", null);
+                    Dialog.show("Failed", "Please enter a valid mail", "Ok", null);
                 }
             }
         });
-    }
-    }
+        NetworkManager.getInstance().addToQueue(con);
 
-
+    }
+}
 

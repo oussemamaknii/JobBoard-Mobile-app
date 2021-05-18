@@ -6,6 +6,7 @@
 package Mobile_App.Gui;
 
 import Mobile_App.Gui.Demande.ListApps;
+import Mobile_App.Gui.GestionProduit_Commande.ShopForm;
 import Mobile_App.Gui.Offre_Emploi.AddOffer;
 import Mobile_App.Gui.Offre_Emploi.ListViewOffer;
 import Mobile_App.Gui.Offre_Emploi.Stat;
@@ -39,6 +40,7 @@ public class HomeForm extends SideMenu {
         Button btnAddTask = new Button("Add Offer");
         Button btnListTasks = new Button("List Offers");
         Button btnListapps = new Button("List Applications");
+
         Button btnResume = new Button("Update Resume");
         Button btnCompany = new Button("Update Company");
         Button btnCandidates = new Button("Candidates List");
@@ -54,7 +56,14 @@ public class HomeForm extends SideMenu {
         btnCompany.addActionListener(e -> new AddEditCompany(current,null,res).show());
 
         btnListapps.addActionListener(e -> new ListApps(current,res).show());
-        addAll(btnAddTask, btnListTasks,btnListapps,btnResume,btnCompany,btnCandidates,btnShowResume);
+
+        Button btnShop = new Button("Shop");
+
+        btnAddTask.addActionListener(e -> new AddOffer(current,null, res).show());
+        btnListTasks.addActionListener(e -> new ListViewOffer(current, res).show());
+        btnListapps.addActionListener(e -> new ListApps(current, res).show());
+        btnShop.addActionListener(e->new ShopForm(current,res).show());
+        addAll(btnAddTask, btnListTasks,btnListapps,btnResume,btnCompany,btnCandidates,btnShowResume,btnShop);
 
     }
 

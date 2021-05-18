@@ -1,12 +1,15 @@
 package Mobile_App.Gui.Offre_Emploi;
 
 import Mobile_App.Gui.event.*;
+import Mobile_App.Entities.Events;
+import Mobile_App.Gui.event.AddEvent;
 import com.codename1.io.ConnectionRequest;
 import com.codename1.io.JSONParser;
 import com.codename1.ui.Display;
 import com.codename1.ui.Form;
 import com.codename1.ui.Dialog;
 import com.codename1.ui.Label;
+import com.codename1.ui.geom.Dimension;
 import com.codename1.ui.plaf.UIManager;
 import com.codename1.ui.util.Resources;
 import com.codename1.io.Log;
@@ -18,7 +21,11 @@ import com.codename1.ui.layouts.BoxLayout;
 import com.codename1.ui.list.DefaultListModel;
 
 import java.io.ByteArrayInputStream;
+import java.io.File;
+import java.io.IOException;
 import java.io.InputStreamReader;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.Map;
 
 import Mobile_App.Entities.Category;
@@ -48,6 +55,17 @@ public class AddOffer extends SideMenu {
 
     private static final String HTML_API_KEY = "AIzaSyAM6hBJIe9C4K0UcegqEjf6O0psKXNGcQU";
     private static final String apiKey = "AIzaSyBr4DKSW58r6tZXyZDYnPTBc7IRAQS2R1U";
+
+    private File selectedFile2;
+    private File getImageFile()
+    {
+        return this.selectedFile2=selectedFile2;
+    }
+
+    private void setImageFile(File file2)
+    {
+        this.selectedFile2=file2;
+    }
 
     public AddOffer(Form previous, Offre_Emploi o, Resources res) {
 
@@ -162,7 +180,6 @@ public class AddOffer extends SideMenu {
                     )
             );
             map.add(root);
-            map.setHeight(1);
 
             TextField tffile = new TextField("", "File");
             tffile.setEditable(false);
@@ -201,16 +218,20 @@ public class AddOffer extends SideMenu {
                 public void actionPerformed(ActionEvent evt) {
                     try {
                         Date date = new Date(System.currentTimeMillis());
+                        setImageFile(new File(tffile.getText()));
+                        File f=new File(getImageFile().getAbsolutePath());
                         Offre_Emploi offer = new Offre_Emploi(0, categ.getSelectedItem().getId(), tfTitle.getText(), tfPost.getText(), tfdescription.getText(), tflocation.getText(),
-                                tffile.getText(), tfemail.getText(), date, dateTimePicker.getDate(), Integer.parseInt(tfmax.getText()),
+                                f.getName(), tfemail.getText(), date, (Date) dateTimePicker.getValue(), Integer.parseInt(tfmax.getText()),
                                 Integer.parseInt(tfmin.getText()));
+                        Files.move(Paths.get(tffile.getText().substring(7)),
+                                Paths.get("C:\\Users\\souso\\Desktop\\Mobile App\\res\\offres\\"+f.getName()));
                         if (Offer_Service.getInstance().addOffer(offer)) {
                             Dialog.show("Success", "Added Successfully !", new Command("OK"));
                             Form f1 = new ListViewOffer(null, res);
                             f1.show();
                         } else
                             Dialog.show("ERROR", "Server error", new Command("OK"));
-                    } catch (NumberFormatException e) {
+                    } catch (NumberFormatException | IOException e) {
                         Dialog.show("ERROR", "Status must be a number", new Command("OK"));
                     }
                 }
@@ -224,11 +245,33 @@ public class AddOffer extends SideMenu {
             getToolbar().addMaterialCommandToLeftBar("", FontImage.MATERIAL_ARROW_BACK
                     , e -> previous.showBack());
         } else {
+            this.setTitle("Update "+o.getTitre());
 
             TextField tfTitle = new TextField(o.getTitre(), "Offer Title");
             TextField tfPost = new TextField(o.getPoste(), "Post");
             TextField tfdescription = new TextField(o.getDescription(), "Description");
-            TextField tflocation = new TextField(o.getLocation(), "Location");
+            final DefaultListModel<String> options = new DefaultListModel<>();
+            AutoCompleteTextField tflocation = new AutoCompleteTextField(options) {
+                @Override
+                protected boolean filter(String text) {
+                    if (text.length() == 0) {
+                        return false;
+                    }
+                    String[] l = searchLocations(text);
+                    System.out.println(l);
+                    if (l == null || l.length == 0) {
+                        return false;
+                    }
+
+                    options.removeAll();
+                    for (String s : l) {
+                        options.addItem(s);
+                        System.out.println(options);
+                    }
+                    return true;
+                }
+            };
+            tflocation.setMinimumElementsShownInPopup(5);
             TextField tffile = new TextField(o.getFile(), "File");
             tffile.setEditable(false);
             Button fc = new Button("file chooser");
@@ -271,18 +314,24 @@ public class AddOffer extends SideMenu {
                 @Override
                 public void actionPerformed(ActionEvent evt) {
                     try {
-                        SimpleDateFormat f = new SimpleDateFormat("yyyy-MM-dd");
                         Date date = new Date(System.currentTimeMillis());
+
+                        setImageFile(new File(tffile.getText()));
+                        File f=new File(getImageFile().getAbsolutePath());
                         Offre_Emploi offer = new Offre_Emploi(o.getId(), categ.getSelectedItem().getId(), tfTitle.getText(), tfPost.getText(), tfdescription.getText(), tflocation.getText(),
-                                tffile.getText(), tfemail.getText(), date, (Date) dateTimePicker.getValue(), Integer.parseInt(tfmax.getText()),
+                                f.getName(), tfemail.getText(), date, (Date) dateTimePicker.getValue(), Integer.parseInt(tfmax.getText()),
                                 Integer.parseInt(tfmin.getText()));
+                        Files.move(Paths.get(tffile.getText().substring(7)),
+                                Paths.get("C:\\Users\\souso\\Desktop\\Mobile App\\res\\offres\\"+f.getName()));
+
+
                         if (Offer_Service.getInstance().modOffer(offer)) {
                             Dialog.show("Success", "Updated Successfully !", new Command("OK"));
                             Form f2 = new ListViewOffer(null, res);
                             f2.show();
                         } else
                             Dialog.show("ERROR", "Server error", new Command("OK"));
-                    } catch (NumberFormatException e) {
+                    } catch (NumberFormatException | IOException e) {
                         Dialog.show("ERROR", "Status must be a number", new Command("OK"));
                     }
                 }

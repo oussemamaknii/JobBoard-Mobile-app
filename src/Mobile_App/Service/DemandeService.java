@@ -65,6 +65,7 @@ public class DemandeService {
                 t.setOffre_id((int) Float.parseFloat(offre.get("id").toString()));
                 Map<String, Object> user = (Map<String, Object>) obj.get("candidat");
                 t.setUsername(user.get("firstName").toString()+" "+user.get("lastName").toString());
+                t.setStatus( obj.get("status").toString());
                 t.setCandidat_id((int) Float.parseFloat(offre.get("id").toString()));
                 apps.add(t);
 

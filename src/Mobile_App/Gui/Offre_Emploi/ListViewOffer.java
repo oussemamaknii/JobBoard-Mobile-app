@@ -27,7 +27,6 @@ public class ListViewOffer extends SideMenu {
         Style s = UIManager.getInstance().getComponentStyle("TitleCommand");
         FontImage icon = FontImage.createMaterial(FontImage.MATERIAL_ADD, s);
         tb.addCommandToRightBar("", icon, (e) -> new AddOffer(this, null, res).show());
-
         tb.addSearchCommand(e -> {
             String text = (String)e.getSource();
             if(text == null || text.length() == 0) {
@@ -41,12 +40,14 @@ public class ListViewOffer extends SideMenu {
                 text = text.toLowerCase();
                 for(Component cmp : this.getContentPane()) {
                     Container mb = (Container)cmp;
-                    List<Component> line1 = mb.getChildrenAsList(false);
-                    Container line2 = (Container) line1.get(1);
-                    List<Component> line3 = line2.getChildrenAsList(false);
-                    Container line4 = (Container) line3.get(0);
-                    List<Component> line5 = line4.getChildrenAsList(false);
-                    Label titre =(Label) line5.get(0);
+                    List<Component> a1 = mb.getChildrenAsList(false);
+                    Container holder = (Container) a1.get(1);
+                    List<Component> a2 = holder.getChildrenAsList(false);
+                    Container details = (Container) a2.get(0);
+                    List<Component> a3 = details.getChildrenAsList(false);
+                    Container titcont = (Container) a3.get(0);
+                    List<Component> a5 = titcont.getChildrenAsList(false);
+                    Label titre =(Label) a5.get(1);
                     boolean show = titre.getText() != null && titre.getText().toLowerCase().indexOf(text) > -1 ;
                     mb.setHidden(!show);
                     mb.setVisible(show);
@@ -69,23 +70,42 @@ public class ListViewOffer extends SideMenu {
     public Container addSeriesHolder(Offre_Emploi s,Resources res) {
         try{
             Container holder = new Container(BoxLayout.x());
+            holder.setWidth(this.getWidth());
             Container details = new Container(BoxLayout.y());
+            details.setWidth(this.getWidth()-250);
             Container titleDuree = new Container(BoxLayout.x());;
 
             ImageViewer image = new ImageViewer(Main.theme.getImage("job.png").scaled(250, 350));
-            System.out.println(s.getDate_debut());
 
+            Container a = new Container(BoxLayout.x());
+            Container b = new Container(BoxLayout.x());
+            Container c = new Container(BoxLayout.xRight());
+
+            ImageViewer imagea = new ImageViewer(Main.theme.getImage("title.png").scaled(100, 150));
             Label lbTitle = new Label(s.getTitre());
-            Label lDescription = new Label(s.getDescription());
+
+            a.addAll(imagea,lbTitle);
+
+            Label lDescription = new Label("Description : \n"+s.getDescription());
+
             Label lDuree = new Label(String.valueOf(s.getEmail()));
+            ImageViewer imageb = new ImageViewer(Main.theme.getImage("email.png").scaled(100, 150));
+
+            b.addAll(imageb,lDuree);
+
+            Label price = new Label(s.getMin_salary()+" DT - "+s.getMax_salary()+" DT");
+            c.add(price);
+
             image.addPointerReleasedListener((evnt)->{
                 Form f = new OfferInfos(s,this,res);
                 f.show();
             });
-            titleDuree.addAll(lbTitle, lDuree);
-            details.addAll(titleDuree, lDescription);
+
+            titleDuree.addAll(a, b);
+            details.addAll(titleDuree, lDescription,c);
             holder.addAll(image, details);
             holder.setLeadComponent(image);
+
             return holder;
         }catch(NullPointerException e){
             System.out.println(e.getMessage());

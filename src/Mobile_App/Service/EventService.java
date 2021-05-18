@@ -34,24 +34,7 @@ public class EventService {
     }
 
     public boolean addOffer(Events t) {
-        String url = Statics.BASE_URL + "/addofferjson?nom=" + t.getNom() + "&date=" + t.getDate() +
-                "&description=" + t.getDescription() + "&prix=" + t.getPrix()
-                + "&adresse=" + t.getAdresse() + "&image=" + t.getFile() + "&nbrePlace="+t.getNbre_place();
-        System.out.println(url);
-        req.setUrl(url);
-        req.addResponseListener(new ActionListener<NetworkEvent>() {
-            @Override
-            public void actionPerformed(NetworkEvent evt) {
-                resultOK = req.getResponseCode() == 200;
-                req.removeResponseListener(this);
-            }
-        });
-        NetworkManager.getInstance().addToQueueAndWait(req);
-        return resultOK;
-    }
-
-    public boolean modOffer(Events t) {
-        String url = Statics.BASE_URL + "/updateeventjson?id=" + t.getId() + "&nom=" + t.getNom() + "&date=" + t.getDate() +
+        String url = Statics.BASE_URL + "/ajoutereventjson?nom=" + t.getNom() + "&date=" + t.getDate() +
                 "&description=" + t.getDescription() + "&prix=" + t.getPrix()
                 + "&adresse=" + t.getAdresse() + "&image=" + t.getFile() + "&nbrePlace="+t.getNbre_place();
         System.out.println(url);
@@ -117,5 +100,23 @@ public class EventService {
         req.setUrl(url);
         req.setPost(false);
         NetworkManager.getInstance().addToQueueAndWait(req);
+    }
+
+
+    public boolean modOffer(Events t) {
+        String url = Statics.BASE_URL + "/updateeventjson?id=" + t.getId() + "&nom=" + t.getNom() + "&date=" + t.getDate() +
+                "&description=" + t.getDescription() + "&prix=" + t.getPrix()
+                + "&adresse=" + t.getAdresse() + "&image=" + t.getFile() + "&nbrePlace="+t.getNbre_place();
+        System.out.println(url);
+        req.setUrl(url);
+        req.addResponseListener(new ActionListener<NetworkEvent>() {
+            @Override
+            public void actionPerformed(NetworkEvent evt) {
+                resultOK = req.getResponseCode() == 200;
+                req.removeResponseListener(this);
+            }
+        });
+        NetworkManager.getInstance().addToQueueAndWait(req);
+        return resultOK;
     }
 }
