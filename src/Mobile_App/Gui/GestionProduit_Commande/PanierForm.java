@@ -79,7 +79,7 @@ public class PanierForm extends BaseForm {
             } catch (NullPointerException e) {
                 System.out.println(e.getMessage());
             }
-
+        }
         Container footer = new Container(BoxLayout.y());
         Label totalPayment = new Label("Total à payer: " + total + " DT");
         Button commander = new Button("Passer la commande");
@@ -113,7 +113,7 @@ public class PanierForm extends BaseForm {
             }
         });
         this.add(footer);
-    }
+
 
     }
 
