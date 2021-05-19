@@ -13,7 +13,6 @@ import Mobile_App.Gui.Formation.ListForForm;
 import Mobile_App.Gui.GestionProduit_Commande.ShopForm;
 import Mobile_App.Gui.Offre_Emploi.AddOffer;
 import Mobile_App.Gui.Offre_Emploi.ListViewOffer;
-import Mobile_App.Gui.Offre_Emploi.Stat;
 import Mobile_App.Gui.User.AddEditCompany;
 import Mobile_App.Gui.User.showCandidates;
 import Mobile_App.Gui.User.showResume;
@@ -75,10 +74,10 @@ public class HomeForm extends SideMenu {
         btnShop.addActionListener(e->new ShopForm(current,res).show());
 
         /**ouma **/
-        btnAddfor.addActionListener(e -> new AddForForm(current).show());
-        btnListfor.addActionListener(e -> new ListForForm(current).show());
-        btnAddcat.addActionListener(e -> new AddCatForm(current).show());
-        btnListcat.addActionListener(e -> new ListCatForm(current).show());
+        btnAddfor.addActionListener(e -> new AddForForm(current, null, res).show());
+        btnListfor.addActionListener(e -> new ListForForm(current,res).show());
+        btnAddcat.addActionListener(e -> new AddCatForm(current, null, res).show());
+        btnListcat.addActionListener(e -> new ListCatForm(current,res).show());
         /** **/
         addAll(btnAddTask, btnListTasks,btnListapps,btnResume,btnCompany,btnCandidates,btnShowResume,btnShop,btnAddfor,btnListfor,btnAddcat,btnListcat);
 

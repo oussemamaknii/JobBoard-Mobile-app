@@ -1,6 +1,7 @@
 package Mobile_App.Service;
 
 import Mobile_App.Entities.Category;
+import Mobile_App.Entities.Events;
 import Mobile_App.Utils.Statics;
 import com.codename1.io.*;
 import com.codename1.ui.events.ActionListener;
@@ -81,7 +82,7 @@ public class CategoryService {
         NetworkManager.getInstance().addToQueueAndWait(req);
         return Category;
     }
-
+/**
     public boolean modcat(Category t) {
         String url = Statics.BASE_URL_OUMA+ "/editcatjson/?id="+ t.getId() + "&titre=" + t.getTitre() + "&desciptionc=" + t.getDescriptionc();
         System.out.println(url);
@@ -95,23 +96,35 @@ public class CategoryService {
         });
         NetworkManager.getInstance().addToQueueAndWait(req);
         return resultOK;
-    }
-
+    }**/
+/**
     public boolean deletecat(int  id ) {
-        String url = Statics.BASE_URL_OUMA +"/deletjsone/?id="+id;
+        String url = Statics.BASE_URL_OUMA +"/deletjsone?id="+id;
+
 
         req.setUrl(url);
-
+        req.setPost(false);
+        NetworkManager.getInstance().addToQueueAndWait(req);
+    }**/
+public void deletecat(int o) {
+    String url = Statics.BASE_URL_OUMA + "/deletecatjson?id=" + o;
+    req.setUrl(url);
+    req.setPost(false);
+    NetworkManager.getInstance().addToQueueAndWait(req);
+}
+    public boolean modcat(Category t) {
+        String url = Statics.BASE_URL_OUMA+ "/editcatjson/?id="+ t.getId() + "&titre=" + t.getTitre() + "&desciptionc=" + t.getDescriptionc();
+        System.out.println(url);
+        req.setUrl(url);
         req.addResponseListener(new ActionListener<NetworkEvent>() {
             @Override
             public void actionPerformed(NetworkEvent evt) {
-
-                req.removeResponseCodeListener(this);
+                resultOK = req.getResponseCode() == 200;
+                req.removeResponseListener(this);
             }
         });
-
         NetworkManager.getInstance().addToQueueAndWait(req);
-        return  resultOK;
+        return resultOK;
     }
 }
 

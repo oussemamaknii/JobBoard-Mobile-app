@@ -3,14 +3,21 @@ package Mobile_App.Gui.Formation;
 
 
 
+import Mobile_App.Entities.Category;
+import Mobile_App.Service.CategoryService;
+import Mobile_App.Service.FormationService;
+import Mobile_App.Service.Offer_Service;
 import com.codename1.ui.*;
 import com.codename1.ui.layouts.BoxLayout;
 import com.codename1.ui.spinner.Picker;
+import com.codename1.ui.util.Resources;
+
+import java.util.ArrayList;
 
 
 public class  AddForForm extends Form {
 
-    public  AddForForm(Form previous) {
+    public  AddForForm(Form previous, Object o, Resources res) {
 
         setTitle("Add a new Formation");
         setLayout(BoxLayout.y());
@@ -22,6 +29,15 @@ public class  AddForForm extends Form {
         TextField lb5 = new TextField("", "mail");
         TextField lb6 = new TextField("", "tel");
         TextField lb7 = new TextField("", "prix");
+/**
+        ComboBox<Category> category = new ComboBox<>();
+        ArrayList<Category> list = Offer_Service.getInstance().getcategnames();
+        for (Category l : list) {
+            category.addItem(l);
+        }**/
+        Picker dateTimePicker = new Picker();
+        dateTimePicker.setType(Display.PICKER_TYPE_DATE_AND_TIME);
+
         Picker datePicker = new Picker();
         datePicker.setType(Display.PICKER_TYPE_DATE);
         Picker datePicker2 = new Picker();
