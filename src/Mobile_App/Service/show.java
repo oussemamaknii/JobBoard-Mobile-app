@@ -84,7 +84,7 @@ public class show {
     }
 
     public ArrayList<User> getAllCandidates() {
-        String url = Statics.BASE_URL_RYAAN + "api/candidatesApi";
+        String url = Statics.BASE_URL_RYAAN + "/api/candidatesApi";
         req.setUrl(url);
         req.setPost(false);
         req.addResponseListener(new ActionListener<NetworkEvent>() {
