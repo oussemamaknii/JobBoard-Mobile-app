@@ -50,7 +50,7 @@ public class HomeForm extends SideMenu {
         Button btnCandidates = new Button("Candidates List");
         Button btnShowResume = new Button("show Resume");
         /**oumaima**/
-        Button btnAddfor = new Button("Add formation");
+
         Button btnListfor = new Button("List formations");
         Button btnAddcat = new Button("Add categorie");
         Button btnListcat = new Button("List categories");
@@ -75,12 +75,12 @@ public class HomeForm extends SideMenu {
         btnShop.addActionListener(e->new ShopForm(current,res).show());
 
         /**ouma **/
-        btnAddfor.addActionListener(e -> new AddForForm(current).show());
-        btnListfor.addActionListener(e -> new ListForForm(current).show());
-        btnAddcat.addActionListener(e -> new AddCatForm(current).show());
-        btnListcat.addActionListener(e -> new ListCatForm(current).show());
+
+        btnListfor.addActionListener(e -> new ListForForm(current,res).show());
+        btnAddcat.addActionListener(e -> new AddCatForm(current, null, res).show());
+        btnListcat.addActionListener(e -> new ListCatForm(current,res).show());;
         /** **/
-        addAll(btnAddTask, btnListTasks,btnListapps,btnResume,btnCompany,btnCandidates,btnShowResume,btnShop,btnAddfor,btnListfor,btnAddcat,btnListcat);
+        addAll(btnAddTask, btnListTasks,btnListapps,btnResume,btnCompany,btnCandidates,btnShowResume,btnShop,btnListfor,btnAddcat,btnListcat);
 
     }
 

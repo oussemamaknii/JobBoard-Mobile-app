@@ -30,7 +30,7 @@ public class CategoryService {
     }
 
     public boolean Addcat(Category t) {
-        String url = Statics.BASE_URL_OUMA+"/category/newCat*?titre=" + t.getTitre() + "&descriptionc=" + t.getDescriptionc(); //création de l'URL
+        String url = Statics.BASE_URL_OUMA+"/categorynewCat?titre=" + t.getTitre() + "&descriptionc=" + t.getDescriptionc(); //création de l'URL
 
         req.setUrl(url);// Insertion de l'URL de notre demande de connexion
         req.addResponseListener(new ActionListener<NetworkEvent>() {
@@ -68,7 +68,7 @@ public class CategoryService {
     }
 
     public ArrayList<Category> getAllCat() {
-        String url = Statics.BASE_URL_OUMA+ "/category*";
+        String url = Statics.BASE_URL_OUMA+ "/getallcategories";
         req.setUrl(url);
         req.setPost(false);
         req.addResponseListener(new ActionListener<NetworkEvent>() {
@@ -97,21 +97,11 @@ public class CategoryService {
         return resultOK;
     }
 
-    public boolean deletecat(int  id ) {
-        String url = Statics.BASE_URL_OUMA +"/deletjsone/?id="+id;
-
+    public void deletecat(int o) {
+        String url = Statics.BASE_URL_OUMA + "/deletecatjson?id=" + o;
         req.setUrl(url);
-
-        req.addResponseListener(new ActionListener<NetworkEvent>() {
-            @Override
-            public void actionPerformed(NetworkEvent evt) {
-
-                req.removeResponseCodeListener(this);
-            }
-        });
-
+        req.setPost(false);
         NetworkManager.getInstance().addToQueueAndWait(req);
-        return  resultOK;
     }
 }
 

@@ -3,50 +3,58 @@ package Mobile_App.Gui.Formation;
 
 
 
+import Mobile_App.Entities.Category;
 import Mobile_App.Entities.Formation;
+import Mobile_App.Gui.HomeForm;
+import Mobile_App.Gui.SideMenu;
+import Mobile_App.Service.CategoryService;
 import Mobile_App.Service.FormationService;
 import com.codename1.ui.*;
 import com.codename1.ui.layouts.BoxLayout;
 import com.codename1.ui.plaf.Style;
+import com.codename1.ui.plaf.UIManager;
+import com.codename1.ui.util.Resources;
 
 import java.util.List;
 
-public class ListForForm extends Form {
-    private FormationService sv;
+public class ListForForm  extends SideMenu {
+    public ListForForm(Form previous, Resources res) {
 
+        Toolbar tb = getToolbar();
+        tb.setTitleCentered(false);
+        setupSideMenu(res);
 
-    public ListForForm(Form previous) {
+        Style s = UIManager.getInstance().getComponentStyle("TitleCommand");
+        FontImage icon = FontImage.createMaterial(FontImage.MATERIAL_ADD, s);
+        tb.addCommandToRightBar("", icon, (e) -> new AddForForm(this, null, res).show());
 
-        sv = new FormationService();
-
-        setTitle("Liste de categories");
+        this.setTitle("list Formation");
         this.setLayout(BoxLayout.y());
 
-        List<Formation> Formation = new FormationService().getAllFor();
-        for (int i = 0; i < Formation.size(); i++) {
-            add(addforItem(Formation.get(i)));
+        List<Formation> formation = FormationService.getInstance().getAllFor();
+        for (int i = 0; i < formation.size(); i++) {
+            this.add(addSeriesHolder(formation.get(i), res));
         }
+        this.getToolbar().addMaterialCommandToLeftBar("", FontImage.MATERIAL_ARROW_BACK, e -> previous.showBack());
 
-        getToolbar().addCommandToRightBar("Retour", null, (evt) -> {
-            previous.showBack();
-        });
     }
-    public Container addforItem(Formation book){
-        //faire un bloc try catch pour eviter une exception genre une image inexistant ie null
+
+    public Container addSeriesHolder(Formation s, Resources res) {
         try {
-            //creer les container
-            Container holder =new Container(BoxLayout.y());
+            Container holder = new Container(BoxLayout.y());
             Container details = new Container(BoxLayout.x());
             Container titleDuree = new Container(BoxLayout.y());
 
-            //les composants de chaq container en recuperant les infos
-            Label lbTitle = new Label("*titre: "+ book.getNom());
-            Label lb1 = new Label("Formateur: "+ book.getFormateur());
-            Label lDescription = new Label("Description: "+ book.getDescription());
-            Label lb2 = new Label("Email: "+ book.getMail());
-            Label lb3 = new Label("Tel: "+ book.getTel());
-            Label lb4 = new Label("Category: "+ book.getCategory_id());
 
+
+            Label lbTitle = new Label("*titre: "+ s.getNom());
+            Label lb1 = new Label("Formateur: "+ s.getFormateur());
+            Label lDescription = new Label("Description: "+s.getDescription());
+            Label lb2 = new Label("Email: "+ s.getMail());
+            Label lb3 = new Label("Tel: "+ s.getTel());
+            Label lb4 = new Label("Category: "+ s.getCategory_id());
+
+            Container buttons = new Container(BoxLayout.x());
             Label lSupprimer = new Label(" ");
             lSupprimer.setUIID("NewsTopLine");
             Style supprmierStyle = new Style(lSupprimer.getUnselectedStyle());
@@ -55,34 +63,8 @@ public class ListForForm extends Form {
             FontImage suprrimerImage = FontImage.createMaterial(FontImage.MATERIAL_DELETE, supprmierStyle);
             lSupprimer.setIcon(suprrimerImage);
             lSupprimer.setTextPosition(RIGHT);
+            Button Update = new Button("Update");
 
-
-            //
-
-            //click delete icon
-            lSupprimer.addPointerPressedListener(l -> {
-
-                Dialog dig = new Dialog("Suppression");
-
-
-
-                if(dig.show("Suppression","Vous voulez supprimer ce reclamation ?","Annuler","Oui")) {
-                    dig.dispose();
-                }
-                else {
-                    dig.dispose();
-                }
-                //n3ayto l suuprimer men service Reclamation
-                //if(CategoryService.getInstance().deletecat(rec.getId())) {
-                //     new ListCatForm(res).show();
-
-
-
-
-            });
-
-
-            //Update icon
             Label lModifier = new Label(" ");
             lModifier.setUIID("NewsTopLine");
             Style modifierStyle = new Style(lModifier.getUnselectedStyle());
@@ -91,28 +73,26 @@ public class ListForForm extends Form {
             lModifier.setIcon(mFontImage);
             lModifier.setTextPosition(LEFT);
 
-
-            lModifier.addPointerPressedListener(l -> {
-
-                //System.out.println("hello update");
-                // new ModifierReclamationForm(res,rec).show();
+            lSupprimer.addPointerPressedListener(e -> {
+                FormationService.getInstance().deletefor(s.getId());
+                Dialog.show("Success", "Deleted Successfully !", new Command("OK"));
+                Form f2 = new ListForForm(new HomeForm(res), res);
+                f2.show();
+            });
+            lModifier.addPointerPressedListener(e -> {
+               // Form f = new AddForForm(this, s, res);
+                //f.show();
             });
 
-            //cree l'action qui utilise un lambda expression
-            //ajouter a chque container les elements respectifs
-            titleDuree.addAll(lbTitle,lb1,lDescription,lb2,lb3,lb4);
-            details.addAll(titleDuree,lSupprimer,lModifier);
-            holder.addAll(details);
-            //pour rendre l'action sur tout le container
 
-            //retourner le container holder
+            titleDuree.addAll(lbTitle,lDescription,lb1,lb2,lb3,lb4);
+            details.addAll(titleDuree,lSupprimer,lModifier );
+            holder.addAll( details,buttons);
+
             return holder;
-        }catch (NullPointerException e){
+        } catch (NullPointerException e) {
             System.out.println(e.getMessage());
         }
         return new Container(BoxLayout.x());
     }
-
-
 }
-

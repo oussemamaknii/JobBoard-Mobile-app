@@ -44,8 +44,15 @@ public class LoginService {
                         Session.ConnectedUser.setImageName("image-blank.jpg");
                     } else Session.ConnectedUser.setImageName(mapUser.get("imageName").toString());
                     Session.ConnectedUser.setRoles(mapUser.get("roles").toString());
+                    if (mapUser.get("adresse").toString().equals("")) {
+                        Session.ConnectedUser.setAdresse("Gafsa");
+                    }
                     Session.ConnectedUser.setAdresse(mapUser.get("adresse").toString());
-                    Session.ConnectedUser.setProfessionalTitle(mapUser.get("professionalTitle").toString());
+                    if (mapUser.get("professionalTitle").toString().equals("")) {
+                        Session.ConnectedUser.setProfessionalTitle("Freelancer");
+                    }else {
+                        Session.ConnectedUser.setProfessionalTitle(mapUser.get("professionalTitle").toString());
+                    }
                     DateFormat format = new SimpleDateFormat("yyyy-MM-dd");
                     try {
                         Session.ConnectedUser.setDateOfBirth(format.parse(mapUser.get("createdAt").toString()));
@@ -61,20 +68,20 @@ public class LoginService {
 
 
     }
-    public void deleteResume(int id){
+
+    public void deleteResume(int id) {
         ConnectionRequest con = new ConnectionRequest();
         con.addRequestHeader("Content-Type", "application/json");
         con.setPost(false);
         con.setUrl(Statics.BASE_URL_RYAAN + "api/deleteresumeApi" + id);
         con.addResponseListener((NetworkEvent evt) -> {
-            if (con.getResponseCode() == 200){
+            if (con.getResponseCode() == 200) {
                 System.out.println("Deleted");
-            } else{
+            } else {
                 System.out.println("Error");
             }
         });
         NetworkManager.getInstance().addToQueueAndWait(con);
-
 
 
     }
@@ -88,7 +95,7 @@ public class LoginService {
         MultipartRequest con = new MultipartRequest();
         con.setUrl(Statics.BASE_URL_RYAAN + "api/register" + "?firstName=" + firstName + "&lastName=" + lastName + "&dateOfBirth=" + dateOfBirth + "&phone=" + phone + "&adresse=" + adresse + "&professionalTitle=" + professionalTitle + "&password=" + password + "&email=" + email);
         con.setPost(true);
-        String filePath = FileSystemStorage.getInstance().getAppHomePath() ;
+        String filePath = FileSystemStorage.getInstance().getAppHomePath();
         String mime = "image/jpeg";
         String fichernom = System.currentTimeMillis() + ".jpeg";
         con.setFilename("file", fichernom);
@@ -110,16 +117,18 @@ public class LoginService {
         });
         NetworkManager.getInstance().addToQueue(con);
     }
-    public void doLogout(Session session){
+
+    public void doLogout(Session session) {
         session = new Session();
 
     }
-    public void sendEmail(String email){
+
+    public void sendEmail(String email) {
         MultipartRequest con = new MultipartRequest();
 
         System.out.println(email);
 
-        con.setUrl(Statics.BASE_URL_RYAAN+"api/request-password-api" + "?email="+email);
+        con.setUrl(Statics.BASE_URL_RYAAN + "api/request-password-api" + "?email=" + email);
         con.setPost(true);
 
         con.addResponseListener(new ActionListener<NetworkEvent>() {

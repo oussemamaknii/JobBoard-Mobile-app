@@ -8,12 +8,12 @@ import com.codename1.ui.*;
 import com.codename1.ui.layouts.BoxLayout;
 import com.codename1.ui.events.ActionEvent;
 import com.codename1.ui.events.ActionListener;
-
+import com.codename1.ui.util.Resources;
 
 
 public class  AddCatForm extends Form {
 
-    public  AddCatForm(Form previous) {
+    public  AddCatForm(Form previous, Object o, Resources res) {
 
         setTitle("Add a new Category");
         setLayout(BoxLayout.y());

@@ -32,7 +32,7 @@ public class FormationService {
     }
 
     public boolean Addfor(Formation t) {
-        String url = Statics.BASE_URL_OUMA+"/formation/newformation*?nom=" + t.getNom() + "&formateur=" + t.getFormateur()+"&description=" + t.getDescription()+"&date_debut=" + t.getDate_debut()+"&date_fin=" + t.getDate_fin()+"&adresse=" + t.getAdresse()+"&mail=" + t.getMail()+"&tel=" + t.getTel()+"&prix=" + t.getPrix(); //création de l'URL
+        String url = Statics.BASE_URL_OUMA + "/formationNew?nom=" + t.getNom() + "&formateur=" + t.getFormateur() + "&description=" + t.getDescription() + "&date_debut=" + t.getDate_debut() + "&date_fin=" + t.getDate_fin() + "&adresse=" + t.getAdresse() + "&mail=" + t.getMail() + "&tel=" + t.getTel() + "&prix=" + t.getPrix(); //création de l'URL
 
         req.setUrl(url);// Insertion de l'URL de notre demande de connexion
         req.addResponseListener(new ActionListener<NetworkEvent>() {
@@ -45,6 +45,7 @@ public class FormationService {
         NetworkManager.getInstance().addToQueueAndWait(req);
         return resultOK;
     }
+
     public ArrayList<Formation> parseTasks(String jsonText) {
         try {
             Formation = new ArrayList<>();
@@ -82,7 +83,7 @@ public class FormationService {
 
 
     public ArrayList<Formation> getAllFor() {
-        String url = Statics.BASE_URL_OUMA+ "/formation*";
+        String url = Statics.BASE_URL_OUMA + "/formationjson";
         req.setUrl(url);
         req.setPost(false);
         req.addResponseListener(new ActionListener<NetworkEvent>() {
@@ -94,6 +95,13 @@ public class FormationService {
         });
         NetworkManager.getInstance().addToQueueAndWait(req);
         return Formation;
+    }
+
+    public void deletefor(int o) {
+        String url = Statics.BASE_URL_OUMA + "/deletjsonefor?id=" + o;
+        req.setUrl(url);
+        req.setPost(false);
+        NetworkManager.getInstance().addToQueueAndWait(req);
     }
 
 
