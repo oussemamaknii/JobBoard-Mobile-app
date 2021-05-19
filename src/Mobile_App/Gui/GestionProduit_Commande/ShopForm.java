@@ -66,9 +66,7 @@ public class ShopForm extends SideMenu {
 
         List<Produit> products = new ShopService().getAllProducts();
         for(int i = 0; i< products.size(); i++){
-            //this.add(addSeriesHolder(products.get(i)));
-            System.out.println(addSeriesHolder(products.get(i)));
-            System.exit(0);
+            this.add(addSeriesHolder(products.get(i)));
         }
         this.getToolbar().addMaterialCommandToLeftBar("", FontImage.MATERIAL_ARROW_BACK, e-> previous.showBack());
         /*

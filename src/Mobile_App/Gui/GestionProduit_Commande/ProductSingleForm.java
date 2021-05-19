@@ -30,10 +30,10 @@ public class ProductSingleForm extends Form {
         this.setTitle("Book Infos");
         this.setLayout(new FlowLayout(CENTER,CENTER));
         this.getToolbar().addMaterialCommandToLeftBar("", FontImage.MATERIAL_ARROW_BACK, e-> previous.showBack());
-        this.getToolbar().addCommandToLeftBar("BackToShop",null,(evt2)->{
-           /* Form f1= new ShopForm();
-            f1.show();*/
-        });
+        /*this.getToolbar().addCommandToLeftBar("BackToShop",null,(evt2)->{
+            Form f1= new ShopForm();
+            f1.show();
+        });*/
         try {
             Container holder = new Container(BoxLayout.y());
             Container details1 = new Container(BoxLayout.y());

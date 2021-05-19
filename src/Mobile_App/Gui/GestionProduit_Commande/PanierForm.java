@@ -31,10 +31,10 @@ public class PanierForm extends BaseForm {
         this.setTitle("Cart");
         this.setLayout(BoxLayout.y());
         this.getToolbar().addMaterialCommandToLeftBar("", FontImage.MATERIAL_ARROW_BACK, e-> previous.showBack());
-        this.getToolbar().addCommandToLeftBar("BackToShop", null, (evt2) -> {
-            /*Form f1 = new ShopForm();
-            f1.show();*/
-        });
+        /*this.getToolbar().addCommandToLeftBar("BackToShop", null, (evt2) -> {
+            Form f1 = new ShopForm();
+            f1.show();
+        });*/
 
         List<LignePanier> panier = new ArrayList<LignePanier>();
         panier.addAll(((List<LignePanier>) Storage.getInstance().readObject("Panier")));
