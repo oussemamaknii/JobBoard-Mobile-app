@@ -106,12 +106,6 @@ public class FormationService {
         NetworkManager.getInstance().addToQueueAndWait(req);
     }
 
-    public void deletefor(int o) {
-        String url = Statics.BASE_URL_OUMA + "/deletjsonefor?id=" + o;
-        req.setUrl(url);
-        req.setPost(false);
-        NetworkManager.getInstance().addToQueueAndWait(req);
-    }
 
 
 }
