@@ -22,19 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="20ad8530-0994-414f-a681-8ba82ed47fc9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/HomeForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/HomeForm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/SideMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/SideMenu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Gui/Formation/AddCatForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/Formation/AddCatForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Gui/Formation/AddForForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/Formation/AddForForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Gui/Formation/ListCatForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/Formation/ListCatForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Gui/Formation/ListForForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/Formation/ListForForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Gui/HomeForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/HomeForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Gui/SideMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/SideMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Service/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Service/CategoryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Service/FormationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Service/FormationService.java" afterDir="false" />
-    </list>
+    <list default="true" id="20ad8530-0994-414f-a681-8ba82ed47fc9" name="Default Changelist" comment="updates oumaima" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -138,6 +126,14 @@
       <option name="presentableId" value="Default" />
       <updated>1619779868610</updated>
     </task>
+    <task id="LOCAL-00001" summary="updates oumaima">
+      <created>1621424188980</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1621424188980</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -196,6 +192,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="updates oumaima" />
+    <option name="LAST_COMMIT_MESSAGE" value="updates oumaima" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
