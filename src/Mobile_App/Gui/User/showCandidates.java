@@ -24,6 +24,8 @@ public class showCandidates extends SideMenu {
             cont.add(date);
         addAll(cont);
         show();
+            getToolbar().addMaterialCommandToLeftBar("", FontImage.MATERIAL_ARROW_BACK
+                    , e -> previous.showBack());
     }
 }
 }

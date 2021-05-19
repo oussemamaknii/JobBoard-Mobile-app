@@ -1,15 +1,12 @@
 package Mobile_App.Gui.Offre_Emploi;
 
-import Mobile_App.Gui.event.*;
-import Mobile_App.Entities.Events;
-import Mobile_App.Gui.event.AddEvent;
+
 import com.codename1.io.ConnectionRequest;
 import com.codename1.io.JSONParser;
 import com.codename1.ui.Display;
 import com.codename1.ui.Form;
 import com.codename1.ui.Dialog;
-import com.codename1.ui.Label;
-import com.codename1.ui.geom.Dimension;
+import com.codename1.ui.Label;import com.codename1.ui.geom.Dimension;
 import com.codename1.ui.plaf.UIManager;
 import com.codename1.ui.util.Resources;
 import com.codename1.io.Log;
@@ -68,7 +65,6 @@ public class AddOffer extends SideMenu {
     }
 
     public AddOffer(Form previous, Offre_Emploi o, Resources res) {
-
         Toolbar tb = getToolbar();
         tb.setTitleCentered(false);
         setupSideMenu(res);
@@ -323,8 +319,6 @@ public class AddOffer extends SideMenu {
                                 Integer.parseInt(tfmin.getText()));
                         Files.move(Paths.get(tffile.getText().substring(7)),
                                 Paths.get("C:\\Users\\souso\\Desktop\\Mobile App\\res\\offres\\"+f.getName()));
-
-
                         if (Offer_Service.getInstance().modOffer(offer)) {
                             Dialog.show("Success", "Updated Successfully !", new Command("OK"));
                             Form f2 = new ListViewOffer(null, res);
