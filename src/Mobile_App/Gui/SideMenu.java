@@ -52,6 +52,8 @@ public class SideMenu extends Form {
                 new ListViewOffer(this, res).show());
         getToolbar().addMaterialCommandToSideMenu("  Events", FontImage.MATERIAL_LOCAL_OFFER, e ->
                 new ListViewEvent(this, res).show());
+        getToolbar().addMaterialCommandToSideMenu("  Catgories", FontImage.MATERIAL_LOCAL_OFFER, e ->
+                new ListCatForm(this, res).show());
         getToolbar().addMaterialCommandToSideMenu("  Statistics", FontImage.MATERIAL_ANALYTICS, e ->
                 new Stat(this, res).createPieChartForm().show());
         getToolbar().addMaterialCommandToSideMenu("  Resume", FontImage.MATERIAL_TRENDING_UP,  e ->

@@ -62,6 +62,9 @@ public class FormationService {
                 t.setNom(obj.get("nom").toString());
                 t.setFormateur(obj.get("formateur").toString());
                 t.setDescription(obj.get("description").toString());
+            //   Map<String, Object> categ = (Map<String, Object>) obj.get("category");
+             //  t.setCategory_id((int) Float.parseFloat(category.get("id").toString()));
+             //   t.setCatname(category.get("titre").toString());
                 // t.setDate_debut(Date.valueOf(obj.get("date_debut").toString()));
                 //  Date date_debut = Date.from(Instant.parse(obj.get("date_debut").toString()));
                 //  t.setDate_debut(date_debut);
@@ -95,6 +98,12 @@ public class FormationService {
         });
         NetworkManager.getInstance().addToQueueAndWait(req);
         return Formation;
+    }
+    public void deletefor(int o) {
+        String url = Statics.BASE_URL_OUMA + "/deletjsonefor?id=" + o;
+        req.setUrl(url);
+        req.setPost(false);
+        NetworkManager.getInstance().addToQueueAndWait(req);
     }
 
     public void deletefor(int o) {
