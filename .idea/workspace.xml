@@ -23,7 +23,72 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="20ad8530-0994-414f-a681-8ba82ed47fc9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Gui/GestionProduit_Commande/PanierForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/GestionProduit_Commande/PanierForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Mobile_App/Entities/Formation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/Formation/AddCatForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/Formation/AddForForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/Formation/ListCatForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/Formation/ListForForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Mobile_App/Service/CategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Mobile_App/Service/FormationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Entities/Category.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Entities/Category.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Entities/Comment.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Entities/Comment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Entities/Demande_Recrutement.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Entities/Demande_Recrutement.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Entities/Events.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Entities/Events.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Entities/GestionProduit_Commande/AbstractDemoChart.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Entities/GestionProduit_Commande/AbstractDemoChart.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Entities/GestionProduit_Commande/Commande.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Entities/GestionProduit_Commande/Commande.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Entities/GestionProduit_Commande/IDemoChart.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Entities/GestionProduit_Commande/IDemoChart.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Entities/GestionProduit_Commande/LignePanier.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Entities/GestionProduit_Commande/LignePanier.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Entities/GestionProduit_Commande/Panier.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Entities/GestionProduit_Commande/Panier.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Entities/GestionProduit_Commande/Produit.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Entities/GestionProduit_Commande/Produit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Entities/GestionProduit_Commande/SalesBarChart.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Entities/GestionProduit_Commande/SalesBarChart.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Entities/Offre_Emploi.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Entities/Offre_Emploi.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Entities/candidateResume.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Entities/candidateResume.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Entities/company.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Entities/company.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Entities/education.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Entities/education.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Entities/rating.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Entities/rating.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Entities/user.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Entities/user.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/BaseForm$MySheet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/BaseForm$MySheet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/BaseForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/BaseForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Demande/AppInfos.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Demande/AppInfos.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Demande/ListApps.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Demande/ListApps.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/GestionProduit_Commande/ChartDemosForm$ListOption.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/GestionProduit_Commande/ChartDemosForm$ListOption.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/GestionProduit_Commande/ChartDemosForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/GestionProduit_Commande/ChartDemosForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/GestionProduit_Commande/InboxForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/GestionProduit_Commande/InboxForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/GestionProduit_Commande/PanierForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/GestionProduit_Commande/PanierForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/GestionProduit_Commande/ProductSingleForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/GestionProduit_Commande/ProductSingleForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/GestionProduit_Commande/ShopForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/GestionProduit_Commande/ShopForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/HomeForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/HomeForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/AddOffer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/AddOffer$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/AddOffer$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/AddOffer$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/AddOffer$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/AddOffer$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/AddOffer$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/AddOffer$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/AddOffer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/AddOffer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/GoogleMapsTestApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/GoogleMapsTestApp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/ListViewOffer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/ListViewOffer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/OfferInfos.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/OfferInfos.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/Stat.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/Offre_Emploi/Stat.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/SideMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/SideMenu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/User/Register$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/User/Register$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/User/Register.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/User/Register.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/User/addEditResume$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/User/addEditResume$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/User/addEditResume.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/User/addEditResume.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/User/login$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/User/login$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/User/login.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/User/login.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/event/AddEvent$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/event/AddEvent$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/event/AddEvent$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/event/AddEvent$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/event/AddEvent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/event/AddEvent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/event/EventsInfod.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/event/EventsInfod.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/event/ListViewEvent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/event/ListViewEvent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Utils/BaseForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Utils/BaseForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Utils/DataSource.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Utils/DataSource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Utils/Session.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Utils/Session.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Utils/Statics.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Utils/Statics.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/theme.res" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/theme.res" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Entities/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Entities/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Gui/HomeForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/HomeForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Mobile_App/Utils/Statics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Utils/Statics.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -77,7 +142,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.13927579" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -123,7 +188,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="4849d1b8-1647-420d-8b15-5bd2191cbf14" name="Default Changelist" comment="" />
+      <changelist id="20ad8530-0994-414f-a681-8ba82ed47fc9" name="Default Changelist" comment="" />
       <created>1619779868610</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -187,24 +252,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state width="1539" height="189" key="GridCell.Tab.0.bottom" timestamp="1621384706582">
-      <screen x="0" y="0" width="1600" height="900" />
-    </state>
-    <state width="1539" height="189" key="GridCell.Tab.0.bottom/0.0.1600.900@0.0.1600.900" timestamp="1621384706582" />
-    <state width="1539" height="189" key="GridCell.Tab.0.center" timestamp="1621384706582">
-      <screen x="0" y="0" width="1600" height="900" />
-    </state>
-    <state width="1539" height="189" key="GridCell.Tab.0.center/0.0.1600.900@0.0.1600.900" timestamp="1621384706582" />
-    <state width="1539" height="189" key="GridCell.Tab.0.left" timestamp="1621384706582">
-      <screen x="0" y="0" width="1600" height="900" />
-    </state>
-    <state width="1539" height="189" key="GridCell.Tab.0.left/0.0.1600.900@0.0.1600.900" timestamp="1621384706582" />
-    <state width="1539" height="189" key="GridCell.Tab.0.right" timestamp="1621384706582">
-      <screen x="0" y="0" width="1600" height="900" />
-    </state>
-    <state width="1539" height="189" key="GridCell.Tab.0.right/0.0.1600.900@0.0.1600.900" timestamp="1621384706582" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

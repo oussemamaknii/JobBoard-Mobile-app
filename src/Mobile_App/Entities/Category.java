@@ -6,9 +6,13 @@ public class Category {
     private String titre, descriptionc, couleur;
 
     public Category() {
+
     }
 
-    public int getId() {
+
+
+
+    public  int getId() {
         return id;
     }
 
@@ -16,7 +20,7 @@ public class Category {
         this.id = id;
     }
 
-    public String getTitre() {
+    public  String getTitre() {
         return titre;
     }
 
@@ -24,7 +28,7 @@ public class Category {
         this.titre = titre;
     }
 
-    public String getDescriptionc() {
+    public  String getDescriptionc() {
         return descriptionc;
     }
 
@@ -76,7 +80,13 @@ public class Category {
 
     @Override
     public String toString() {
-        return titre;
+        return ("Category [couleur="
+                + couleur
+                + ", descriptionc="
+                + descriptionc
+                + ", titre="
+                + titre
+                + "]");
     }
 
     public Category( String titre, String descriptionc, String couleur) {
@@ -85,4 +95,8 @@ public class Category {
         this.couleur = couleur;
     }
 
+    public Category(String titre,String descriptionc) {
+        this.titre = titre;
+        this.descriptionc = descriptionc;
+    }
 }
