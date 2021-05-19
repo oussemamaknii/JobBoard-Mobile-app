@@ -6,6 +6,10 @@
 package Mobile_App.Gui;
 
 import Mobile_App.Gui.Demande.ListApps;
+import Mobile_App.Gui.Formation.AddCatForm;
+import Mobile_App.Gui.Formation.AddForForm;
+import Mobile_App.Gui.Formation.ListCatForm;
+import Mobile_App.Gui.Formation.ListForForm;
 import Mobile_App.Gui.GestionProduit_Commande.ShopForm;
 import Mobile_App.Gui.Offre_Emploi.AddOffer;
 import Mobile_App.Gui.Offre_Emploi.ListViewOffer;
@@ -45,6 +49,12 @@ public class HomeForm extends SideMenu {
         Button btnCompany = new Button("Update Company");
         Button btnCandidates = new Button("Candidates List");
         Button btnShowResume = new Button("show Resume");
+        /**oumaima**/
+        Button btnAddfor = new Button("Add formation");
+        Button btnListfor = new Button("List formations");
+        Button btnAddcat = new Button("Add categorie");
+        Button btnListcat = new Button("List categories");
+        /** **/
         btnShowResume.addActionListener(e -> new showResume(current, res));
 
 
@@ -63,7 +73,14 @@ public class HomeForm extends SideMenu {
         btnListTasks.addActionListener(e -> new ListViewOffer(current, res).show());
         btnListapps.addActionListener(e -> new ListApps(current, res).show());
         btnShop.addActionListener(e->new ShopForm(current,res).show());
-        addAll(btnAddTask, btnListTasks,btnListapps,btnResume,btnCompany,btnCandidates,btnShowResume,btnShop);
+
+        /**ouma **/
+        btnAddfor.addActionListener(e -> new AddForForm(current).show());
+        btnListfor.addActionListener(e -> new ListForForm(current).show());
+        btnAddcat.addActionListener(e -> new AddCatForm(current).show());
+        btnListcat.addActionListener(e -> new ListCatForm(current).show());
+        /** **/
+        addAll(btnAddTask, btnListTasks,btnListapps,btnResume,btnCompany,btnCandidates,btnShowResume,btnShop,btnAddfor,btnListfor,btnAddcat,btnListcat);
 
     }
 

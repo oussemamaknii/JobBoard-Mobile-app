@@ -72,12 +72,18 @@ public class Main {
     }
 
 
-    public void start() {
+   /** public void start() {
         if (current != null) {
             current.show();
             return;
         }
         new login(theme).show();
-    }
+    }**/
+
+
+   public void start() {
+       //  new HomeForm().show();
+       new HomeForm(theme).show();
+   }
 
 }
