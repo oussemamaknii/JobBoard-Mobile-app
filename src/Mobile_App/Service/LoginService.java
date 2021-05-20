@@ -73,7 +73,7 @@ public class LoginService {
         ConnectionRequest con = new ConnectionRequest();
         con.addRequestHeader("Content-Type", "application/json");
         con.setPost(false);
-        con.setUrl(Statics.BASE_URL_RYAAN + "api/deleteresumeApi" + id);
+        con.setUrl(Statics.BASE_URL_RYAAN + "/api/deleteresumeApi" + id);
         con.addResponseListener((NetworkEvent evt) -> {
             if (con.getResponseCode() == 200) {
                 System.out.println("Deleted");
@@ -93,7 +93,7 @@ public class LoginService {
         System.err.println(hashed);
 
         MultipartRequest con = new MultipartRequest();
-        con.setUrl(Statics.BASE_URL_RYAAN + "api/register" + "?firstName=" + firstName + "&lastName=" + lastName + "&dateOfBirth=" + dateOfBirth + "&phone=" + phone + "&adresse=" + adresse + "&professionalTitle=" + professionalTitle + "&password=" + password + "&email=" + email);
+        con.setUrl(Statics.BASE_URL_RYAAN + "/api/register" + "?firstName=" + firstName + "&lastName=" + lastName + "&dateOfBirth=" + dateOfBirth + "&phone=" + phone + "&adresse=" + adresse + "&professionalTitle=" + professionalTitle + "&password=" + password + "&email=" + email);
         con.setPost(true);
         String filePath = FileSystemStorage.getInstance().getAppHomePath();
         String mime = "image/jpeg";
@@ -128,7 +128,7 @@ public class LoginService {
 
         System.out.println(email);
 
-        con.setUrl(Statics.BASE_URL_RYAAN + "api/request-password-api" + "?email=" + email);
+        con.setUrl(Statics.BASE_URL_RYAAN + "/api/request-password-api" + "?email=" + email);
         con.setPost(true);
 
         con.addResponseListener(new ActionListener<NetworkEvent>() {

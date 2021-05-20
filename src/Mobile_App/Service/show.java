@@ -29,10 +29,8 @@ public class show {
     public boolean resultOK;
     private ConnectionRequest req;
 
-    private show() {
-        req = new ConnectionRequest() {
-
-        };
+    public show() {
+        req = new ConnectionRequest() {};
     }
 
     public static show getInstance() {
@@ -97,6 +95,7 @@ public class show {
         NetworkManager.getInstance().addToQueueAndWait(req);
         return users;
     }
+
 
     /// get all resume
     // problem list null

@@ -23,8 +23,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="20ad8530-0994-414f-a681-8ba82ed47fc9" name="Default Changelist" comment="last">
+      <change afterPath="$PROJECT_DIR$/src/Mobile_App/Utils/AbstractDemoChart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Mobile_App/Utils/CompaniesChart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Mobile_App/Utils/IDemoChart.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Service/FormationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Service/FormationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/User/login.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mobile_App/Mobile_App/Gui/User/login.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Gui/HomeForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/HomeForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Gui/User/forgetPassword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/User/forgetPassword.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Gui/User/login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/User/login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Gui/User/showCandidates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Gui/User/showCandidates.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Service/LoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Service/LoginService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Service/addEditResumeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Service/addEditResumeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mobile_App/Service/show.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile_App/Service/show.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

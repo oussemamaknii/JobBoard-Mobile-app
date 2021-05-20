@@ -25,7 +25,7 @@ public class addEditResumeService {
         return instance;
     }
     public boolean addResume(candidateResume t) {
-        String url = Statics.BASE_URL_RYAAN + "api/candidateresumeApi?ResumeHeadline=" + t.getResumeHeadline() + "&skills=" + t.getSkills() +
+        String url = Statics.BASE_URL_RYAAN + "/api/candidateresumeApi?ResumeHeadline=" + t.getResumeHeadline() + "&skills=" + t.getSkills() +
                 "&experience=" + t.getExperience();
         System.out.println(url);
         req.setUrl(url);

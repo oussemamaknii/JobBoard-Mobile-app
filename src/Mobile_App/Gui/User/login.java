@@ -27,7 +27,7 @@ public class login extends Form {
         );
         getTitleArea().setUIID("Container");
         TextField login = new TextField(null, "Enter your username ! Exp: Admin_Admin", 20, TextField.ANY);
-        TextField password = new TextField(null, "Enter tour password", 20, TextField.PASSWORD);
+        TextField password = new TextField(null, "Enter your password", 20, TextField.PASSWORD);
         login.getAllStyles().setMargin(LEFT, 0);
         password.getAllStyles().setMargin(LEFT, 0);
         Label loginIcon = new Label("", "TextField");

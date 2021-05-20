@@ -7,13 +7,11 @@ package Mobile_App.Gui;
 
 import Mobile_App.Gui.Demande.ListApps;
 import Mobile_App.Gui.Formation.AddCatForm;
-import Mobile_App.Gui.Formation.AddForForm;
 import Mobile_App.Gui.Formation.ListCatForm;
 import Mobile_App.Gui.Formation.ListForForm;
 import Mobile_App.Gui.GestionProduit_Commande.ShopForm;
 import Mobile_App.Gui.Offre_Emploi.AddOffer;
 import Mobile_App.Gui.Offre_Emploi.ListViewOffer;
-import Mobile_App.Gui.Offre_Emploi.Stat;
 import Mobile_App.Gui.User.AddEditCompany;
 import Mobile_App.Gui.User.showCandidates;
 import Mobile_App.Gui.User.showResume;
@@ -58,7 +56,7 @@ public class HomeForm extends SideMenu {
         btnShowResume.addActionListener(e -> new showResume(current, res));
 
 
-        btnCandidates.addActionListener(e -> new showCandidates(current, res));
+        btnCandidates.addActionListener(e -> new showCandidates(current,res));
 
         btnAddTask.addActionListener(e -> new AddOffer(current,null,res).show());
         btnListTasks.addActionListener(e -> new ListViewOffer(current,res).show());
