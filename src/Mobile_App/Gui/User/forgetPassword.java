@@ -2,6 +2,7 @@ package Mobile_App.Gui.User;
 
 import Mobile_App.Entities.User;
 import Mobile_App.Gui.HomeForm;
+import Mobile_App.Gui.SideMenu;
 import Mobile_App.Service.LoginService;
 import Mobile_App.Utils.BaseForm;
 import Mobile_App.Utils.CompaniesChart;
@@ -18,7 +19,7 @@ import com.twilio.type.PhoneNumber;
 import java.util.Random;
 
 
-public class forgetPassword extends Form {
+public class forgetPassword extends SideMenu {
     Form current;
     private static User User;
     public static String Codex;
@@ -32,7 +33,8 @@ public class forgetPassword extends Form {
     public static final String AUTH_TOKEN = "654c38e49aa6b0878c74d472b086e277";
     public static Resources theme;
 
-    public forgetPassword(Resources res) {
+
+    public forgetPassword(Form previous,Resources res) {
 
         add(new Label(res.getImage("logo.png"), "LogoLabel"));
 
@@ -56,48 +58,53 @@ public class forgetPassword extends Form {
                 Dialog.show("Error", "Please enter your email", "Ok", null);
 
             } else {
-            //    Session.setForgetPassMail(email.getText());
-              LoginService ser = new LoginService();
-              ser.sendEmail(email.getText());
-         //       System.out.println(email.getText());
+                //    Session.setForgetPassMail(email.getText());
+                LoginService ser = new LoginService();
+                ser.sendEmail(email.getText());
+                //       System.out.println(email.getText());
             }
         });
+        getToolbar().addMaterialCommandToLeftBar("", FontImage.MATERIAL_ARROW_BACK
+                , e -> previous.showBack());
         show();
+
+
     }
 
-    public void code(Resources res) {
-
-        String SALTCHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
-        StringBuilder salt = new StringBuilder();
-        Random rnd = new Random();
-        while (salt.length() < 5) { // length of the random string.
-            int index = (int) (rnd.nextFloat() * SALTCHARS.length());
-            salt.append(SALTCHARS.charAt(index));
-        }
-        String saltStr = salt.toString();
-        Session.setSaltToken(saltStr);
-        Twilio.init(ACCOUNT_SID, AUTH_TOKEN);
-        com.twilio.rest.api.v2010.account.Message messages = com.twilio.rest.api.v2010.account.Message.creator(new PhoneNumber("+21629903274"),
-                new PhoneNumber("+14156505681"), "Votre Code est : " + saltStr).create();
-        f = new Form();
-
-        getTitleArea().setUIID("Container");
-        setUIID("SignIn");
-        add(new Label(res.getImage("Logo.png"), "LogoLabel"));
-        add(new Label("A message has been sent to your phone number"));
-        TextField email1 = new TextField("", "Code", 20, TextField.ANY);
-        email1.setSingleLineTextArea(false);
-        Button signIn1 = new Button("Send !");
-        Container content1 = BoxLayout.encloseY(
-                new FloatingHint(email1),
-                new BaseForm().createLineSeparator(),
-                new BaseForm().createLineSeparator(),
-                signIn1,
-                FlowLayout.encloseCenter()
-        );
-        add(content1);
-        show();
-    }
+//    public void code(Resources res) {
+//
+//        String SALTCHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
+//        StringBuilder salt = new StringBuilder();
+//        Random rnd = new Random();
+//        while (salt.length() < 5) { // length of the random string.
+//            int index = (int) (rnd.nextFloat() * SALTCHARS.length());
+//            salt.append(SALTCHARS.charAt(index));
+//        }
+//        String saltStr = salt.toString();
+//        Session.setSaltToken(saltStr);
+//        Twilio.init(ACCOUNT_SID, AUTH_TOKEN);
+//        com.twilio.rest.api.v2010.account.Message messages = com.twilio.rest.api.v2010.account.Message.creator(new PhoneNumber("+21629903274"),
+//                new PhoneNumber("+14156505681"), "Votre Code est : " + saltStr).create();
+//        f = new Form();
+//
+//        getTitleArea().setUIID("Container");
+//        setUIID("SignIn");
+//        add(new Label(res.getImage("Logo.png"), "LogoLabel"));
+//        add(new Label("A message has been sent to your phone number"));
+//        TextField email1 = new TextField("", "Code", 20, TextField.ANY);
+//        email1.setSingleLineTextArea(false);
+//        Button signIn1 = new Button("Send !");
+//        Container content1 = BoxLayout.encloseY(
+//                new FloatingHint(email1),
+//                new BaseForm().createLineSeparator(),
+//                new BaseForm().createLineSeparator(),
+//                signIn1,
+//                FlowLayout.encloseCenter()
+//        );
+//        add(content1);
+//
+//        show();
+//    }
 
 
 }

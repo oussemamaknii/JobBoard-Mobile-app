@@ -46,14 +46,12 @@ public class HomeForm extends SideMenu {
         Button btnResume = new Button("Update Resume");
         Button btnCompany = new Button("Update Company");
         Button btnCandidates = new Button("Candidates List");
-        Button btnShowResume = new Button("show Resume");
         /**oumaima**/
 
         Button btnListfor = new Button("List formations");
         Button btnAddcat = new Button("Add categorie");
         Button btnListcat = new Button("List categories");
         /** **/
-        btnShowResume.addActionListener(e -> new showResume(current, res));
 
 
         btnCandidates.addActionListener(e -> new showCandidates(current,res));
@@ -78,7 +76,7 @@ public class HomeForm extends SideMenu {
         btnAddcat.addActionListener(e -> new AddCatForm(current, null, res).show());
         btnListcat.addActionListener(e -> new ListCatForm(current,res).show());;
         /** **/
-        addAll(btnAddTask, btnListTasks,btnListapps,btnResume,btnCompany,btnCandidates,btnShowResume,btnShop,btnListfor,btnAddcat,btnListcat);
+        addAll(btnAddTask, btnListTasks,btnListapps,btnResume,btnCompany,btnCandidates,btnShop,btnListfor,btnAddcat,btnListcat);
 
     }
 

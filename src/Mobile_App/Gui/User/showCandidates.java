@@ -95,9 +95,8 @@ public class showCandidates extends SideMenu {
         table.addAll(cnthelpers, speclts, times, actions,tel);
         table.setScrollableX(true);
         add(BorderLayout.OVERLAY, table);
+        show();
         getToolbar().addMaterialCommandToLeftBar("", FontImage.MATERIAL_ARROW_BACK
                 , e -> previous.showBack());
-        show();
-
     }
 }

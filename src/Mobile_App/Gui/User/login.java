@@ -19,12 +19,15 @@ public class login extends Form {
     private Button Forget_Password;
 
     public login(Resources res) {
+
         super(new BorderLayout(BorderLayout.CENTER_BEHAVIOR_CENTER_ABSOLUTE));
         setUIID("LoginForm");
         Container welcome = FlowLayout.encloseCenter(
                 new Label("Sign In | ", "WelcomeWhite"),
                 new Label("JobHub", "WelcomeBlue")
         );
+        current = this;
+
         getTitleArea().setUIID("Container");
         TextField login = new TextField(null, "Enter your username ! Exp: Admin_Admin", 20, TextField.ANY);
         TextField password = new TextField(null, "Enter your password", 20, TextField.PASSWORD);
@@ -63,7 +66,7 @@ public class login extends Form {
         Button forgetPassword = new Button("forget Password?");
         forgetPassword.setUIID("forgetPassword");
         forgetPassword.addActionListener(e -> {
-            new forgetPassword(res).show();
+            new forgetPassword(current,res).show();
         });
         Button createNewAccount = new Button("CREATE NEW ACCOUNT");
         createNewAccount.setUIID("CreateNewAccountButton");

@@ -1,12 +1,14 @@
 package Mobile_App.Service;
 
 import Mobile_App.Entities.User;
+import Mobile_App.Gui.User.login;
 import Mobile_App.Utils.BCrypt;
 import Mobile_App.Utils.Session;
 import Mobile_App.Utils.Statics;
 import com.codename1.io.*;
 import com.codename1.ui.Dialog;
 import com.codename1.ui.events.ActionListener;
+import com.codename1.ui.util.Resources;
 
 import java.io.IOException;
 import java.text.DateFormat;
@@ -39,10 +41,7 @@ public class LoginService {
                     Session.ConnectedUser.setFirstName(mapUser.get("firstName").toString());
                     Session.ConnectedUser.setLastName(mapUser.get("lastName").toString());
                     Session.ConnectedUser.setPhone((int) Float.parseFloat(mapUser.get("phone").toString()));
-                    if (mapUser.get("imageName").toString().equals("")) {
-                        //TODO:: exception if image == null
-                        Session.ConnectedUser.setImageName("image-blank.jpg");
-                    } else Session.ConnectedUser.setImageName(mapUser.get("imageName").toString());
+
                     Session.ConnectedUser.setRoles(mapUser.get("roles").toString());
                     if (mapUser.get("adresse").toString().equals("")) {
                         Session.ConnectedUser.setAdresse("Gafsa");
@@ -69,29 +68,13 @@ public class LoginService {
 
     }
 
-    public void deleteResume(int id) {
-        ConnectionRequest con = new ConnectionRequest();
-        con.addRequestHeader("Content-Type", "application/json");
-        con.setPost(false);
-        con.setUrl(Statics.BASE_URL_RYAAN + "/api/deleteresumeApi" + id);
-        con.addResponseListener((NetworkEvent evt) -> {
-            if (con.getResponseCode() == 200) {
-                System.out.println("Deleted");
-            } else {
-                System.out.println("Error");
-            }
-        });
-        NetworkManager.getInstance().addToQueueAndWait(con);
 
-
-    }
 
     public void SingUp(String firstName, String lastName, Date dateOfBirth, int phone, String adresse, String professionalTitle, String password, String email) {
 
         String hashed = BCrypt.hashpw(password, BCrypt.gensalt(13));
 
         System.err.println(hashed);
-
         MultipartRequest con = new MultipartRequest();
         con.setUrl(Statics.BASE_URL_RYAAN + "/api/register" + "?firstName=" + firstName + "&lastName=" + lastName + "&dateOfBirth=" + dateOfBirth + "&phone=" + phone + "&adresse=" + adresse + "&professionalTitle=" + professionalTitle + "&password=" + password + "&email=" + email);
         con.setPost(true);
@@ -109,7 +92,7 @@ public class LoginService {
             @Override
             public void actionPerformed(NetworkEvent evt) {
                 if (con.getResponseCode() == 200) {
-                    Dialog.show("Success", "Added Successfully", "Ok", null);
+                    Dialog.show("Success", "User Created Successfully", "Ok", null);
                 } else {
                     Dialog.show("Failed", "Existing User", "Ok", null);
                 }

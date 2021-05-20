@@ -85,7 +85,6 @@ public class Session {
 
             Map<String, Object> Users = j.parseJSON(new CharArrayReader(json.toCharArray()));
             List<Map<String, Object>> list = (List<Map<String, Object>>) Users.get("root");
-            System.out.println("97" + list);
             for (Map<String, Object> mapUser : list) {
                 User user = new User();
                 user.setId((int) Float.parseFloat(mapUser.get("id").toString()));

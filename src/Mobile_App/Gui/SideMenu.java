@@ -56,10 +56,10 @@ public class SideMenu extends Form {
                 new ListCatForm(this, res).show());
         getToolbar().addMaterialCommandToSideMenu("  Statistics", FontImage.MATERIAL_ANALYTICS, e ->
                 new Stat(this, res).createPieChartForm().show());
-        getToolbar().addMaterialCommandToSideMenu("  Resume", FontImage.MATERIAL_TRENDING_UP,  e ->
-                new addEditResume(this,null,res).show());
-        getToolbar().addMaterialCommandToSideMenu("  Company", FontImage.MATERIAL_TRENDING_UP,  e ->
-                new AddEditCompany(this,null,res).show());
+        getToolbar().addMaterialCommandToSideMenu("  Resume", FontImage.MATERIAL_TRENDING_UP, e ->
+                new addEditResume(this, null, res).show());
+        getToolbar().addMaterialCommandToSideMenu("  Company", FontImage.MATERIAL_TRENDING_UP, e ->
+                new AddEditCompany(this, null, res).show());
         getToolbar().addMaterialCommandToSideMenu("  Shop", FontImage.MATERIAL_STORE, e ->
                 new ShopForm(this, res).show());
 
@@ -69,14 +69,7 @@ public class SideMenu extends Form {
 
 /****/
 
-getToolbar().addMaterialCommandToSideMenu("  Meetings", FontImage.MATERIAL_TRENDING_UP, null);
-        getToolbar().addMaterialCommandToSideMenu("  Projects", FontImage.MATERIAL_ACCESS_TIME, null);
-        getToolbar().addMaterialCommandToSideMenu("  Releases", FontImage.MATERIAL_ACCESS_TIME, null);
-        getToolbar().addMaterialCommandToSideMenu("  Documents", FontImage.MATERIAL_TRENDING_UP, null);
-        getToolbar().addMaterialCommandToSideMenu("  Issues", FontImage.MATERIAL_ACCESS_TIME, null);
-        getToolbar().addMaterialCommandToSideMenu("  Meeting Claims", FontImage.MATERIAL_ACCESS_TIME, null);
-        getToolbar().addMaterialCommandToSideMenu(" Update Profile", FontImage.MATERIAL_SETTINGS, null);
-        getToolbar().addMaterialCommandToSideMenu("  Logout", FontImage.MATERIAL_EXIT_TO_APP, 0,e -> new login(res).show());
+        getToolbar().addMaterialCommandToSideMenu("  Logout", FontImage.MATERIAL_EXIT_TO_APP, 0, e -> new login(res).show());
 
     }
 }
