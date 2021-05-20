@@ -25,14 +25,13 @@ public class AddEvent extends SideMenu {
 
 
     private File selectedFile2;
-    private File getImageFile()
-    {
-        return this.selectedFile2=selectedFile2;
+
+    private File getImageFile() {
+        return this.selectedFile2 = selectedFile2;
     }
 
-    private void setImageFile(File file2)
-    {
-        this.selectedFile2=file2;
+    private void setImageFile(File file2) {
+        this.selectedFile2 = file2;
     }
 
     public AddEvent(Form previous, Events o, Resources res) {
@@ -77,13 +76,12 @@ public class AddEvent extends SideMenu {
                         Date date = new Date(System.currentTimeMillis());
 
                         setImageFile(new File(tffile.getText()));
-                        File f=new File(getImageFile().getAbsolutePath());
-                        Events offer = new Events(0, tfTitle.getText(), dateTimePicker.getDate().toInstant()
-                                .atZone(ZoneId.systemDefault())
-                                .toLocalDate(), tfdescription.getText(), Integer.parseInt(tflocation.getText()),
+                        File f = new File(getImageFile().getAbsolutePath());
+                        Events offer = new Events(0, tfTitle.getText(), dateTimePicker.getDate().toInstant().atZone(ZoneId.systemDefault()).toLocalDate()
+                                , tfdescription.getText(), Integer.parseInt(tflocation.getText()),
                                 tfPost.getText(), "event2.jpg", Integer.parseInt(nbr.getText()));
                         Files.move(Paths.get(tffile.getText().substring(7)),
-                                Paths.get("C:\\Users\\Ryaan\\Desktop\\Mobile-app\\res\\events\\"+f.getName()));
+                                Paths.get("C:\\Users\\Ryaan\\Desktop\\master\\Mobile-app\\res\\events\\" + f.getName()));
 
                         if (EventService.getInstance().addOffer(offer)) {
                             Dialog.show("Success", "Added Successfully !", new Command("OK"));
@@ -91,14 +89,14 @@ public class AddEvent extends SideMenu {
                             f1.show();
                         } else
                             Dialog.show("ERROR", "Server error", new Command("OK"));
-                    } catch ( IOException e) {
+                    } catch (IOException e) {
                         Dialog.show("ERROR", "Status must be a number", new Command("OK"));
                     }
                 }
             });
             Container a = new Container(BoxLayout.y());
             Container b = new Container(BoxLayout.y());
-            a.addAll(tfTitle, tfPost, tfdescription, tflocation,nbr);
+            a.addAll(tfTitle, tfPost, tfdescription, tflocation, nbr);
             b.addAll(tffile, fc, dateTimePicker, btnValider);
 
             addAll(a, b);
@@ -144,13 +142,13 @@ public class AddEvent extends SideMenu {
                         Date date = new Date(System.currentTimeMillis());
 
                         setImageFile(new File(tffile.getText()));
-                        File f=new File(getImageFile().getAbsolutePath());
+                        File f = new File(getImageFile().getAbsolutePath());
                         Events offer = new Events(o.getId(), tfTitle.getText(), dateTimePicker.getDate().toInstant()
                                 .atZone(ZoneId.systemDefault())
                                 .toLocalDate(), tfdescription.getText(), Integer.parseInt(tflocation.getText()),
                                 tfPost.getText(), "event2.jpg", Integer.parseInt(nbr.getText()));
                         Files.move(Paths.get(tffile.getText().substring(7)),
-                                Paths.get("C:\\Users\\souso\\Desktop\\Mobile App\\res\\events\\"+f.getName()));
+                                Paths.get("C:\\Users\\souso\\Desktop\\master\\Mobile App\\res\\events\\" + f.getName()));
 
                         if (EventService.getInstance().modOffer(offer)) {
                             Dialog.show("Success", "UPDATED Successfully !", new Command("OK"));
@@ -165,7 +163,7 @@ public class AddEvent extends SideMenu {
             });
             Container a = new Container(BoxLayout.y());
             Container b = new Container(BoxLayout.y());
-            a.addAll(tfTitle, tfPost, tfdescription, tflocation,nbr);
+            a.addAll(tfTitle, tfPost, tfdescription, tflocation, nbr);
             b.addAll(tffile, fc, dateTimePicker, btnValider);
 
             addAll(a, b);

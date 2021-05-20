@@ -30,7 +30,7 @@ public class addEditCompanyService {
         return instance;
     }
     public boolean addEditCompany(company comp) {
-        String url = Statics.BASE_URL_RYAAN + "apiCompany/AddEditCompanyApi?companyName=" + comp.getCompanyName() + "&contactEmail="+comp.getContactEmail()+"&website="+comp.getWebsite()+"&foundedDate="+comp.getFoundedDate()+"&category="+comp.getCategory()+"&description="+comp.getDescription()+"&contactPhone="+comp.getContactPhone()+"&companyAdress="+comp.getCompanyAddress()+"&facebookLink="+comp.getFacebookLink();
+        String url = Statics.BASE_URL_RYAAN + "/apiCompany/AddEditCompanyApi?companyName=" + comp.getCompanyName() + "&contactEmail="+comp.getContactEmail()+"&website="+comp.getWebsite()+"&foundedDate="+comp.getFoundedDate()+"&category="+comp.getCategory()+"&description="+comp.getDescription()+"&contactPhone="+comp.getContactPhone()+"&companyAdress="+comp.getCompanyAddress()+"&facebookLink="+comp.getFacebookLink();
         System.out.println(url);
         req.setUrl(url);
         req.addResponseListener(new ActionListener<NetworkEvent>() {

@@ -220,7 +220,7 @@ public class AddOffer extends SideMenu {
                                 "desc.png", tfemail.getText(), date, (Date) dateTimePicker.getValue(), Integer.parseInt(tfmax.getText()),
                                 Integer.parseInt(tfmin.getText()));
                         Files.move(Paths.get(tffile.getText().substring(7)),
-                                Paths.get("C:\\Users\\Ryaan\\Desktop\\Mobile-app\\res\\offres\\"+f.getName()));
+                                Paths.get("C:\\Users\\Ryaan\\Desktop\\master\\Mobile-app\\res\\offres\\"+f.getName()));
                         if (Offer_Service.getInstance().addOffer(offer)) {
                             Dialog.show("Success", "Added Successfully !", new Command("OK"));
                             Form f1 = new ListViewOffer(null, res);
@@ -315,10 +315,11 @@ public class AddOffer extends SideMenu {
                         setImageFile(new File(tffile.getText()));
                         File f=new File(getImageFile().getAbsolutePath());
                         Offre_Emploi offer = new Offre_Emploi(o.getId(), categ.getSelectedItem().getId(), tfTitle.getText(), tfPost.getText(), tfdescription.getText(), tflocation.getText(),
-                                f.getName(), tfemail.getText(), date, (Date) dateTimePicker.getValue(), Integer.parseInt(tfmax.getText()),
+                                "desc.png", tfemail.getText(), date, (Date) dateTimePicker.getValue(), Integer.parseInt(tfmax.getText()),
                                 Integer.parseInt(tfmin.getText()));
                         Files.move(Paths.get(tffile.getText().substring(7)),
-                                Paths.get("C:\\Users\\souso\\Desktop\\Mobile App\\res\\offres\\"+f.getName()));
+
+                                Paths.get("C:\\Users\\Ryaan\\Desktop\\master\\Mobile-app\\res\\offres\\"+f.getName()));
                         if (Offer_Service.getInstance().modOffer(offer)) {
                             Dialog.show("Success", "Updated Successfully !", new Command("OK"));
                             Form f2 = new ListViewOffer(null, res);

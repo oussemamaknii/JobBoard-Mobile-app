@@ -23,6 +23,7 @@ public class AppInfos extends SideMenu {
         tb.setTitleCentered(false);
         setupSideMenu(res);
         this.setTitle("Apps Infos");
+        this.setTitle("Apps Infos");
         this.setLayout(new FlowLayout(CENTER, CENTER));
         this.getToolbar().addMaterialCommandToLeftBar("", FontImage.MATERIAL_ARROW_BACK
                 , e -> previous.showBack());

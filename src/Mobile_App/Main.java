@@ -8,6 +8,7 @@ import Mobile_App.Gui.HomeForm;
 import Mobile_App.Gui.User.AddEditCompany;
 import Mobile_App.Gui.User.Register;
 import Mobile_App.Gui.User.login;
+import Mobile_App.Gui.event.AddEvent;
 import Mobile_App.Utils.Session;
 import com.codename1.components.FloatingHint;
 import com.codename1.social.Login;
@@ -78,6 +79,7 @@ public class Main {
             return;
         }
         new login(theme).show();
+     //   new AddEvent(null,null,theme).show();
     }
 
 

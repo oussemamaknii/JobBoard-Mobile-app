@@ -56,7 +56,7 @@ public class OfferInfos extends SideMenu {
                 f.show();
             });
             Apply.addActionListener(e -> {
-                int iduser = 5;
+                int iduser = 45;
                 DemandeService.getInstance().applytojob(s.getId(), iduser);
                 Dialog.show("Success", "Applied Successfully !", new Command("OK"));
                 Form f2 = new ListViewOffer(new HomeForm(res), res);

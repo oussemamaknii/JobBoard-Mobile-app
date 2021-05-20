@@ -25,7 +25,7 @@ public class LoginService {
         con.setPost(false);
         con.addArgument("email", email);
         con.addArgument("password", password);
-        con.setUrl("http://127.0.0.1/jobBoard/public/api/loginApiTest");
+        con.setUrl(Statics.BASE_URL_RYAAN+"/api/loginApiTest");
         User user = new User();
         con.addResponseListener((NetworkEvent evt) -> {
             if (con.getResponseCode() == 200) {
@@ -43,6 +43,7 @@ public class LoginService {
                     Session.ConnectedUser.setPhone((int) Float.parseFloat(mapUser.get("phone").toString()));
 
                     Session.ConnectedUser.setRoles(mapUser.get("roles").toString());
+
                     if (mapUser.get("adresse").toString().equals("")) {
                         Session.ConnectedUser.setAdresse("Gafsa");
                     }
@@ -65,10 +66,7 @@ public class LoginService {
         });
         NetworkManager.getInstance().addToQueueAndWait(con);
 
-
     }
-
-
 
     public void SingUp(String firstName, String lastName, Date dateOfBirth, int phone, String adresse, String professionalTitle, String password, String email) {
 

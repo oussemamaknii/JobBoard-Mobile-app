@@ -16,6 +16,7 @@ public class AddEditCompany extends SideMenu {
         setTitle("Update your Company");
         setLayout(BoxLayout.y());
 
+
         System.out.println("hi");
         //  resume.getUser_id() != Session.ConnectedUser.getId()
         TextField tfCompanyName = new TextField("", "Ex: Jobhub");
@@ -24,7 +25,7 @@ public class AddEditCompany extends SideMenu {
         TextField tfWebsite = new TextField("", "Ex: www.jobhub.tn");
         Picker date = new Picker();
         TextField tfCategory = new TextField("", "Ex: Software Developpment company");
-        TextField tfDescription = new TextField("", "Ex: ");
+        TextField tfDescription = new TextField("", "Ex: Company description ");
         TextField tfCompanyAdress = new TextField("", "Ex: Tunisia, Gafsa");
         TextField tfContactPhone = new TextField("", "Ex: +21620202020");
         TextField tfFacebookLink = new TextField("", "Ex: www.facebook.com/jobhub");
